@@ -19,7 +19,7 @@ const Home = () => {
             </span>
           </h1>
           <span className="intro animated-layer">
-            Acompañamos a PYMES chilenas y extranjeras en todo el proceso de licitación pública para que no solo participen, sino que ganen, crezcan y se consoliden.
+            Transformamos la gestión de tu empresa para que venda más, planifique mejor y ejecute con excelencia.
           </span>
         </div>
       </div>
