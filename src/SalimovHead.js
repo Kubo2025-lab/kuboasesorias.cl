@@ -2,7 +2,7 @@ import Head from "next/head";
 const SalimovHead = () => {
   return (
     <Head>
-      <title>Salimov - Horizontal Personal Portfolio</title>
+      <title>Kubo - Te ayudamos con las licitaciones públicas</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {/* Template Google Fonts */}
@@ -24,7 +24,7 @@ const SalimovHead = () => {
       {/* <link rel="stylesheet" href="css/skins/yellow.css" /> */}
       {/* Live Style Switcher - demo only */}
 
-      <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+       {/* <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" /> */}
     </Head>
   );
 };
