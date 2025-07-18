@@ -11,11 +11,11 @@ const Home = () => {
             </span>
             <span>
               <span className="animated-layer">
-                Soy
+                Somos
               </span>
             </span>
             <span>
-              <span className="animated-layer">Kubo</span>
+              <span className="animated-layer">Kubo Asesorías</span>
             </span>
           </h1>
           <span className="intro animated-layer">
