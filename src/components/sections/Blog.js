@@ -87,7 +87,7 @@ const Blog = () => {
               <div className="content">
                 <span className="category">PYMES</span>
                 <span className="title">
-                  Crear un plan y luego tu empresa
+                  Crea un plan y luego tu empresa
                 </span>
                 <p>
                   De nada sirve crear una empresa si no tienes un objetivo SMART...
