@@ -1,0 +1,79 @@
+import { Fragment, useEffect } from "react";
+
+const BlogPost = () => {
+  useEffect(() => {
+    document.querySelector("body").classList.add("blog-page");
+  }, []);
+
+  return (
+    <Fragment>
+      <a href="/" className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </a>
+      <div className="blog-content">
+        <h1>#Kubo_blog</h1>
+        {/* ARTICLE STARTS */}
+        <div className="main-post">
+          {/* META STARTS */}
+          <div className="meta d-flex align-items-center">
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-calendar" />
+              <span>18 Jul 2025</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-solid fa-tag" />
+              <span>mercado público, licitaciones, negocios</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-comments" />
+              <span>0 comentarios</span>
+            </div>
+          </div>
+          {/* META ENDS */}
+          {/* CONTENT STARTS */}
+          <h3>Cerca de 6.000 oportunidades diarias, ¿cómo no ganar una?</h3>
+          <img src="assets/blog/vivir-licitaciones.jpg" alt="Cómo vivir de las licitaciones" />
+          <div className="post-content">
+            <p>
+              Sí, leíste bien: cada día se publican cerca de <strong>6.000 licitaciones</strong> solo en Chile. El Estado es, por lejos, el mayor comprador del país. Desde papel higiénico hasta obras de infraestructura, pasando por servicios de consultoría, capacitación, tecnología y todo lo que se te ocurra.
+            </p>
+            <p>
+              Entonces… ¿por qué no estás vendiéndole al Estado? O peor: ¿por qué sigues pensando que eso es solo para las grandes empresas?
+            </p>
+            <p>
+              La verdad es que <strong>una pyme puede perfectamente vivir (y crecer) del mercado público</strong>. Pero no se trata de postular por postular, sino de entender cómo funciona el juego.
+            </p>
+            <p>
+              📌 <strong>Regla 1: El Estado no te regala nada, pero sí compra con reglas claras</strong><br />
+              Las bases de licitación son tu hoja de ruta. Si aprendes a leerlas como un detective y postulas estratégicamente, puedes ganarle incluso a empresas más grandes.
+            </p>
+            <p>
+              📌 <strong>Regla 2: No necesitas ganar todas. Con una buena al mes puedes vivir</strong><br />
+              Si prestas un servicio de $2 a 5 millones, con una adjudicación mensual ya tienes un flujo saludable. La clave está en ser constante y seleccionar bien las oportunidades.
+            </p>
+            <p>
+              📌 <strong>Regla 3: Automatiza y enfócate en propuestas de calidad</strong><br />
+              Usa herramientas que te notifiquen de nuevas licitaciones, clasifica por región o rubro, y dedica tu tiempo a estudiar y preparar buenas ofertas. No a navegar 2 horas en Mercado Público.
+            </p>
+            <p>
+              📌 <strong>Regla 4: Invierte en aprender</strong><br />
+              La mayoría fracasa porque no entiende el proceso. Aprender sobre evaluación, bases administrativas, técnicas y criterios de adjudicación te pone 10 pasos delante del resto.
+            </p>
+            <p>
+              📌 <strong>Regla 5: Tu reputación es oro</strong><br />
+              Si cumples bien un contrato, la próxima vez vas con ventaja. El historial de cumplimiento y la experiencia sí pesan. Vive de licitar, pero también de entregar calidad.
+            </p>
+            <p>
+              Así que sí, **sí se puede vivir de las licitaciones**. Y no solo sobrevivir: escalar, contratar gente, proyectarte, diversificar. La oportunidad está. Solo hay que saber jugarla.
+            </p>
+            <p><strong>¿La pregunta correcta ya no es “se puede?”, sino: ¿cuándo empiezas tú?</strong></p>
+          </div>
+          {/* CONTENT ENDS */}
+        </div>
+        {/* ARTICLE ENDS */}
+      </div>
+    </Fragment>
+  );
+};
+
+export default BlogPost;
