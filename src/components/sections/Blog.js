@@ -95,7 +95,7 @@ const Blog = () => {
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>1 Jan 2022</span>
+                    <span>18 Jul 2025</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
