@@ -79,7 +79,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/crea-un-plan-y-luego-tu-empresa" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
