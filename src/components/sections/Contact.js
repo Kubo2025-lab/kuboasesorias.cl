@@ -7,7 +7,7 @@ const Contact = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              Get in touch
+              #Contáctanos
             </span>
           </span>
         </h3>
@@ -21,8 +21,8 @@ const Contact = () => {
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
             <i className="fa fa-phone" />
             <p>
-              <span className="small-text">phone</span>
-              +216 21 184 010
+              <span className="small-text">Fono</span>
+              +569 2179 2366
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -30,8 +30,8 @@ const Contact = () => {
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-location-dot" />
             <p>
-              <span className="small-text">address</span>
-              London, England
+              <span className="small-text">Dirección</span>
+              Merced N° 838 of. 117, Santiago
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -42,14 +42,14 @@ const Contact = () => {
             <i className="fa fa-envelope" />
             <p>
               <span className="small-text">email</span>
-              contact@steven.net
+              eduardo@kuboasesorias.cl
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
           {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
-            <span className="small-text">follow me</span>
+            <span className="small-text">Síguenos</span>
             <ul className="social">
               <li>
                 <a href="#">
