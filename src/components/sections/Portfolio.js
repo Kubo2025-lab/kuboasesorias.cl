@@ -40,7 +40,7 @@ const Portfolio = () => {
         {[
           {
             titulo: "Automatización de propuestas",
-            detalle: "Plantillas inteligentes conectadas a PRESTO, Excel y BIM para acelerar entregas.",
+            detalle: "Plantillas inteligentes conectadas a </br>PRESTO, Excel y BIM para acelerar entregas.",
             duracion: "Servicio continuo",
             img: "assets/portfolio/project-2.jpg"
           },
