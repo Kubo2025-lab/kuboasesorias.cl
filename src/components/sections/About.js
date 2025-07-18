@@ -315,7 +315,6 @@ const About = () => {
               </div>
             </li>
             {/* TIMELINE ITEM ENDS */}
-            <li />
           </ol>
         </div>
         {/* TIMELINE ENDS */}
