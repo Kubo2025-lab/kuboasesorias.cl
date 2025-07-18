@@ -54,15 +54,15 @@ const Portfolio = () => {
                 </span>
                 <span>1 mes</span>
               </li>
-              <li>
-                <span>
-                  <i className="fa-solid fa-code-branch" /> Detalle :
-                </span>
-                <span>
-                  Controlamos desvíos y maximizamos tu rentabilidad proyecto a
-                  proyecto.
-                </span>
-              </li>
+<li>
+  <span>
+    <i className="fa-solid fa-code-branch" /> Detalle :
+  </span>
+  <span>
+    Controlamos desvíos y maximizamos <br />
+    tu rentabilidad proyecto a proyecto.
+  </span>
+</li>
             </ul>
             <a href="#" target="_blank" className="custom-btn">
               <span>
