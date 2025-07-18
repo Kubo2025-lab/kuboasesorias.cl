@@ -8,7 +8,7 @@ const Blog = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              Latest Posts
+              #Artículos_Blog
             </span>
           </span>
         </h3>
@@ -25,22 +25,21 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">design</span>
+                <span className="category">Proyectos</span>
                 <span className="title">
-                  How To Publish Content That Ranks On Google
+                 Cómo ganarle a la oferta corrupta
                 </span>
                 <p>
-                  ncididunt ut labore et dolore magna aliqua. Ut enim aminim
-                  veniam...
+                  Lo que necesitabas saber para ganarle a la corrupción...
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>9 Apr 2022</span>
+                    <span>18 Jul 2025</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>17 comments</span>
+                    <span>0 comentarios</span>
                   </div>
                 </div>
               </div>
@@ -56,22 +55,21 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">development</span>
+                <span className="category">Crecimiento</span>
                 <span className="title">
-                  How Efficient Site Structure Can Boost SEO
+                  Cómo vivir de las licitaciones
                 </span>
                 <p>
-                  ncididunt ut labore et dolore magna aliqua. Ut enim aminim
-                  veniam...
+                  Cerca de 6.000 oportunidades diarias, como no ganar una!...
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>21 Feb 2022</span>
+                    <span>18 Jul 2025</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>34 comments</span>
+                    <span>0 comentarios</span>
                   </div>
                 </div>
               </div>
@@ -87,13 +85,12 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="category">essentials</span>
+                <span className="category">PYMES</span>
                 <span className="title">
-                  Change Management for Customer Success
+                  Crear un plan y luego tu empresa
                 </span>
                 <p>
-                  ncididunt ut labore et dolore magna aliqua. Ut enim aminim
-                  veniam...
+                  De nada sirve crear una empresa si no tienes un objetivo SMART...
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
@@ -102,7 +99,7 @@ const Blog = () => {
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>10 comments</span>
+                    <span>0 comentarios</span>
                   </div>
                 </div>
               </div>
