@@ -558,7 +558,7 @@ header .mobile-menu {
 
 .home > div > div h1 > span {
   padding: 0 200px;
-  line-height: 160px;
+  line-height: 100px;
 }
 
 .home > div > div h1 > span > span:not(.intro) {
@@ -581,7 +581,7 @@ header .mobile-menu {
   text-align: center;
   border-radius: 50%;
   left: 520px;
-  top: 0px;
+  top: 60px;
   color: #fff;
   font-size: 18px;
   flex-direction: column;
@@ -1963,7 +1963,7 @@ header .mobile-menu {
 
   .home > div > div h1 > span {
     padding: 0;
-    line-height: 120px;
+    line-height: 60px;
   }
 
   .home > div > div h1 > span > span:not(.intro) {
@@ -2405,7 +2405,7 @@ header .mobile-menu {
 
   .home > div > div h1 > span {
     padding: 0;
-    line-height: 75px;
+    line-height: 60px;
   }
 
   .about .my-photo-container {
