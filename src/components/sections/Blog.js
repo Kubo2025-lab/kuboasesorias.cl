@@ -19,7 +19,7 @@ const Blog = () => {
       <div className="latestposts flex-column-mobile">
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="blog-post1" legacyBehavior>
+          <Link href="pages/blog-post1.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
@@ -49,7 +49,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="blog-post2" legacyBehavior>
+          <Link href="pages/blog-post2.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
@@ -79,7 +79,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="blog-post3" legacyBehavior>
+          <Link href="pages/blog-post3.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
