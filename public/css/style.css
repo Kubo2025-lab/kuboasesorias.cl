@@ -2622,3 +2622,41 @@ header .mobile-menu {
     padding: 20px 0 30px;
   }
 }
+.contact-form-container {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #222;
+  padding: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #0b0b0b;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form button.custom-btn {
+  align-self: flex-start;
+}
+
