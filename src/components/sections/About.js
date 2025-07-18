@@ -124,7 +124,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fa-briefcase" />
+                <i className="devicon-clion-plain" />
               </span>
               <h4>Gestión Empresarial</h4>
             </div>
@@ -132,7 +132,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fa-project-diagram" />
+                <i className="devicon-trello-plain" />
               </span>
               <h4>Planificación Estratégica</h4>
             </div>
@@ -142,7 +142,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fa-landmark" />
+                <i className="devicon-clion-plain" />
               </span>
               <h4>Ventas en Mercado Público</h4>
             </div>
@@ -150,7 +150,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fa-diagram-project" />
+                <i className="devicon-clion-plain" />
               </span>
               <h4>Automatización de Flujos</h4>
             </div>
@@ -160,7 +160,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                 <i className="fa-file-contract" />
+                 <i className="devicon-clion-plain" />
               </span>
               <h4>Estudio de Propuestas</h4>
             </div>
@@ -168,7 +168,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fa-chalkboard-teacher" />
+                <i className="devicon-vscode-plain" />
               </span>
               <h4>Capacitación y Asesoría</h4>
             </div>
@@ -178,7 +178,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fa-id-badge" />
+                <i className="devicon-clion-plain" />
               </span>
               <h4>Registro en ChileCompra</h4>
             </div>
@@ -186,7 +186,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fa-chart-line" />
+                <i className="devicon-clion-plain" />
               </span>
               <h4>Flujos Financieros</h4>
             </div>
