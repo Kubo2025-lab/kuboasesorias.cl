@@ -11,7 +11,7 @@ const Facts = () => {
             <div>
               <h3>13</h3>
               <p>
-                years of<span>experience</span>
+                años de <span>experiencia</span>
               </p>
             </div>
           </div>
@@ -24,9 +24,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>67</h3>
+              <h3>8</h3>
               <p>
-                completed<span>projects</span>
+                Proyectos <span>completos</span>
               </p>
             </div>
           </div>
@@ -39,9 +39,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>56</h3>
+              <h3>17</h3>
               <p>
-                Happy<span>customers</span>
+                Clientes <span>felices</span>
               </p>
             </div>
           </div>
@@ -54,9 +54,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>13</h3>
+              <h3>28</h3>
               <p>
-                awards<span>won</span>
+                licitaciones <span>ganadas</span>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Facts = () => {
             <div>
               <h3>32</h3>
               <p>
-                learned<span>frameworks</span>
+                RDI <span>gestionadas</span>
               </p>
             </div>
           </div>
