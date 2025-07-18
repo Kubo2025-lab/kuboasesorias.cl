@@ -124,7 +124,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-clion-plain" />
+                <i class="devicon-backbonejs-plain"></i>
               </span>
               <h4>Gestión Empresarial</h4>
             </div>
