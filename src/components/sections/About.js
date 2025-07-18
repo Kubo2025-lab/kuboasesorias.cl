@@ -213,109 +213,72 @@ const About = () => {
         {/* TIMELINE STARTS */}
         <div className="timeline">
           <ol className="animated-layer fade-in-animation">
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Obras de Salud</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2025 - Ejecutándose</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Construcción SAR Miraflores</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-up-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Obra de Salud</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2024 - 2025</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Pabellones del HLCM</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Obra Patrimonial</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2023 - 2024</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Centro Recoleta Dominica</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-up-animation fadeInUp wow">
-                <i className="fa-regular fa-building" />
-                  <h4>Obra Salud</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2023 - 2024</span>
-                  </p>
-                  <p>
-                    <i className="fa-solid fa-building-columns" />
-                    <span>Cesfam Eduardo Frei</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <i className="fa-regular fa-building" />
-                  <h4>Obra Deportiva</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2023 - 2024</span>
-                  </p>
-                  <p>
-                    <i className="fa-solid fa-building-columns" />
-                    <span>Reparación Polideportivo E.N.</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <i className="fa-regular fa-building" />
-                  <h4>Obra Salud</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2022 - 2023</span>
-                  </p>
-                  <p>
-                    <i className="fa-solid fa-building-columns" />
-                    <span>Pabellón HCSBA</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-          </ol>
+  {/* ITEM 1 */}
+  <li>
+    <div className="animated-layer fade-in-down-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obras de Salud</h4>
+        <p><i className="fa-regular fa-clock" /><span>2025 - Ejecutándose</span></p>
+        <p><i className="fa-regular fa-building" /><span>Construcción SAR Miraflores</span></p>
+      </div>
+    </div>
+  </li>
+
+  {/* ITEM 2 */}
+  <li>
+    <div className="animated-layer fade-in-up-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obra de Salud</h4>
+        <p><i className="fa-regular fa-clock" /><span>2024 - 2025</span></p>
+        <p><i className="fa-regular fa-building" /><span>Pabellones del HLCM</span></p>
+      </div>
+    </div>
+  </li>
+
+  {/* ITEM 3 */}
+  <li>
+    <div className="animated-layer fade-in-down-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obra Patrimonial</h4>
+        <p><i className="fa-regular fa-clock" /><span>2023 - 2024</span></p>
+        <p><i className="fa-regular fa-building" /><span>Centro Recoleta Dominica</span></p>
+      </div>
+    </div>
+  </li>
+
+  {/* ITEM 4 */}
+  <li>
+    <div className="animated-layer fade-in-up-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obra Salud</h4>
+        <p><i className="fa-regular fa-clock" /><span>2023 - 2024</span></p>
+        <p><i className="fa-solid fa-building-columns" /><span>Cesfam Eduardo Frei</span></p>
+      </div>
+    </div>
+  </li>
+
+  {/* ITEM 5 */}
+  <li>
+    <div className="animated-layer fade-in-down-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obra Deportiva</h4>
+        <p><i className="fa-regular fa-clock" /><span>2023 - 2024</span></p>
+        <p><i className="fa-solid fa-building-columns" /><span>Reparación Polideportivo E.N.</span></p>
+      </div>
+    </div>
+  </li>
+
+  {/* ITEM 6 */}
+  <li>
+    <div className="animated-layer fade-in-down-animation fadeInUp wow">
+      <div className="experience">
+        <h4>Obra Salud</h4>
+        <p><i className="fa-regular fa-clock" /><span>2022 - 2023</span></p>
+        <p><i className="fa-solid fa-building-columns" /><span>Pabellón HCSBA</span></p>
+      </div>
+    </div>
+  </li>
+</ol>
         </div>
         {/* TIMELINE ENDS */}
       </div>
