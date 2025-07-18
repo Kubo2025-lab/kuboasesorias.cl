@@ -9,12 +9,12 @@ const Copyright = () => {
       <div>
         <span>© {new Date().getFullYear()} Steven Walker</span>
         <span>
-          Designed By{" "}
+          Diseñado por{" "}
           <a
             target="_blank"
-            href="https://themeforest.net/user/Codeefly/portfolio"
+            href="https://www.brandata.cl"
           >
-            Codeefly
+            BrandData
           </a>
         </span>
         <ul>
