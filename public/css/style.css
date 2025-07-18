@@ -2623,9 +2623,10 @@ header .mobile-menu {
   }
 }
 .contact-form-container {
-  margin-top: 50px;
+  margin-top: 40px; /* separa del bloque superior */
   width: 100%;
   max-width: 650px;
+  padding-bottom: 40px; /* espacio con el separador inferior */
 }
 
 .contact-form {
