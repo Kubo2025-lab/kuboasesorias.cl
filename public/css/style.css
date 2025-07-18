@@ -558,7 +558,7 @@ header .mobile-menu {
 
 .home > div > div h1 > span {
   padding: 0 200px;
-  line-height: 100px;
+  line-height: 160px;
 }
 
 .home > div > div h1 > span > span:not(.intro) {
@@ -572,23 +572,26 @@ header .mobile-menu {
 
 .home > div > div .intro {
   position: absolute;
-  height: 170px;
-  width: 200px;
-  padding: 0;
+  height: auto;
+  width: 250px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 50%;
-  left: 520px;
-  top: 60px;
+  border-radius: 10px;
+  left: 650px;
+  top: 320px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   flex-direction: column;
-  line-height: 30px;
+  line-height: 24px;
   margin: 0;
   text-align: left;
   font-weight: normal;
+  background-color: #ff5e14; /* Color naranja o tu current color. Puedes usar var(--primary-color) si está definido en tu CSS. */
+  z-index: 2; /* Asegura que esté por encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para que parezca flotante */
 }
 
 .home .cta {
