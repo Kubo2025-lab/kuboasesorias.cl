@@ -30,7 +30,7 @@ const Portfolio = () => {
               <li><span><i className="fa-regular fa-file-lines" /> Servicio :</span><span>Consultoría</span></li>
               <li><span><i className="fa-regular fa-user" /> Modalidad :</span><span>A distancia</span></li>
               <li><span><i className="fa-regular fa-hourglass" /> Duración :</span><span>1 mes</span></li>
-              <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span>Control de desviaciones y <br />optimización de presupuesto público.</span></li>
+              <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span><p>Control de desviaciones y <br />optimización de presupuesto público.</p></span></li>
             </ul>
             <a href="#" target="_blank" className="custom-btn"><span>Contratar <i className="fa-solid fa-arrow-up-right-from-square" /></span></a>
           </div>
@@ -91,7 +91,7 @@ const Portfolio = () => {
                 <li><span><i className="fa-regular fa-file-lines" /> Servicio :</span><span>Consultoría / Plataforma</span></li>
                 <li><span><i className="fa-regular fa-user" /> Modalidad :</span><span>A distancia</span></li>
                 <li><span><i className="fa-regular fa-hourglass" /> Duración :</span><span>{servicio.duracion}</span></li>
-                <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span>{servicio.detalle}</span></li>
+                <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span dangerouslySetInnerHTML={{ __html: servicio.detalle }} /></li>
               </ul>
               <a href="#" target="_blank" className="custom-btn"><span>Más info <i className="fa-solid fa-arrow-up-right-from-square" /></span></a>
             </div>
@@ -134,7 +134,7 @@ const Portfolio = () => {
       </li>
       <li>
         <span><i className="fa-solid fa-code-branch" /> Detalle :</span>
-        <span>Capítulos didácticos sobre licitaciones, herramientas y casos reales.</span>
+        <span><p>Capítulos didácticos sobre <br />licitaciones, herramientas y casos reales.</p></span>
       </li>
     </ul>
     <a href="https://www.youtube.com/@kuboasesorias_cl" target="_blank" className="custom-btn">
