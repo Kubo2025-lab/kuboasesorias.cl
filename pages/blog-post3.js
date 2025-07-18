@@ -31,17 +31,36 @@ const BlogPost = () => {
           </div>
           {/* META ENDS */}
           {/* CONTENT STARTS */}
-          <h3>Cómo ganarle a una oferta corrupta</h3>
+          <h3>Crea un plan y luego tu empresa.</h3>
           <img src="assets/blog/blog-post-1.jpg" alt="Blog image" />
 <div className="post-content">
   <p>
-    Vivir de las licitaciones no es un sueño inalcanzable ni un privilegio de unos pocos. Es una estrategia de negocio legítima, rentable y alcanzable si sabes lo que estás haciendo. Pero no se trata de postular por postular. Se trata de tener foco, método y disciplina. No basta con descargar bases, hay que leerlas con lupa, encontrar oportunidades reales y armar propuestas que no solo cumplan, sino que destaquen. Este juego no lo gana el más barato, sino el más sólido.
+    Todos quieren emprender, pero pocos se detienen a planificar. ¿Resultado? Empresas que nacen apuradas, sin norte, sin modelo, sin clientes. Y al poco tiempo… mueren. Por eso, si estás pensando en independizarte, en renunciar, en facturar por lo tuyo: antes que empresa, crea un plan. Un plan real, accionable, que te obligue a pensar como empresario desde el primer día, no como sobreviviente.
   </p>
+
   <p>
-    El primer paso es elegir tu rubro, tu cliente ideal y el tipo de licitación que dominas. Especialízate. Luego, crea una rutina diaria: monitorea oportunidades, estudia requerimientos, ajusta tus costos y arma tu carpeta documental como si fuera tu carta de presentación (porque lo es). Automatiza lo que puedas y lleva registro de todo. No hay espacio para la improvisación. La licitación es una maratón, no una rifa. El que persiste, aprende. Y el que aprende, gana.
+    Pero no hablo de escribir un mamotreto de 70 páginas que guardas en el cajón. Hablo de algo simple, potente y honesto. ¿A quién ayudas? ¿Qué problema resuelves? ¿Qué servicio ofrecerás primero? ¿Cómo lo entregarás? ¿Qué precio tiene sentido para tu cliente y para ti? ¿Qué vas a hacer cada semana para conseguir tus primeras ventas? Si no puedes responder eso en una hoja, aún no estás listo. Y eso no es un fracaso, es una oportunidad de construir bien desde el inicio.
   </p>
+
   <p>
-    Si hoy no estás ganando, quizás es porque estás disparando sin apuntar. O porque te falta alguien que te enseñe el mapa. Pero te aseguro una cosa: se puede vivir de las licitaciones. Yo lo he hecho, y otros también. El sistema tiene sus vicios, sí. Pero también tiene reglas claras, pagos estables y oportunidades constantes. ¿Quieres una fuente de ingresos predecible y escalable? Deja de mirar al costado y empieza a licitar con estrategia. Ahí está la diferencia.
+    Muchos profesionales independientes fracasan por cansancio, no por falta de talento. Porque salen a vender sin tener claro qué venden. Porque lo intentan todo y no profundizan en nada. Porque no saben decir que no. Y eso los lleva al agotamiento. Un buen plan evita eso. Te enfoca. Te filtra. Te recuerda por qué empezaste y hacia dónde vas. Y cuando vienen los días difíciles —que vendrán—, ese plan es brújula, es guía, es sustento emocional.
+  </p>
+
+  <p>
+    ¿Cómo empezar? Abre una hoja en blanco y escribe:  
+    <ul>
+      <li>✅ ¿Cuál es el problema que quiero resolver?</li>
+      <li>✅ ¿Quién es mi cliente ideal?</li>
+      <li>✅ ¿Qué voy a ofrecer primero (y qué NO voy a ofrecer aún)?</li>
+      <li>✅ ¿Cuánto cuesta entregar mi servicio de forma profesional?</li>
+      <li>✅ ¿Cómo voy a encontrar mis primeros 5 clientes?</li>
+      <li>✅ ¿Qué me hace distinto (y valioso)?</li>
+    </ul>
+    Esas respuestas son tu plan. Todo lo demás es accesorio. Cuando las tengas claras, estarás mucho más cerca de emprender con propósito… y no por desesperación.
+  </p>
+
+  <p>
+    No te prometo que será fácil. Pero te aseguro algo: un profesional que emprende con estrategia está mil veces más preparado para resistir que quien simplemente “se lanza”. Porque no se trata solo de tener una empresa, sino de tener una visión. Y si hoy estás dudando, si sientes ese fuego interno por crear algo propio… no lo apagues. Pero canalízalo bien. Hazlo real. Hazlo rentable. Crea un plan, y luego —con fuerza, foco y valentía— crea tu empresa.
   </p>
 </div>
           {/* CONTENT ENDS */}

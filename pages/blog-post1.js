@@ -31,17 +31,23 @@ const BlogPost = () => {
           </div>
           {/* META ENDS */}
           {/* CONTENT STARTS */}
-          <h3>Cómo ganarle a una oferta corrupta</h3>
+          <h3>¿Cómo ganarle a una oferta corrupta?</h3>
           <img src="assets/blog/blog-post-1.jpg" alt="Blog image" />
           <div className="post-content">
   <p>
-    Todos lo sabemos pero pocos lo dicen: hay licitaciones armadas. Bases escritas con nombre y apellido, criterios absurdos y plazos imposibles. Pero que haya corrupción no significa que estés condenado. Se le puede ganar. No con quejas en redes, sino con técnica, estrategia y precisión quirúrgica. No vas a tumbar el sistema, pero sí puedes desnudar sus debilidades… y obligarlo a jugar limpio.
+    No es un secreto para nadie: existen licitaciones públicas que nacen viciadas. Bases redactadas para beneficiar a una empresa específica, requisitos técnicos imposibles de cumplir para el resto, o evaluaciones tan subjetivas que parecen escritas con doble intención. Pero que exista corrupción no significa que estés condenado a perder. Ganarle a una oferta corrupta es posible, y no con escándalos, sino con estrategia, precisión y conocimiento de las reglas del juego.
   </p>
   <p>
-    Lo primero es identificar el vicio. ¿El criterio técnico vale un 90% y el precio un 10%? ¿Se exige un requisito que solo una empresa tiene? Ahí ya tienes luces de alerta. No huyas. Estúdialo. Busca precedentes, consulta con tu equipo, arma tu matriz comparativa y saca ventaja donde el otro se relaja. Porque el que se siente ganador por dentro, suele dormirse por fuera. Y ahí entras tú.
+    Todo parte por identificar las señales. ¿El puntaje técnico tiene un peso desproporcionado? ¿Se exige una marca o una experiencia que solo una empresa puede cumplir? ¿Hay errores evidentes en el desglose de cantidades o montos? No huyas. Analiza, documenta y consulta. Cada consulta que haces obliga al organismo a transparentar. Cada observación que presentas deja registro. Mientras otros callan, tú haces ruido con fundamentos.
   </p>
   <p>
-    Prepara tu oferta con excelencia. Sin errores, sin documentos faltantes, sin márgenes de duda. Adjunta cada anexo, cada certificado, cada argumento. Si algo está mal en las bases, haz la consulta. Si algo es injusto, presenta el reclamo. Con respeto, pero con evidencia. Porque cuando demuestras que sabes más que el que escribió las bases, te vuelves incómodo. Y cuando eres incómodo, pasas de invisible a inevitable. Así es como se gana. Incluso contra la oferta que “ya estaba lista”.
+    Luego viene la estrategia de oferta. Aquí no hay espacio para errores. Tu propuesta debe ser impecable: bien redactada, completa en documentación, clara en precios y sólida en argumentos. Adjunta todo. Revisa tres veces. Usa lenguaje técnico y normativo. Si puedes, cita la ley. Si las bases están mal redactadas o contradicen la normativa, preséntalo con claridad. Las entidades públicas están obligadas a responder, y en muchos casos, a corregir.
+  </p>
+  <p>
+    ¿Y si pierdes igual? Aún puedes marcar la diferencia. Solicita el acta de evaluación, revisa las puntuaciones, presenta un reclamo si hay irregularidades. No se trata de pelear por todo, sino de dejar claro que estás mirando. Cuando haces esto con seriedad y conocimiento, te conviertes en un proveedor incómodo. Y lo incómodo, en este mercado, a veces es lo más eficaz. Porque al mostrar que sabes jugar el juego legalmente, fuerzas a los demás a hacer lo mismo.
+  </p>
+  <p>
+    Ganarle a una oferta corrupta no siempre significa adjudicar. A veces, significa que no se repita. Que la próxima vez la entidad lo piense dos veces antes de inventar bases a la medida. Que sepan que hay alguien vigilando, licitando bien y dispuesto a exigir transparencia. Esa es la forma más poderosa de cambiar el sistema: desde dentro, usando sus propias reglas.
   </p>
 </div>
           {/* CONTENT ENDS */}
