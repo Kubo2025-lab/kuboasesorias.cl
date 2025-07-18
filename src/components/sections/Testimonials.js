@@ -22,8 +22,7 @@ notables. "
           <div>
             <p>
               <span className="quote">
-                " Ha demostrado ser un asesor confiable en
-diversos aspectos relacionados con la construcción."
+                " Ha demostrado ser un asesor confiable en diversos aspectos relacionados con la construcción."
               </span>
               <span className="person">Roxana Ballesteros</span>
               <span className="job">Eco - Espacio</span>
