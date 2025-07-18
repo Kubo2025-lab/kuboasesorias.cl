@@ -1,4 +1,37 @@
 const Contact = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+
+    const formData = new FormData(event.target);
+    const data = {
+      timestamp: new Date().toLocaleString('es-CL', { timeZone: 'America/Santiago' }), // Fecha y hora actual
+      nombre: formData.get('name'),
+      email: formData.get('email'),
+      asunto: formData.get('subject'),
+      mensaje: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('¡Mensaje enviado con éxito!');
+        event.target.reset(); // Limpia el formulario
+      } else {
+        alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+      }
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      alert('Hubo un error de conexión. Por favor, inténtalo de nuevo más tarde.');
+    }
+  };
+
   return (
     <section className="contact main-section flex-column-mobile" id="contact">
       {/* TITLE STARTS */}
@@ -77,6 +110,30 @@ const Contact = () => {
         </div>
       </div>
       {/* CONTACTS ENDS */}
+
+      {/* CONTACT FORM STARTS */}
+      <div className="contact-form">
+        <form className="animated-layer fade-in-up-animation fadeInUp wow" onSubmit={handleSubmit}>
+          <div className="input-group">
+            <input type="text" name="name" placeholder="Tu Nombre" className="input-control" required />
+            <input type="email" name="email" placeholder="Tu Email" className="input-control" required />
+          </div>
+          <div className="input-group">
+            <input type="text" name="subject" placeholder="Asunto" className="input-control" required />
+          </div>
+          <div className="input-group">
+            <textarea name="message" placeholder="Tu Mensaje" className="input-control" required></textarea>
+          </div>
+          <div className="button-group">
+            <button type="submit" className="btn hover-animated">
+              <span className="text">Enviar Mensaje</span>
+              <span className="circle"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+      {/* CONTACT FORM ENDS */}
+
       <img
         alt=""
         className="separator hide-mobile"
