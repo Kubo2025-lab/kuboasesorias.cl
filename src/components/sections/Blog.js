@@ -19,7 +19,7 @@ const Blog = () => {
       <div className="latestposts flex-column-mobile">
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="como-ganarle-a-la-oferta-corrupta" legacyBehavior>
+          <Link href="/pages/como-ganarle-a-la-oferta-corrupta.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
@@ -49,7 +49,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="como-vivir-de-las-licitaciones" legacyBehavior>
+          <Link href="/pages/como-vivir-de-las-licitaciones.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
@@ -79,7 +79,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="crea-un-plan-y-luego-tu-empresa" legacyBehavior>
+          <Link href="/pages/crea-un-plan-y-luego-tu-empresa.js" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-3.jpg" alt="" />
