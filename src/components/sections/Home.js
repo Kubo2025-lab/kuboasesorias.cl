@@ -19,7 +19,7 @@ const Home = () => {
             </span>
           </h1>
           <span className="intro animated-layer">
-            Ayudamos a PYMES chilenas y extranjeras a ganar licitaciones.
+            Acompañamos a PYMES chilenas y extranjeras en todo el proceso de licitación pública para que no solo participen, sino que ganen, crezcan y se consoliden.
           </span>
         </div>
       </div>
