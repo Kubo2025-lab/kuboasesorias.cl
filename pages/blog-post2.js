@@ -32,7 +32,7 @@ const BlogPost = () => {
           {/* META ENDS */}
           {/* CONTENT STARTS */}
           <h3>¿Cómo vivir de las licitaciones?</h3>
-          <img src="assets/blog/blog-post-1.jpg" alt="Blog image" />
+          <img src="assets/blog/blog-post-2.jpg" alt="Blog image" />
 <div className="post-content">
   <p>
     “Quiero vivir de las licitaciones”. Esa frase la he escuchado decenas de veces, y no es casualidad. Las compras públicas en Chile (y en buena parte de Latinoamérica) representan una fuente de ingresos gigantesca, estable y —para muchos— subutilizada. Pero vamos al grano: vivir de las licitaciones no es apretar un botón y empezar a facturar. Es una disciplina, un sistema, una forma de hacer empresa que requiere estrategia, constancia y profesionalismo.
