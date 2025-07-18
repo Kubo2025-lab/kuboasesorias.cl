@@ -31,8 +31,8 @@ const SalimovHead = () => {
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="public/assets/kubo_icon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="public/assets/kubo_icon.ico" type="image/x-icon" />
 
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
