@@ -2622,60 +2622,74 @@ header .mobile-menu {
     padding: 20px 0 30px;
   }
 }
-.contact-container {
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.9);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
-  margin-top: 60px;
+  align-items: center;
+  z-index: 999;
 }
 
-.contact-form-container {
-  flex: 1 1 400px;
+.popup-content {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
   max-width: 500px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background-color: #111;
-  border: 1px solid #444;
-  border-radius: 12px;
-  padding: 14px;
   color: #fff;
-  font-size: 16px;
-  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px #000;
 }
 
-.custom-btn {
-  background-color: #ff4a00;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 12px;
-  padding: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  height: 50px;
+.popup-content h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
   text-align: center;
 }
 
-.custom-btn:hover {
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-form input,
+.popup-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+}
+
+.popup-form button.custom-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff4a00;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+.popup-form button.custom-btn:hover {
   background-color: #e04300;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
 }
 
