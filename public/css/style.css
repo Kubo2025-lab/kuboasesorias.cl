@@ -2622,11 +2622,17 @@ header .mobile-menu {
     padding: 20px 0 30px;
   }
 }
-.form-wrapper {
-  width: 100%;
+.contact-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.contact-form-container {
+  flex: 1 1 400px;
+  max-width: 500px;
 }
 
 .contact-form {
@@ -2634,7 +2640,6 @@ header .mobile-menu {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 500px;
 }
 
 .contact-form input,
@@ -2655,7 +2660,7 @@ header .mobile-menu {
   font-weight: 600;
   border: none;
   border-radius: 12px;
-  padding: 14px 0;
+  padding: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
@@ -2666,3 +2671,11 @@ header .mobile-menu {
 .custom-btn:hover {
   background-color: #e04300;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
