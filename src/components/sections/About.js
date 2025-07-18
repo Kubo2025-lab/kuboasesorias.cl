@@ -21,12 +21,12 @@ const About = () => {
           <h2>
             <span>
               <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Kubo
+                Steven
               </span>
             </span>
             <span>
               <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Servicios
+                Walker
               </span>
             </span>
           </h2>
@@ -35,32 +35,32 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Experiencia :</span>
-                    <span>12 años</span>
+                    <span>Age :</span>
+                    <span>27 Years</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Nacionalidad :</span>
-                    <span>Chilena</span>
+                    <span>Nationality :</span>
+                    <span>German</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Empresa :</span>
-                    <span>Formalizada</span>
+                    <span>Freelance :</span>
+                    <span>Available</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Lenguaje :</span>
-                    <span>Español</span>
+                    <span>Langages :</span>
+                    <span>English</span>
                   </span>
                 </span>
               </li>
@@ -69,16 +69,16 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Dirección :</span>
-                    <span>Merced N° 838 of. 117, Santiago</span>
+                    <span>Address :</span>
+                    <span>London</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Fono :</span>
-                    <span>+569 2179 2366</span>
+                    <span>Phone :</span>
+                    <span>21 184 010</span>
                   </span>
                 </span>
               </li>
@@ -86,15 +86,15 @@ const About = () => {
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
                     <span>Email :</span>
-                    <span>eduardo@kuboasesorias.cl</span>
+                    <span>contact@steven.net</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Linkedin :</span>
-                    <span>/in/eduardo-zambrano/</span>
+                    <span>Skype :</span>
+                    <span>steven.walker</span>
                   </span>
                 </span>
               </li>
@@ -104,88 +104,113 @@ const About = () => {
         {/* INFO ENDS */}
       </div>
       {/* INFO HOLDER ENDS */}
-  
       {/* SKILLS STARTS */}
       <div className="skills flex-column-mobile">
+        {/* TITLE STARTS */}
         <div className="custom-title">
+          {/* MAIN TITLE STARTS */}
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation fadeInUp wow">
-                #Servicios
+                My Skills
               </span>
             </span>
           </h3>
+          {/* MAIN TITLE ENDS */}
         </div>
-
+        {/* TITLE ENDS */}
         <div className="skills-content">
-          {/* Bloque 1 */}
           <div>
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fas fa-chart-line" />
+                <i className="devicon-wordpress-plain" />
               </span>
-              <h4>Gestión Empresarial</h4>
+              <h4>WordPress</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fas fa-coins" />
+                <i className="devicon-jquery-plain" />
               </span>
-              <h4>Ejecución Presupuestaria</h4>
+              <h4>jQuery</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
           </div>
-
-          {/* Bloque 2 */}
           <div>
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fas fa-bullseye" />
+                <i className="devicon-angularjs-plain" />
               </span>
-              <h4>Estrategias Comerciales</h4>
+              <h4>Angular JS</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fas fa-check-circle" />
+                <i className="devicon-drupal-plain" />
               </span>
-              <h4>Metodología SMART</h4>
+              <h4>Drupal</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
           </div>
-
-          {/* Bloque 3 */}
           <div>
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fas fa-briefcase" />
+                <i className="devicon-react-plain" />
               </span>
-              <h4>Venta a Gobierno (B2G)</h4>
+              <h4>React JS</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fas fa-file-signature" />
+                <i className="devicon-docker-plain" />
               </span>
-              <h4>Estudio de Propuestas</h4>
+              <h4>Docker</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
           </div>
-
-          {/* Bloque 4 */}
           <div>
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="fas fa-project-diagram" />
+                <i className="devicon-nodejs-plain" />
               </span>
-              <h4>Planificación de Proyectos</h4>
+              <h4>Node JS</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="fas fa-funnel-dollar" />
+                <i className="devicon-sass-plain" />
               </span>
-              <h4>Flujos Financieros</h4>
+              <h4>Sass</h4>
             </div>
+            {/* SKILL ITEM ENDS */}
           </div>
         </div>
       </div>
       {/* SKILLS ENDS */}
-
-      {/* TIMELINE STARTS */}
+      {/* RESUME STARTS */}
+      <div className="resume flex-column-mobile">
+        {/* TITLE STARTS */}
+        <div className="custom-title fadeInUp wow">
+          {/* MAIN TITLE STARTS */}
+          <h3>
+            <span>
+              <span className="animated-layer fade-in-left-animation">
+                My Resume
+              </span>
+            </span>
+          </h3>
+          {/* MAIN TITLE ENDS */}
+        </div>
+        {/* TITLE ENDS */}
+        {/* TIMELINE STARTS */}
         <div className="timeline">
           <ol className="animated-layer fade-in-animation">
             {/* TIMELINE ITEM STARTS */}
