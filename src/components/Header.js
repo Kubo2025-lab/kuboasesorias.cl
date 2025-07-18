@@ -16,7 +16,7 @@ const Header = () => {
                 <span id="about-link">Nosotros</span>
               </li>
               <li>
-                <span id="portfolio-link">Portfolio</span>
+                <span id="portfolio-link">Servicios</span>
               </li>
               <li>
                 <span id="contact-link">Contacto</span>
@@ -57,7 +57,7 @@ const Header = () => {
             </li>
             <li>
               <a href="#portfolio">
-                <span>Portfolio</span>
+                <span>Servicios</span>
               </a>
             </li>
             <li>
