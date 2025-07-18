@@ -9,16 +9,18 @@ const Home = () => {
                 Hola<span>.</span>
               </span>
             </span>
-            <span className="position-relative">
-              <span className="animated-layer">Somos</span>
-              <span className="intro animated-layer">
-                Ayudamos a PYMES chilenas y extranjeras a ganar licitaciones.
+            <span>
+              <span className="animated-layer">
+                Soy
               </span>
             </span>
             <span>
-              <span className="animated-layer">Kubo Asesorías</span>
+              <span className="animated-layer">Kubo</span>
             </span>
           </h1>
+          <span className="intro animated-layer">
+            Ayudamos a PYMES chilenas y extranjeras a ganar licitaciones.
+          </span>
         </div>
       </div>
       {/* CALL TO ACTION STARTS */}
