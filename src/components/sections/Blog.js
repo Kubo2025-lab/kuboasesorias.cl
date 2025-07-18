@@ -19,7 +19,7 @@ const Blog = () => {
       <div className="latestposts flex-column-mobile">
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/como-ganarle-a-la-oferta-corrupta" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
