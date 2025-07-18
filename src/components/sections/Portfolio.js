@@ -85,59 +85,6 @@ const Portfolio = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <div className="videocontainer">
-              <iframe
-                className="youtube-video"
-                src="https://youtu.be/9aTWRphGdnA"
-                allowFullScreen=""
-              />
-            </div>
-          </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
-          <div className="details">
-            <h4>Canal de Youtube</h4>
-            <div>
-              <ul>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-file-lines" /> Servicio :
-                  </span>
-                  <span>Recursos gratuitos</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-user" /> Clientes :
-                  </span>
-                  <span>Usarios de KUBO</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-hourglass" /> Duración :
-                  </span>
-                  <span>Eterno</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-solid fa-code-branch" /> Detalle :
-                  </span>
-                  <span>Presto / Ms Project</span>
-                </li>
-              </ul>
-            </div>
-            <a href="https://youtu.be/9aTWRphGdnA" target="_blank" className="custom-btn">
-              <span>
-                Ver <i className="fa-solid fa-arrow-up-right-from-square" />
-              </span>
-            </a>
-          </div>
-          {/* ITEM DETAILS ENDS */}
-        </SwiperSlide>
-        {/* PORTFOLIO ITEM ENDS */}
-        {/* PORTFOLIO ITEM STARTS */}
-        <SwiperSlide className="single-item swiper-slide">
-          {/* ITEM MAIN CONTENT STARTS */}
-          <div className="main-content">
             <Swiper
               {...salimovSlider.portfolioItems}
               className="swiper swiper-portfolio-item"
