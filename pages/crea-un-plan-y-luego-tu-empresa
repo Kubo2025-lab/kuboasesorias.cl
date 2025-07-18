@@ -1,0 +1,76 @@
+import { Fragment, useEffect } from "react";
+
+const BlogPost = () => {
+  useEffect(() => {
+    document.querySelector("body").classList.add("blog-page");
+  }, []);
+
+  return (
+    <Fragment>
+      <a href="/" className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </a>
+      <div className="blog-content">
+        <h1>Crear un plan y luego tu empresa</h1>
+        {/* ARTICLE STARTS */}
+        <div className="main-post">
+          {/* META STARTS */}
+          <div className="meta d-flex align-items-center">
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-calendar" />
+              <span>1 Jan 2022</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-solid fa-tag" />
+              <span>plan de negocios, emprendimiento, SMART</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-comments" />
+              <span>0 comentarios</span>
+            </div>
+          </div>
+          {/* META ENDS */}
+          {/* CONTENT STARTS */}
+          <h3>De nada sirve crear una empresa si no tienes un objetivo SMART…</h3>
+          <img src="assets/blog/plan-empresa.jpg" alt="Crear un plan y luego tu empresa" />
+          <div className="post-content">
+            <p>
+              Muchos emprendedores comienzan al revés: arman una empresa, sacan iniciación de actividades y luego... recién ahí se preguntan: “¿Y ahora qué vendo?”. Craso error.
+            </p>
+            <p>
+              <strong>Primero va el plan, luego la empresa.</strong> ¿Por qué? Porque un RUT no es una estrategia. Es solo un código. Para que ese código genere ingresos, necesitas tener una dirección clara. Y para eso, necesitas un objetivo SMART.
+            </p>
+            <p>
+              📌 <strong>Específico</strong>: No basta con “quiero vender”. ¿Qué vendes exactamente? ¿A quién? ¿En qué mercado?
+            </p>
+            <p>
+              📌 <strong>Medible</strong>: “Quiero vender más” no sirve. “Quiero facturar $5.000.000 en 6 meses” sí.
+            </p>
+            <p>
+              📌 <strong>Alcanzable</strong>: Si partes hoy, ¿tienes los recursos, red de contactos o conocimientos necesarios? Si no, planifica cómo conseguirlos.
+            </p>
+            <p>
+              📌 <strong>Relevante</strong>: ¿Está alineado con lo que sabes hacer y lo que el mercado necesita? Un negocio sin propósito muere en 3 meses.
+            </p>
+            <p>
+              📌 <strong>Temporal</strong>: Todo plan sin fecha es solo un sueño. Define plazos. Cortos, medios y largos.
+            </p>
+            <p>
+              Un objetivo SMART no solo guía tu negocio. Te ayuda a tomar decisiones. ¿Postulas a ese fondo? ¿Te asocias con alguien? ¿Inviertes en esa campaña? Todo se responde con: ¿acerca esto a mi objetivo?
+            </p>
+            <p>
+              <strong>Crear una empresa es fácil. Hacerla sostenible, no.</strong> Y la diferencia la marca un plan bien pensado desde el inicio.
+            </p>
+            <p>
+              ¿Ya tienes el tuyo o solo estás navegando sin timón?
+            </p>
+          </div>
+          {/* CONTENT ENDS */}
+        </div>
+        {/* ARTICLE ENDS */}
+      </div>
+    </Fragment>
+  );
+};
+
+export default BlogPost;
