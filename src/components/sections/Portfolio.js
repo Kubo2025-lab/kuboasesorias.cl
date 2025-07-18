@@ -189,7 +189,177 @@ const Portfolio = () => {
           </div>
           {/* ITEM DETAILS ENDS */}
         </SwiperSlide>
+      <Swiper
+        {...salimovSlider.portfolio}
+        className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
+        data-wow-offset={200}
+      >
+        {/* PORTFOLIO ITEM STARTS */}
+        <SwiperSlide className="single-item swiper-slide">
+          {/* ITEM MAIN CONTENT STARTS */}
+          <div className="main-content">
+            <img
+              className="img-fluid"
+              src="assets/portfolio/project-1.jpg"
+              alt="Image Project"
+            />
+          </div>
+          {/* ITEM MAIN CONTENT ENDS */}
+          {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Gestión Empresarial</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>3 meses</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Diagnosticamos procesos y diseñamos planes de eficiencia operativa</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Ejecución Presupuestaria</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>1 mes</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Controlamos desvíos y maximizamos tu rentabilidad proyecto a proyecto.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Desarrollo Estrategias</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>3 meses</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Planes de penetración y fidelización en mercado público y privado.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Metodología SMART</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>1 mes</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Objetivos específicos, medibles, alcanzables, relevantes y acotados en el tiempo.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+        </SwiperSlide>
         {/* PORTFOLIO ITEM ENDS */}
+
         {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
