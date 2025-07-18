@@ -1,11 +1,13 @@
 import { useState } from "react";
 
 const Contact = () => {
-  const [enviando, setEnviando] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => setShowModal(!showModal);
 
   return (
     <section className="contact main-section flex-column-mobile" id="contact">
-      {/* TITLE STARTS */}
+      {/* TITLE */}
       <div className="custom-title">
         <h3>
           <span>
@@ -15,9 +17,8 @@ const Contact = () => {
           </span>
         </h3>
       </div>
-      {/* TITLE ENDS */}
 
-      {/* CONTACTS STARTS */}
+      {/* CONTACT BOXES */}
       <div className="boxes">
         <div>
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
@@ -35,6 +36,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
+
         <div>
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
             <i className="fa fa-envelope" />
@@ -43,67 +45,39 @@ const Contact = () => {
               eduardo@kuboasesorias.cl
             </p>
           </div>
+
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
-            <span className="small-text">Síguenos</span>
-            <ul className="social">
-              <li><a href="#"><i className="fa-brands fa-github" /></a></li>
-              <li><a href="#"><i className="fa-brands fa-twitter" /></a></li>
-              <li><a href="#"><i className="fa-brands fa-dribbble" /></a></li>
-              <li><a href="#"><i className="fa-brands fa-facebook" /></a></li>
-            </ul>
+            <span className="small-text">¿Tienes dudas?</span>
+            <button onClick={toggleModal} className="custom-btn">
+              Envíanos un mensaje directo
+            </button>
           </div>
         </div>
       </div>
-      {/* CONTACTS ENDS */}
 
-      {/* FORMULARIO SEPARADO */}
-      <div className="form-wrapper">
-        <div className="contact-form-container animated-layer fade-in-up-animation fadeInUp wow">
-          <form
-            className="contact-form"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              setEnviando(true);
-              const data = {
-                nombre: e.target.nombre.value,
-                email: e.target.email.value,
-                motivo: e.target.motivo.value,
-                mensaje: e.target.mensaje.value,
-              };
-
-              try {
-                const response = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(data),
-                });
-
-                const result = await response.json();
-                alert(result?.respuesta || "Mensaje enviado. ¡Gracias por escribir!");
-                e.target.reset();
-              } catch (error) {
-                alert("Hubo un error al enviar. Intenta nuevamente.");
-              }
-              setEnviando(false);
-            }}
-          >
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-            <input type="email" name="email" placeholder="Tu correo electrónico" required />
-            <input type="text" name="motivo" placeholder="Motivo del contacto" required />
-            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-            <button type="submit" className="custom-btn">
-              {enviando ? "Enviando..." : "Enviar"}
-            </button>
-          </form>
+      {/* MODAL */}
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <span className="close-modal" onClick={toggleModal}>
+              &times;
+            </span>
+            <h3>Formulario de Contacto</h3>
+            <form>
+              <input type="text" placeholder="Tu nombre" required />
+              <input type="email" placeholder="Tu correo electrónico" required />
+              <input type="text" placeholder="Motivo del contacto" required />
+              <textarea placeholder="Tu mensaje" rows="4" required />
+              <button type="submit" className="custom-btn">Enviar</button>
+            </form>
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* SEPARATOR */}
       <img alt="" className="separator hide-mobile" src="assets/separator.png" />
     </section>
   );
 };
 
 export default Contact;
-
