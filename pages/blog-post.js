@@ -11,7 +11,7 @@ const BlogPost = () => {
         <i className="fa-solid fa-arrow-left"></i>
       </a>
       <div className="blog-content">
-        <h1>Cómo ganarle a la oferta corrupta</h1>
+        <h1>#Kubo_Blog</h1>
         {/* ARTICLE STARTS */}
         <div className="main-post">
           {/* META STARTS */}
