@@ -203,7 +203,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation">
-                #Nuestros_proyectos
+                #Experiencia
               </span>
             </span>
           </h3>
