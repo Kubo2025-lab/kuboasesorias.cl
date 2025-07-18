@@ -5,7 +5,7 @@ const Contact = () => {
 
   return (
     <section className="contact main-section flex-column-mobile" id="contact">
-      {/* TÍTULO */}
+      {/* TITLE STARTS */}
       <div className="custom-title">
         <h3>
           <span>
@@ -15,8 +15,9 @@ const Contact = () => {
           </span>
         </h3>
       </div>
+      {/* TITLE ENDS */}
 
-      {/* BLOQUES DE CONTACTO */}
+      {/* CONTACTS STARTS */}
       <div className="boxes">
         <div>
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
@@ -54,6 +55,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* CONTACTS ENDS */}
 
       {/* FORMULARIO SEPARADO */}
       <div className="form-wrapper">
@@ -97,7 +99,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* SEPARADOR */}
+      {/* SEPARATOR */}
       <img alt="" className="separator hide-mobile" src="assets/separator.png" />
     </section>
   );
