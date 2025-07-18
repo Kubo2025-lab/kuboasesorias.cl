@@ -99,25 +99,52 @@ const Portfolio = () => {
         ))}
 
         {/* Nuevo Servicio: Clases por YouTube */}
-        <SwiperSlide className="single-item swiper-slide">
-          <div className="main-content">
-            <a href="https://youtu.be/9aTWRphGdnA" target="_blank" className="external">
-              <img className="img-fluid" src="assets/portfolio/youtube-kubo.jpg" alt="Clases en YouTube" />
-            </a>
-          </div>
-          <div className="details">
-            <h4>Clases Abiertas por YouTube</h4>
-            <ul>
-              <li><span><i className="fa-regular fa-file-lines" /> Servicio :</span><span>Capacitación Gratuita</span></li>
-              <li><span><i className="fa-regular fa-user" /> Canal :</span><span><a href="https://www.youtube.com/@kuboasesorias_cl" target="_blank">@kuboasesorias_cl</a></span></li>
-              <li><span><i className="fa-regular fa-hourglass" /> Acceso :</span><span>Libre y permanente</span></li>
-              <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span>Capítulos didácticos sobre licitaciones, herramientas y casos reales.</span></li>
-            </ul>
-            <a href="https://www.youtube.com/@kuboasesorias_cl" target="_blank" className="custom-btn">
-              <span>Ir al canal <i className="fa-brands fa-youtube" /></span>
-            </a>
-          </div>
-        </SwiperSlide>
+<SwiperSlide className="single-item swiper-slide">
+  {/* ITEM MAIN CONTENT STARTS */}
+  <div className="main-content">
+    <div className="videocontainer">
+      <iframe
+        className="youtube-video"
+        src="https://www.youtube.com/embed/9aTWRphGdnA?enablejsapi=1&version=3&playerapiid=ytplayer"
+        allowFullScreen
+      />
+    </div>
+  </div>
+  {/* ITEM MAIN CONTENT ENDS */}
+  
+  {/* ITEM DETAILS STARTS */}
+  <div className="details">
+    <h4>Clases Abiertas por YouTube</h4>
+    <ul>
+      <li>
+        <span><i className="fa-regular fa-file-lines" /> Servicio :</span>
+        <span>Capacitación Gratuita</span>
+      </li>
+      <li>
+        <span><i className="fa-regular fa-user" /> Canal :</span>
+        <span>
+          <a href="https://www.youtube.com/@kuboasesorias_cl" target="_blank">
+            @kuboasesorias_cl
+          </a>
+        </span>
+      </li>
+      <li>
+        <span><i className="fa-regular fa-hourglass" /> Acceso :</span>
+        <span>Libre y permanente</span>
+      </li>
+      <li>
+        <span><i className="fa-solid fa-code-branch" /> Detalle :</span>
+        <span>Capítulos didácticos sobre licitaciones, herramientas y casos reales.</span>
+      </li>
+    </ul>
+    <a href="https://www.youtube.com/@kuboasesorias_cl" target="_blank" className="custom-btn">
+      <span>
+        Ir al canal <i className="fa-brands fa-youtube" />
+      </span>
+    </a>
+  </div>
+  {/* ITEM DETAILS ENDS */}
+</SwiperSlide>
 
         {/* NAVEGACIÓN */}
         <div className="nav-item next-item animated-btn"><span /></div>
