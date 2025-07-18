@@ -24,12 +24,12 @@ const Portfolio = () => {
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        {/* PORTFOLIO ITEM 1 */}
+        {/* PORTFOLIO ITEM 1 - Original: Ejecución Presupuestaria */}
         <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <img
               className="img-fluid"
-              src="assets/portfolio/project-1.jpg"
+              src="assets/portfolio/project-1.jpg" // Asegúrate de tener una imagen adecuada para cada servicio
               alt="Image Project"
             />
           </div>
@@ -54,15 +54,15 @@ const Portfolio = () => {
                 </span>
                 <span>1 mes</span>
               </li>
-<li>
-  <span>
-    <i className="fa-solid fa-code-branch" /> Detalle :
-  </span>
-  <span>
-    Controlamos desvíos y maximizamos <br />
-    tu rentabilidad proyecto a proyecto.
-  </span>
-</li>
+              <li>
+                <span>
+                  <i className="fa-solid fa-code-branch" /> Detalle :
+                </span>
+                <span>
+                  Controlamos desvíos y maximizamos <br />tu rentabilidad proyecto a
+                  proyecto.
+                </span>
+              </li>
             </ul>
             <a href="#" target="_blank" className="custom-btn">
               <span>
@@ -73,52 +73,43 @@ const Portfolio = () => {
           </div>
         </SwiperSlide>
 
-        {/* PORTFOLIO ITEM 2 */}
+        {/* NUEVO ITEM DE PORTFOLIO 2: Gestión Empresarial */}
         <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
-            <Swiper
-              {...salimovSlider.portfolioItems}
-              className="swiper swiper-portfolio-item"
-            >
-              <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-2.jpg" title="img" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-3.jpg" title="img" />
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-1.jpg" title="img" />
-              </SwiperSlide>
-              <div className="swiper-pagination" />
-            </Swiper>
+            <img
+              className="img-fluid"
+              src="assets/portfolio/project-2.jpg" // Cambia a una imagen relevante
+              alt="Image Project"
+            />
           </div>
           <div className="details">
-            <h4>OfertaPublica.cl</h4>
+            <h4>Gestión Empresarial</h4>
             <ul>
               <li>
                 <span>
                   <i className="fa-regular fa-file-lines" /> Servicio :
                 </span>
-                <span>Asesorías</span>
+                <span>Consultoría</span>
               </li>
               <li>
                 <span>
-                  <i className="fa-regular fa-user" /> Clientes :
+                  <i className="fa-regular fa-user" /> Modalidad :
                 </span>
-                <span>Usuarios de KUBO</span>
+                <span>A distancia</span>
               </li>
               <li>
                 <span>
                   <i className="fa-regular fa-hourglass" /> Duración :
                 </span>
-                <span>Depende del proyecto</span>
+                <span>3 meses</span>
               </li>
               <li>
                 <span>
                   <i className="fa-solid fa-code-branch" /> Detalle :
                 </span>
                 <span>
-                  Análisis profesional de antecedentes de licitaciones.
+                  Diagnosticamos procesos y diseñamos <br />planes de eficiencia
+                  operativa
                 </span>
               </li>
             </ul>
@@ -131,48 +122,141 @@ const Portfolio = () => {
           </div>
         </SwiperSlide>
 
-        {/* PORTFOLIO ITEM 3 */}
+        {/* NUEVO ITEM DE PORTFOLIO 3: Ejecución Presupuestaria */}
         <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
-            <a
-              href="https://www.academia.cl"
-              target="_blank"
-              className="external"
-            >
-              <img
-                className="img-fluid"
-                src="assets/portfolio/project-3.jpg"
-                alt="External Project"
-              />
-            </a>
+            <img
+              className="img-fluid"
+              src="assets/portfolio/project-3.jpg" // Cambia a una imagen relevante
+              alt="Image Project"
+            />
           </div>
           <div className="details">
-            <h4>Academia Mercado Público</h4>
+            <h4>Ejecución Presupuestaria</h4>
             <ul>
               <li>
                 <span>
                   <i className="fa-regular fa-file-lines" /> Servicio :
                 </span>
-                <span>Capacitación</span>
+                <span>Consultoría</span>
               </li>
               <li>
                 <span>
-                  <i className="fa-regular fa-user" /> Clientes :
+                  <i className="fa-regular fa-user" /> Modalidad :
                 </span>
-                <span>Usuarios de KUBO</span>
+                <span>A distancia</span>
               </li>
               <li>
                 <span>
                   <i className="fa-regular fa-hourglass" /> Duración :
                 </span>
-                <span>Eterno</span>
+                <span>1 mes</span>
               </li>
               <li>
                 <span>
-                  <i className="fa-solid fa-code-branch" /> Detalles :
+                  <i className="fa-solid fa-code-branch" /> Detalle :
                 </span>
                 <span>
-                  Cursos Presto - MS Project - Mercado Público
+                  Controlamos desvíos y maximizamos <br />tu rentabilidad proyecto a
+                  proyecto.
+                </span>
+              </li>
+            </ul>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar{" "}
+                <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+        </SwiperSlide>
+
+        {/* NUEVO ITEM DE PORTFOLIO 4: Desarrollo Estrategias */}
+        <SwiperSlide className="single-item swiper-slide">
+          <div className="main-content">
+            <img
+              className="img-fluid"
+              src="assets/portfolio/project-4.jpg" // Cambia a una imagen relevante
+              alt="Image Project"
+            />
+          </div>
+          <div className="details">
+            <h4>Desarrollo Estrategias</h4>
+            <ul>
+              <li>
+                <span>
+                  <i className="fa-regular fa-file-lines" /> Servicio :
+                </span>
+                <span>Consultoría</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-regular fa-user" /> Modalidad :
+                </span>
+                <span>A distancia</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-regular fa-hourglass" /> Duración :
+                </span>
+                <span>3 meses</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-solid fa-code-branch" /> Detalle :
+                </span>
+                <span>
+                  Planes de penetración y fidelización <br />en mercado público y
+                  privado.
+                </span>
+              </li>
+            </ul>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar{" "}
+                <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+        </SwiperSlide>
+
+        {/* NUEVO ITEM DE PORTFOLIO 5: Metodología SMART */}
+        <SwiperSlide className="single-item swiper-slide">
+          <div className="main-content">
+            <img
+              className="img-fluid"
+              src="assets/portfolio/project-5.jpg" // Cambia a una imagen relevante
+              alt="Image Project"
+            />
+          </div>
+          <div className="details">
+            <h4>Metodología SMART</h4>
+            <ul>
+              <li>
+                <span>
+                  <i className="fa-regular fa-file-lines" /> Servicio :
+                </span>
+                <span>Consultoría</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-regular fa-user" /> Modalidad :
+                </span>
+                <span>A distancia</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-regular fa-hourglass" /> Duración :
+                </span>
+                <span>1 mes</span>
+              </li>
+              <li>
+                <span>
+                  <i className="fa-solid fa-code-branch" /> Detalle :
+                </span>
+                <span>
+                  Objetivos específicos, medibles, <br /> alcanzables, relevantes y
+                  acotados en el tiempo.
                 </span>
               </li>
             </ul>
@@ -204,4 +288,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
