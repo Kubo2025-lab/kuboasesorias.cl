@@ -24,7 +24,7 @@ const SalimovHead = () => {
       {/* <link rel="stylesheet" href="css/skins/yellow.css" /> */}
       {/* Live Style Switcher - demo only */}
 
-       {/* <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" /> */}
+       <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
     </Head>
   );
 };
