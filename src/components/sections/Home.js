@@ -12,7 +12,7 @@ const Home = () => {
             <span className="position-relative">
               <span className="animated-layer">Soy</span>
               <span className="intro animated-layer">
-                Front-end Developer with 7 years experience based in London
+                Ayudamos a PYMES chilenas y extranjeras a ganar licitaciones.
               </span>
             </span>
             <span>
