@@ -7,7 +7,7 @@ const Copyright = () => {
         src="assets/separator-copyright.png"
       />
       <div>
-        <span>© {new Date().getFullYear()} Steven Walker</span>
+        <span>© {new Date().getFullYear()} Kubo</span>
         <span>
           Diseñado por{" "}
           <a
