@@ -601,19 +601,35 @@ header .mobile-menu {
   z-index: 1;
 }
 .home .intro.maquina {
-  display: block;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  position: absolute;
+  height: auto;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  left: 650px;
+  top: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
   line-height: 24px;
-  max-width: 270px; /* o lo que necesites según diseño original */
+  background-color: #ff5e14;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-.home .cursor {
+.home .intro.maquina .cursor {
   display: inline-block;
   width: 1ch;
   animation: blink 0.8s steps(1) infinite;
-  color: #ff4f00;
+  color: #fff;
   font-weight: bold;
 }
 
