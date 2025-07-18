@@ -3,7 +3,6 @@ const Contact = () => {
     <section className="contact main-section flex-column-mobile" id="contact">
       {/* TITLE STARTS */}
       <div className="custom-title">
-        {/* MAIN TITLE STARTS */}
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
@@ -11,13 +10,12 @@ const Contact = () => {
             </span>
           </span>
         </h3>
-        {/* MAIN TITLE ENDS */}
       </div>
       {/* TITLE ENDS */}
-      {/* CONTACTS STARTS */}
+
+      {/* CONTACT INFO STARTS */}
       <div className="boxes">
         <div>
-          {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
             <i className="fa fa-phone" />
             <p>
@@ -25,8 +23,6 @@ const Contact = () => {
               +569 2179 2366
             </p>
           </div>
-          {/* CONTACT ITEM ENDS */}
-          {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-location-dot" />
             <p>
@@ -34,49 +30,70 @@ const Contact = () => {
               Merced N° 838 of. 117, Santiago
             </p>
           </div>
-          {/* CONTACT ITEM ENDS */}
         </div>
         <div>
-          {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-down-animation fadeInUp wow">
             <i className="fa fa-envelope" />
             <p>
-              <span className="small-text">email</span>
+              <span className="small-text">Email</span>
               eduardo@kuboasesorias.cl
             </p>
           </div>
-          {/* CONTACT ITEM ENDS */}
-          {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
             <span className="small-text">Síguenos</span>
             <ul className="social">
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-github" />
-                </a>
+                <a href="#"><i className="fa-brands fa-github" /></a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-twitter" />
-                </a>
+                <a href="#"><i className="fa-brands fa-twitter" /></a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-dribbble" />
-                </a>
+                <a href="#"><i className="fa-brands fa-dribbble" /></a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-facebook" />
-                </a>
+                <a href="#"><i className="fa-brands fa-facebook" /></a>
               </li>
             </ul>
           </div>
-          {/* CONTACT ITEM ENDS */}
         </div>
       </div>
-      {/* CONTACTS ENDS */}
+      {/* CONTACT INFO ENDS */}
+
+      {/* CONTACT FORM STARTS */}
+      <div className="contact-form-container animated-layer fade-in-up-animation fadeInUp wow">
+        <form
+          className="contact-form"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const data = {
+              nombre: e.target.nombre.value,
+              email: e.target.email.value,
+              motivo: e.target.motivo.value,
+              mensaje: e.target.mensaje.value,
+            };
+
+            const response = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+
+            const result = await response.json();
+            alert(result?.respuesta || "Mensaje enviado. ¡Gracias por escribir!");
+            e.target.reset();
+          }}
+        >
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <input type="text" name="motivo" placeholder="Motivo del contacto" required />
+          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+          <button type="submit" className="custom-btn">Enviar</button>
+        </form>
+      </div>
+      {/* CONTACT FORM ENDS */}
+
       <img
         alt=""
         className="separator hide-mobile"
@@ -85,4 +102,6 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;
+
