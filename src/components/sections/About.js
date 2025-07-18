@@ -124,7 +124,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-bulma-plain"></i>
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Gestión Empresarial</h4>
             </div>
@@ -132,7 +132,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-trello-plain" />
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Planificación Estratégica</h4>
             </div>
@@ -150,7 +150,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-circleci-plain"></i>
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Automatización de Flujos</h4>
             </div>
@@ -160,7 +160,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                 <i class="devicon-cloudflareworkers-plain"></i>
+                 <i class="devicon-bash-plain"></i>
               </span>
               <h4>Estudio de Propuestas</h4>
             </div>
@@ -168,7 +168,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-codepen-original"></i>
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Capacitación y Asesoría</h4>
             </div>
@@ -178,7 +178,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-couchdb-plain"></i>
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Registro en ChileCompra</h4>
             </div>
@@ -186,7 +186,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-ecto-original"></i>
+                <i class="devicon-bash-plain"></i>
               </span>
               <h4>Flujos Financieros</h4>
             </div>
