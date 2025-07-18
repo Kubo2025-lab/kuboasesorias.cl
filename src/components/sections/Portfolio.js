@@ -13,7 +13,7 @@ const Portfolio = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              My Portfolio
+              #Qué_ofrecemos?
             </span>
           </span>
         </h3>
@@ -38,38 +38,152 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Image Project</h4>
+            <h4>Gestión Empresarial</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Servicio :
                   </span>
-                  <span>Website</span>
+                  <span>Consultoría</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> Modalidad :
                   </span>
-                  <span>Envato</span>
+                  <span>A distancia</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Duración :
                   </span>
-                  <span>3 months</span>
+                  <span>3 meses</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Detalle :
                   </span>
-                  <span>WordPress</span>
+                  <span>Diagnosticamos procesos y diseñamos planes de eficiencia operativa</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Ejecución Presupuestaria</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>1 mes</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Controlamos desvíos y maximizamos tu rentabilidad proyecto a proyecto.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Desarrollo Estrategias</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>3 meses</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Planes de penetración y fidelización en mercado público y privado.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a>
+          </div>
+          {/* ITEM DETAILS ENDS */}
+ {/* ITEM DETAILS STARTS */}
+          <div className="details">
+            <h4>Metodología SMART</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> Servicio :
+                  </span>
+                  <span>Consultoría</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> Modalidad :
+                  </span>
+                  <span>A distancia</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> Duración :
+                  </span>
+                  <span>1 mes</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> Detalle :
+                  </span>
+                  <span>Objetivos específicos, medibles, alcanzables, relevantes y acotados en el tiempo.</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#" target="_blank" className="custom-btn">
+              <span>
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -83,7 +197,7 @@ const Portfolio = () => {
             <div className="videocontainer">
               <iframe
                 className="youtube-video"
-                src="https://www.youtube.com/embed/AqcjdkPMPJA?enablejsapi=1&version=3&playerapiid=ytplayer"
+                src="https://youtu.be/9aTWRphGdnA"
                 allowFullScreen=""
               />
             </div>
@@ -91,38 +205,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Youtube Project</h4>
+            <h4>Canal de Youtube</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Servicio :
                   </span>
-                  <span>Short Film</span>
+                  <span>Recursos gratuitos</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> Clientes :
                   </span>
-                  <span>Videohive</span>
+                  <span>Usarios de KUBO</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Duración :
                   </span>
-                  <span>8 months</span>
+                  <span>Eterno</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Detalle :
                   </span>
-                  <span>After Effects</span>
+                  <span>Presto / Ms Project</span>
                 </li>
               </ul>
             </div>
-            <a href="#" target="_blank" className="custom-btn">
+            <a href="https://youtu.be/9aTWRphGdnA" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                Ver <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -152,38 +266,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Slider Project</h4>
+            <h4>OfertaPublica.cl</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Servicio :
                   </span>
-                  <span>Mobile App</span>
+                  <span>Asesorías</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> Clientes :
                   </span>
-                  <span>Codecanyon</span>
+                  <span>Usuarios de KUBO</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Duración :
                   </span>
-                  <span>3 months</span>
+                  <span>Depende del proyecto</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Detalle :
                   </span>
-                  <span>React JS</span>
+                  <span>Análisis profesional de antecedentes de licitaciones.</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -195,7 +309,7 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <a
-              href="https://themeforest.net"
+              href="https://www.academia.cl"
               target="_blank"
               className="external"
             >
@@ -209,38 +323,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>External Link</h4>
+            <h4>Academia Mercado Público</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> Servicio :
                   </span>
-                  <span>Advertising</span>
+                  <span>Capacitación</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> Clientes :
                   </span>
-                  <span>Envato</span>
+                  <span>Usuarios de KUBO</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> Duración :
                   </span>
-                  <span>1 month</span>
+                  <span>Eterno</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> Detalles :
                   </span>
-                  <span>Adobe Premiere</span>
+                  <span>Cursos Presto - MS Project - Mercado Público</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                Contratar <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
