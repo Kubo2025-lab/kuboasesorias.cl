@@ -600,6 +600,28 @@ header .mobile-menu {
   top: calc(50vh - 30px);
   z-index: 1;
 }
+.home .intro.maquina {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.home .cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.8s steps(1) infinite;
+  color: #ff4f00;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
 
 /*** ABOUT SECTION ***/
 
