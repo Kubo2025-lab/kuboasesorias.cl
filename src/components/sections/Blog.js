@@ -49,7 +49,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/como-vivir-de-las-licitaciones" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
