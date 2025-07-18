@@ -30,7 +30,7 @@ const Portfolio = () => {
               <li><span><i className="fa-regular fa-file-lines" /> Servicio :</span><span>Consultoría</span></li>
               <li><span><i className="fa-regular fa-user" /> Modalidad :</span><span>A distancia</span></li>
               <li><span><i className="fa-regular fa-hourglass" /> Duración :</span><span>1 mes</span></li>
-              <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span>Control de desviaciones y optimización de presupuesto público.</span></li>
+              <li><span><i className="fa-solid fa-code-branch" /> Detalle :</span><span>Control de desviaciones y </br>optimización de presupuesto público.</span></li>
             </ul>
             <a href="#" target="_blank" className="custom-btn"><span>Contratar <i className="fa-solid fa-arrow-up-right-from-square" /></span></a>
           </div>
@@ -46,37 +46,37 @@ const Portfolio = () => {
           },
           {
             titulo: "Modelo Freemium",
-            detalle: "Plataforma gratuita con alertas y formación base, escalable a consultorías premium.",
+            detalle: "Plataforma gratuita con alertas y </br>formación base, escalable a consultorías premium.",
             duracion: "Acceso permanente",
             img: "assets/portfolio/project-3.jpg"
           },
           {
             titulo: "Capacitación certificada",
-            detalle: "Cursos modulares con certificación, marketing segmentado y contenido descargable.",
+            detalle: "Cursos modulares con certificación, </br>marketing segmentado y contenido descargable.",
             duracion: "Según módulo",
             img: "assets/portfolio/project-4.jpg"
           },
           {
             titulo: "Alianzas Fintech",
-            detalle: "Opciones de pago en cuotas o con crédito en línea para clientes sin liquidez.",
+            detalle: "Opciones de pago en cuotas o con </br>crédito en línea para clientes sin liquidez.",
             duracion: "A demanda",
             img: "assets/portfolio/project-5.jpg"
           },
           {
             titulo: "Servicio post-adjudicación",
-            detalle: "Acompañamiento técnico y fiscal durante ejecución de contratos, con reportes y alertas.",
+            detalle: "Acompañamiento técnico y fiscal durante </br>ejecución de contratos, con reportes y alertas.",
             duracion: "Hasta cierre de contrato",
             img: "assets/portfolio/project-6.jpg"
           },
           {
             titulo: "Paquetes sectorizados",
-            detalle: "Ofertas especializadas para Salud, Deporte e Infraestructura Verde con material técnico.",
+            detalle: "Ofertas especializadas para Salud, Deporte </br>e Infraestructura Verde con material técnico.",
             duracion: "Diseño por proyecto",
             img: "assets/portfolio/project-7.jpg"
           },
           {
             titulo: "Club de usuarios",
-            detalle: "Comunidad con sesiones grupales, networking y beneficios exclusivos.",
+            detalle: "Comunidad con sesiones grupales, </br>networking y beneficios exclusivos.",
             duracion: "Suscripción mensual",
             img: "assets/portfolio/project-8.jpg"
           }
