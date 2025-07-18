@@ -32,7 +32,7 @@ const BlogPost = () => {
           {/* META ENDS */}
           {/* CONTENT STARTS */}
           <h3>Crea un plan y luego tu empresa.</h3>
-          <img src="assets/blog/blog-post-1.jpg" alt="Blog image" />
+          <img src="assets/blog/blog-post-3.jpg" alt="Blog image" />
 <div className="post-content">
   <p>
     Todos quieren emprender, pero pocos se detienen a planificar. ¿Resultado? Empresas que nacen apuradas, sin norte, sin modelo, sin clientes. Y al poco tiempo… mueren. Por eso, si estás pensando en independizarte, en renunciar, en facturar por lo tuyo: antes que empresa, crea un plan. Un plan real, accionable, que te obligue a pensar como empresario desde el primer día, no como sobreviviente.
