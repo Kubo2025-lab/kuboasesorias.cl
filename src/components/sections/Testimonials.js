@@ -7,8 +7,7 @@ const Testimonials = () => {
           <div>
             <p>
               <span className="quote">
-                " La atención al detalle y la calidad en la ejecución de tareas han sido consistentemente 
-notables. "
+                " La atención al detalle y la calidad en la ejecución de tareas han sido consistentemente notables. "
               </span>
               <span className="person">Jaime Oliva</span>
               <span className="job">Inversiones OCAT</span>
