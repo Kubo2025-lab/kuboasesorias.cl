@@ -601,12 +601,12 @@ header .mobile-menu {
   z-index: 1;
 }
 .home .intro.maquina {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 24px;
+  max-width: 270px; /* o lo que necesites según diseño original */
 }
 
 .home .cursor {
