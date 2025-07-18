@@ -52,22 +52,22 @@ const Contact = () => {
             <span className="small-text">Síguenos</span>
             <ul className="social">
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-github" />
+                <a href="https://www.tiktok.com/@kuboservicios">
+                  <i className="fa-brands fa-tiktok" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-twitter" />
+                <a href="https://www.youtube.com/@kuboasesorias_cl">
+                  <i className="fa-brands fa-youtube" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-dribbble" />
+                <a href="https://www.linkedin.com/in/eduardo-zambrano/">
+                  <i className="fa-brands fa-linkedin" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/kubo.asesorias">
                   <i className="fa-brands fa-facebook" />
                 </a>
               </li>
