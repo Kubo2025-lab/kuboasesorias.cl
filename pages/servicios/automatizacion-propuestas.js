@@ -34,6 +34,7 @@ const AutomatizacionPropuestas = () => {
       <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
     </div>
 
+    {/* ⬇️ Video DEBAJO del contenido */}
     <div className="hero-video">
       <iframe
         src="https://www.youtube.com/embed/9aTWRphGdnA"
