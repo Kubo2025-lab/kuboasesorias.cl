@@ -1,76 +1,65 @@
-import Head from "next/head";
-import { useState } from "react";
+import { Fragment, useEffect } from "react";
 
-
-const ModeloFreemium = () => {
-  const [enviado, setEnviado] = useState(false);
-  const [formulario, setFormulario] = useState({
-    nombre: "",
-    email: "",
-    mensaje: ""
-  });
-
-  const handleChange = (e) => {
-    setFormulario({ ...formulario, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const payload = {
-      nombre: formulario.nombre,
-      email: formulario.email,
-      motivo: "Modelo freemium",
-      mensaje: formulario.mensaje,
-    };
-
-    try {
-      await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-
-      setEnviado(true);
-    } catch (error) {
-      console.error("Error al enviar formulario", error);
-    }
-  };
+const BlogPost = () => {
+  useEffect(() => {
+    document.querySelector("body").classList.add("blog-page");
+  }, []);
 
   return (
-    <>
-      <Head>
-        <title>Modelo Freemium | Kubo Asesorías</title>
-      </Head>
-      <section className="portfolio-page">
-        <div className="container">
-          <h1 className="portfolio-title">Modelo freemium</h1>
-          <ul className="portfolio-details">
-            <li><strong>Servicio:</strong> Consultoría</li>
-            <li><strong>Modalidad:</strong> A distancia</li>
-            <li><strong>Duración:</strong> 1 mes</li>
-            <li>
-              <strong>Detalle:</strong> Creamos un modelo freemium que ofrece contenido gratuito (alertas, capacitación base) y convierte a usuarios en clientes de consultorías premium.
-            </li>
-          </ul>
+    <Fragment>
+      <a href="/" className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </a>
+      <div className="blog-content">
+        <h1>#Kubo_Blog</h1>
 
-          {!enviado ? (
-            <form className="formulario-servicio" onSubmit={handleSubmit}>
-              <input type="text" name="nombre" placeholder="Tu nombre" required onChange={handleChange} />
-              <input type="email" name="email" placeholder="Tu correo electrónico" required onChange={handleChange} />
-              <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required onChange={handleChange}></textarea>
-              <button type="submit">Enviar</button>
-            </form>
-          ) : (
-            <div className="formulario-enviado">
-              <p>Gracias por escribirnos. Te responderemos pronto.</p>
-              <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">Volver al portafolio</a>
+        <div className="main-post">
+          <div className="meta d-flex align-items-center">
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-calendar" />
+              <span>19 Jul 2025</span>
             </div>
-          )}
+            <div className="d-flex align-items-center">
+              <i className="fa-solid fa-tag" />
+              <span>modelo freemium, consultoría, escalamiento</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-comments" />
+              <span>0 comentarios</span>
+            </div>
+          </div>
+
+          <h3>¿Qué es el modelo freemium y por qué lo aplicamos en Kubo?</h3>
+          <img src="/assets/blog/freemium.jpg" alt="Modelo freemium" />
+
+          <div className="post-content">
+            <p>
+              A veces para vender, primero hay que regalar. Pero no cualquier regalo: uno que enganche, que aporte y que genere una relación. Así funciona el modelo freemium.
+            </p>
+            <p>
+              En Kubo decidimos que no basta con esperar que nos contraten. Queremos demostrar lo que sabemos, generar confianza y educar al mercado. Por eso:
+            </p>
+            <p>
+              📌 <strong>Ofrecemos alertas gratuitas de licitaciones</strong><br />
+              Para que cualquier empresa sepa cuándo hay oportunidades en el mercado público.
+            </p>
+            <p>
+              📌 <strong>Publicamos contenidos útiles cada semana</strong><br />
+              Desde tips legales hasta estrategias de evaluación económica, todo en un lenguaje entendible.
+            </p>
+            <p>
+              📌 <strong>Capacitamos sin cobrar</strong><br />
+              Cursos introductorios, webinars y recursos abiertos para que más personas entiendan cómo postular.
+            </p>
+            <p>
+              Y cuando ya necesitas algo más a medida, ahí entran nuestros planes pagados: estudios de propuestas, estrategia de adjudicación, representación, etc.
+            </p>
+            <p><strong>El freemium no es regalar porque sí. Es invertir en confianza.</strong></p>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </Fragment>
   );
 };
 
-export default ModeloFreemium;
+export default BlogPost;
