@@ -325,3 +325,19 @@ h1, h2, h3, h4 {
     margin-top: 2rem;
   }
 }
+.frase-dinamica {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  min-height: 1.5em;
+  transition: opacity 0.8s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
