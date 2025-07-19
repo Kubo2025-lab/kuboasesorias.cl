@@ -1,72 +1,69 @@
-import Head from "next/head";
-import { useState } from "react";
+import { Fragment, useEffect } from "react";
 
-
-export default function PostAdjudicacion() {
-  const [formEnviado, setFormEnviado] = useState(false);
-
-  const manejarEnvio = async (e) => {
-    e.preventDefault();
-
-    const datos = {
-      nombre: e.target.nombre.value,
-      email: e.target.email.value,
-      motivo: "Post adjudicación",
-      mensaje: e.target.mensaje.value,
-    };
-
-    await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(datos),
-    });
-
-    setFormEnviado(true);
-  };
+const BlogPost = () => {
+  useEffect(() => {
+    document.querySelector("body").classList.add("blog-page");
+  }, []);
 
   return (
-    <>
-      <Head>
-        <title>Post Adjudicación | Kubo Asesorías</title>
-        <meta
-          name="description"
-          content="Acompañamiento técnico y fiscal para la ejecución de contratos adjudicados. Desde informes hasta cumplimiento de hitos."
-        />
-      </Head>
+    <Fragment>
+      <a href="/" className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </a>
+      <div className="blog-content">
+        <h1>#Kubo_Blog</h1>
 
-      <section className="main-section service-page">
-        <h1>Post adjudicación</h1>
-        <p>
-          Acompañamos a tu empresa en la ejecución de contratos adjudicados.
-          Te ayudamos con informes técnicos, cumplimiento de plazos,
-          fiscalizaciones y cierre correcto.
-        </p>
-
-        {!formEnviado ? (
-          <form onSubmit={manejarEnvio} className="formulario-servicio">
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Tu correo electrónico"
-              required
-            />
-            <textarea
-              name="mensaje"
-              placeholder="¿En qué podemos ayudarte?"
-              required
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        ) : (
-          <div className="confirmacion">
-            <p>Gracias por tu mensaje. Te responderemos pronto.</p>
-            <a href="https://www.kuboasesorias.cl/#portfolio" className="boton-volver">
-              Volver al portafolio
-            </a>
+        <div className="main-post">
+          <div className="meta d-flex align-items-center">
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-calendar" />
+              <span>19 Jul 2025</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-solid fa-tag" />
+              <span>ejecución, reporting, contratos públicos</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-comments" />
+              <span>0 comentarios</span>
+            </div>
           </div>
-        )}
-      </section>
-    </>
+
+          <h3>¿Y después de adjudicar, qué? La etapa que muchos olvidan…</h3>
+          <img src="/assets/blog/post-adjudicacion.jpg" alt="Gestión post adjudicación" />
+
+          <div className="post-content">
+            <p>
+              Ganaste la licitación. ¡Bravo! Pero ahora viene lo verdaderamente importante: cumplir. Y no basta con entregar a tiempo, hay que hacerlo con cabeza, estrategia y reporting.
+            </p>
+            <p>
+              En Kubo te acompañamos después de la adjudicación para evitar que te metas en problemas por no cumplir con lo prometido (o no saber cómo justificarlo).
+            </p>
+            <p>
+              📌 <strong>Checklist de obligaciones</strong><br />
+              Te ayudamos a traducir la resolución en tareas concretas, con plazos, responsables y entregables.
+            </p>
+            <p>
+              📌 <strong>Informes técnicos y financieros</strong><br />
+              Lo que no se mide, no se paga. Elaboramos los reportes que exige el mandante, en su lenguaje.
+            </p>
+            <p>
+              📌 <strong>Alertas de vencimientos</strong><br />
+              Nada de andar revisando correos a última hora. Te avisamos cuando hay que entregar, renovar o justificar.
+            </p>
+            <p>
+              📌 <strong>Representación ante el comprador</strong><br />
+              Si hay cambios, contingencias o ajustes, te respaldamos para comunicarlo y negociar correctamente.
+            </p>
+            <p>
+              Ganar es solo la mitad del juego. La otra mitad se llama *gestión post-adjudicación*. Y ahí es donde se ganan —o se pierden— los contratos futuros.
+            </p>
+            <p><strong>Si quieres seguir ganando, cumple como nadie.</strong></p>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
-}
+};
+
+export default BlogPost;
