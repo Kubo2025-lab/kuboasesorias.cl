@@ -112,17 +112,21 @@ const AutomatizacionPropuestas = () => {
         </div> {/* Fin Nuevo contenedor */}
       </section>
 
-      <section className="propuesta-section">
-        <div className="section-container"> {/* Nuevo contenedor */}
-          <h2>¿Cómo funciona nuestro servicio?</h2>
-          <ul>
-            <li><strong>01.</strong> Diagnóstico de tu proceso actual de armado</li>
-            <li><strong>02.</strong> Diseño de plantillas inteligentes en PRESTO y Excel</li>
-            <li><strong>03.</strong> Integración con tu flujo BIM (si aplica)</li>
-            <li><strong>04.</strong> Capacitación en uso y documentación del sistema</li>
-          </ul>
-        </div> {/* Fin Nuevo contenedor */}
-      </section>
+<section className="propuesta-section">
+  <div className="contenido-limitado">
+    <h2>¿Cómo funciona nuestro servicio?</h2>
+    <ul>
+      <li><strong>01.</strong> Diagnóstico personalizado de tu proceso actual de armado</li>
+      <li><strong>02.</strong> Diseño de plantillas inteligentes en PRESTO y Excel según tus rubros más frecuentes</li>
+      <li><strong>03.</strong> Integración con tu flujo BIM o softwares complementarios (si aplica)</li>
+      <li><strong>04.</strong> Capacitación completa en uso, edición y gestión de las nuevas herramientas</li>
+      <li><strong>05.</strong> Documentación técnica del sistema implementado y manual de usuario</li>
+      <li><strong>06.</strong> Validación en una propuesta real o simulada para comprobar resultados</li>
+      <li><strong>07.</strong> Ajustes finales según feedback de tu equipo o responsables técnicos</li>
+      <li><strong>08.</strong> Soporte post implementación durante 30 días para resolver dudas y afinar detalles</li>
+    </ul>
+  </div>
+</section>
 
       <section id="contacto" className="cta-section">
         <div className="section-container"> {/* Nuevo contenedor */}
