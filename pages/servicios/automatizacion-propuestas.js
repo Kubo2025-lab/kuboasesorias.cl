@@ -3,8 +3,7 @@ import Head from "next/head";
 
 const AutomatizacionPropuestas = () => {
   useEffect(() => {
-    // Asegúrate de que esta clase sea 'servicio-page' como se define en tu CSS
-    document.querySelector("body").classList.add("servicio-page");
+    document.querySelector("body").classList.add("blog-page");
   }, []);
 
   return (
@@ -27,24 +26,24 @@ const AutomatizacionPropuestas = () => {
         <i className="fa-brands fa-whatsapp"></i>
       </a>
 
-     <section className="hero-section">
+      <section className="hero-section">
         <div className="hero-content">
-            <h1>Automatiza tus propuestas y gana más licitaciones</h1>
-            <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
-            <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
+          <h1>Automatiza tus propuestas y gana más licitaciones</h1>
+          <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
+          <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
         </div>
 
         <div className="hero-video">
-            <iframe
-                src="https://www.youtube.com/embed/9aTWRphGdnA"
-                title="Automatización de Propuestas KUBO"
-                allowFullScreen
-            ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/9aTWRphGdnA"
+            title="Automatización de Propuestas KUBO"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
       <section className="benefits-section">
-        <div className="section-container"> {/* Nuevo contenedor */}
+        <div className="contenido-limitado">
           <h2>¿Por qué automatizar?</h2>
           <div className="benefits-grid">
             <div className="benefit-box">
@@ -63,11 +62,11 @@ const AutomatizacionPropuestas = () => {
               <p>Propuestas con mejor puntaje técnico, entregadas a tiempo y con sello de calidad.</p>
             </div>
           </div>
-        </div> {/* Fin Nuevo contenedor */}
+        </div>
       </section>
 
       <section className="propuesta-section">
-        <div className="section-container"> {/* Nuevo contenedor */}
+        <div className="contenido-limitado">
           <h2>¿Cómo funciona nuestro servicio?</h2>
           <ul>
             <li><strong>01.</strong> Diagnóstico de tu proceso actual de armado</li>
@@ -75,11 +74,11 @@ const AutomatizacionPropuestas = () => {
             <li><strong>03.</strong> Integración con tu flujo BIM (si aplica)</li>
             <li><strong>04.</strong> Capacitación en uso y documentación del sistema</li>
           </ul>
-        </div> {/* Fin Nuevo contenedor */}
+        </div>
       </section>
 
       <section id="contacto" className="cta-section">
-        <div className="section-container"> {/* Nuevo contenedor */}
+        <div className="contenido-limitado">
           <h2>Solicita tu diagnóstico gratuito</h2>
           <form
             className="formulario-contacto"
@@ -113,7 +112,7 @@ const AutomatizacionPropuestas = () => {
               Volver a servicios
             </a>
           </div>
-        </div> {/* Fin Nuevo contenedor */}
+        </div>
       </section>
     </Fragment>
   );
