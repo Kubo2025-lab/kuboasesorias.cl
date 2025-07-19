@@ -24,10 +24,9 @@ h1, h2, h3, h4 {
 --------------------------- */
 .hero-section {
   flex-direction: row;
-  justify-content: center; /* <-- más centrado */
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem; /* <-- espacio entre columnas */
-  padding: 4rem 4rem; /* <-- menos padding general */
+  padding: 6rem 8rem;
 }
 
 .hero-content {
