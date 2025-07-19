@@ -3,8 +3,32 @@ import Head from "next/head";
 
 const AutomatizacionPropuestas = () => {
   useEffect(() => {
-    document.querySelector("body").classList.add("blog-page");
-  }, []);
+  document.querySelector("body").classList.add("blog-page");
+
+  const frases = [
+    "Agiliza tus propuestas técnicas sin perder calidad.",
+    "Di adiós al copiar y pegar en cada licitación.",
+    "Integra PRESTO + Excel con un clic.",
+    "Menos errores, más adjudicaciones.",
+    "Diseñado para profesionales que valoran su tiempo."
+  ];
+
+  let index = 0;
+  const contenedor = document.getElementById("frase-dinamica");
+
+  const rotar = () => {
+    contenedor.classList.add("fade-out");
+    setTimeout(() => {
+      contenedor.innerHTML = `<p>${frases[index]}</p>`;
+      contenedor.classList.remove("fade-out");
+      contenedor.classList.add("fade-in");
+      index = (index + 1) % frases.length;
+    }, 1000);
+  };
+
+  const intervalo = setInterval(rotar, 15000);
+  return () => clearInterval(intervalo);
+}, []);
 
   return (
     <Fragment>
@@ -30,7 +54,10 @@ const AutomatizacionPropuestas = () => {
   <div className="contenido-limitado">
     <div className="hero-content">
       <h1>Automatiza tus propuestas y gana más licitaciones</h1>
-      <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
+      <div className="frase-dinamica" id="frase-dinamica">
+  <p>Agiliza tus propuestas técnicas sin perder calidad.</p>
+</div>
+
       <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
     </div>
 
