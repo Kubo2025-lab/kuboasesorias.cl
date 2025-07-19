@@ -1,60 +1,90 @@
+// /pages/servicios/capacitacion-certificada.js
 import { Fragment, useEffect } from "react";
 
-const BlogPost = () => {
+const CapacitacionCertificada = () => {
   useEffect(() => {
-    document.querySelector("body").classList.add("blog-page");
+    document.querySelector("body").classList.add("page-servicio");
   }, []);
 
   return (
     <Fragment>
       <a href="/" className="back-btn">
-        <i className="fa-solid fa-arrow-left"></i>
+        <i className="fa-solid fa-arrow-left" />
       </a>
-      <div className="blog-content">
-        <h1>#Kubo_Blog</h1>
+      <div className="service-content">
+        {/* Sección 1: Título */}
+        <h1>🚀 Capacitación Certificada para Profesionales que Licitan</h1>
 
-        <div className="main-post">
-          <div className="meta d-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-calendar" />
-              <span>19 Jul 2025</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-solid fa-tag" />
-              <span>capacitación, consultoría, PYMES</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-comments" />
-              <span>0 comentarios</span>
-            </div>
-          </div>
+        {/* Sección 2: Problema */}
+        <div className="service-section">
+          <h3>El conocimiento técnico ya no es suficiente.</h3>
+          <p>
+            Cada día, más licitaciones exigen dominio de plataformas, criterios de evaluación,
+            estrategias de oferta y gestión documental. ¿El problema? La mayoría aprende a punta de errores.
+          </p>
+          <p>
+            Si estás en una constructora, consultora o eres profesional independiente, sabes que capacitarse no es un lujo: es sobrevivir en el mercado público.
+          </p>
+        </div>
 
-          <h3>La formación certificada que impulsa tus oportunidades</h3>
-          <img src="/assets/blog/capacitacion.jpg" alt="Capacitación Certificada" />
+        {/* Sección 3: Solución */}
+        <div className="service-section">
+          <h3>Capacitación diseñada para ganar licitaciones.</h3>
+          <p>
+            Creamos programas 100% online, modulares, cortos y aplicables desde el día uno.  
+            Nuestros cursos están validados por empresas reales y se actualizan constantemente según las nuevas exigencias del sistema.
+          </p>
+          <p>
+            Además, obtendrás un certificado de KUBO, con sello de reconocimiento en el ecosistema de compras públicas.
+          </p>
+        </div>
 
-          <div className="post-content">
-            <p>
-              Las licitaciones no se ganan solo con buenas intenciones. Se ganan con habilidades. Y esas habilidades se aprenden. Pero no en cualquier parte.
-            </p>
-            <p>
-              En Kubo, diseñamos programas de capacitación pensados para la acción. No queremos que memorices teoría. Queremos que ganes.
-            </p>
-            <p>
-              📌 <strong>Certificación que abre puertas:</strong><br />
-              Cada módulo entrega herramientas aplicables al mercado público. Y al finalizar, obtienes un certificado que pesa en tu CV y ante los mandantes.
-            </p>
-            <p>
-              📌 <strong>Contenido diseñado por expertos:</strong><br />
-              Nuestra experiencia se traduce en contenidos que resuelven problemas reales. Desde lectura de bases hasta estrategia de adjudicación.
-            </p>
-            <p>
-              📌 <strong>100% online y flexible:</strong><br />
-              Avanza a tu ritmo. Compatible con tus tiempos, tu trabajo y tu negocio.
-            </p>
-            <p>
-              La formación es la palanca que multiplica tu crecimiento. Y si esa formación es de calidad, con enfoque práctico y aval de resultados... la ventaja es tuya.
-            </p>
-            <p><strong>El conocimiento no te lo pueden quitar. ¡Aprovéchalo!</strong></p>
+        {/* Sección 4: Beneficios */}
+        <div className="service-section">
+          <h3>🎯 Beneficios de nuestra capacitación:</h3>
+          <ul>
+            <li>✅ Certificación con respaldo de empresa especializada en mercado público.</li>
+            <li>✅ Aprendizaje aplicado: estudia hoy, usa mañana.</li>
+            <li>✅ Acceso de por vida y actualizaciones sin costo.</li>
+            <li>✅ Cursos desde 1 hora a programas completos de 10 horas.</li>
+            <li>✅ Marca personal fortalecida con credenciales verificables.</li>
+          </ul>
+        </div>
+
+        {/* Sección 5: Llamado a la acción */}
+        <div className="cta-section">
+          <h4>¿Listo para dejar de improvisar en las licitaciones?</h4>
+          <form
+            className="formulario-contacto"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = new FormData(e.target);
+              const data = Object.fromEntries(form.entries());
+              data.motivo = "Capacitación certificada";
+
+              try {
+                await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(data),
+                });
+                document.getElementById("respuesta").style.display = "block";
+                e.target.reset();
+              } catch (err) {
+                console.error("Error al enviar:", err);
+              }
+            }}
+          >
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu correo electrónico" required />
+            <textarea name="mensaje" placeholder="Cuéntanos qué curso te interesa" required></textarea>
+            <button type="submit" className="custom-btn">Quiero capacitarme</button>
+          </form>
+          <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}>
+            <p>Gracias por escribirnos. Un asesor te contactará en breve.</p>
+            <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">
+              Volver a servicios
+            </a>
           </div>
         </div>
       </div>
@@ -62,4 +92,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default CapacitacionCertificada;
