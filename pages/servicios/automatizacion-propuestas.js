@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Fragment, useEffect } from "react";
 
 const AutomatizacionPropuestas = () => {
@@ -7,13 +8,29 @@ const AutomatizacionPropuestas = () => {
 
   return (
     <Fragment>
+      <Head>
+        <link rel="stylesheet" href="/css/servicios.css" />
+      </Head>
+
       <a href="/" className="back-btn">
         <i className="fa-solid fa-arrow-left"></i>
       </a>
 
+      {/* Botón flotante de WhatsApp */}
+      <a
+        href="https://wa.me/56921792366"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="animated-layer fadeInUp wow">Automatiza tus propuestas y gana más licitaciones</h1>
+          <h1 className="animated-layer fadeInUp wow">
+            Automatiza tus propuestas y gana más licitaciones
+          </h1>
           <p className="animated-layer fadeInUp wow">
             Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.
           </p>
@@ -57,18 +74,10 @@ const AutomatizacionPropuestas = () => {
       <section className="propuesta-section">
         <h2>¿Cómo funciona nuestro servicio?</h2>
         <ul>
-          <li>
-            <strong>01.</strong> Diagnóstico de tu proceso actual de armado
-          </li>
-          <li>
-            <strong>02.</strong> Diseño de plantillas inteligentes en PRESTO y Excel
-          </li>
-          <li>
-            <strong>03.</strong> Integración con tu flujo BIM (si aplica)
-          </li>
-          <li>
-            <strong>04.</strong> Capacitación en uso y documentación del sistema
-          </li>
+          <li><strong>01.</strong> Diagnóstico de tu proceso actual de armado</li>
+          <li><strong>02.</strong> Diseño de plantillas inteligentes en PRESTO y Excel</li>
+          <li><strong>03.</strong> Integración con tu flujo BIM (si aplica)</li>
+          <li><strong>04.</strong> Capacitación en uso y documentación del sistema</li>
         </ul>
       </section>
 
