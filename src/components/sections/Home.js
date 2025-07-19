@@ -25,7 +25,7 @@ const Home = () => {
     } else if (!borrando && charIndex === frases[fraseIndex].length) {
       timer = setTimeout(() => {
         setBorrando(true);
-      }, 30000); // espera antes de borrar
+      }, 1500); // espera antes de borrar
     } else if (borrando && charIndex > 0) {
       timer = setTimeout(() => {
         setTexto((prev) => prev.slice(0, -1));
