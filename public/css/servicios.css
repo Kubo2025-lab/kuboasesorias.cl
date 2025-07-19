@@ -29,6 +29,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   padding: 4rem 2rem;
   background-color: #111;
+  gap: 2rem;
 }
 
 .hero-content {
@@ -193,7 +194,10 @@ h1, h2, h3, h4 {
   margin-top: 2rem;
   color: #00e676;
 }
-/* Botón flotante de WhatsApp */
+
+/* --------------------------
+   WHATSAPP FLOAT
+--------------------------- */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -211,4 +215,35 @@ h1, h2, h3, h4 {
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #1ebe5d;
+}
+
+/* --------------------------
+   MEDIA QUERIES
+--------------------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+  }
+
+  .benefit-box {
+    width: 100%;
+  }
 }
