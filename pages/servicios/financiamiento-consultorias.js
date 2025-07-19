@@ -1,70 +1,68 @@
-import Head from "next/head";
-import { useState } from "react";
+import { Fragment, useEffect } from "react";
 
-export default function FinanciamientoConsultorias() {
-  const [enviado, setEnviado] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const payload = Object.fromEntries(data.entries());
-
-    await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-
-    setEnviado(true);
-  };
+const BlogPost = () => {
+  useEffect(() => {
+    document.querySelector("body").classList.add("blog-page");
+  }, []);
 
   return (
-    <div className={styles.pageContainer}>
-      <Head>
-        <title>Financiamiento de Consultorías | Kubo Asesorías</title>
-        <meta
-          name="description"
-          content="Facilitamos acceso a consultorías a través de alianzas con fintech. Pago en cuotas o crédito online."
-        />
-      </Head>
+    <Fragment>
+      <a href="/" className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </a>
+      <div className="blog-content">
+        <h1>#Kubo_Blog</h1>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Financiamiento de Consultorías</h1>
-
-        <p className={styles.description}>
-          Te ayudamos a acceder a servicios de consultoría de alto valor sin afectar tu
-          flujo de caja. Gracias a alianzas con fintech, puedes pagar en cuotas o acceder a créditos en línea.
-        </p>
-
-        <ul className={styles.featureList}>
-          <li>
-            ✔ Servicio: <strong>Consultoría + Fintech</strong>
-          </li>
-          <li>
-            ✔ Modalidad: <strong>Online / A distancia</strong>
-          </li>
-          <li>
-            ✔ Beneficio: <strong>Pago flexible, sin intereses ocultos</strong>
-          </li>
-        </ul>
-
-        {!enviado ? (
-          <form onSubmit={handleSubmit} className={styles.formulario}>
-            <input name="nombre" placeholder="Tu nombre" required />
-            <input name="email" type="email" placeholder="Tu correo electrónico" required />
-            <input name="motivo" placeholder="Motivo del contacto" defaultValue="Financiamiento consultorías" hidden />
-            <textarea name="mensaje" placeholder="Tu mensaje" required />
-            <button type="submit">Enviar</button>
-          </form>
-        ) : (
-          <div className={styles.confirmacion}>
-            <p>¡Gracias por tu mensaje! Te responderemos a la brevedad.</p>
-            <a href="https://www.kuboasesorias.cl/#portfolio">
-              <button>Volver al portafolio</button>
-            </a>
+        <div className="main-post">
+          <div className="meta d-flex align-items-center">
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-calendar" />
+              <span>19 Jul 2025</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-solid fa-tag" />
+              <span>financiamiento, consultoría, pymes</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <i className="fa-regular fa-comments" />
+              <span>0 comentarios</span>
+            </div>
           </div>
-        )}
-      </main>
-    </div>
+
+          <h3>Financiamiento para consultorías: deja de postergar tu crecimiento</h3>
+          <img src="/assets/blog/financiamiento.jpg" alt="Financiamiento consultorías" />
+
+          <div className="post-content">
+            <p>
+              Muchos emprendedores y gerentes quieren mejorar sus procesos, entender mejor el mercado público o potenciar su estrategia, pero se frenan por lo mismo: no hay presupuesto.
+            </p>
+            <p>
+              ¿Y si te dijéramos que sí puedes acceder a una consultoría profesional, sin pagar todo de una?
+            </p>
+            <p>
+              En Kubo estamos desarrollando alianzas con fintechs que permitirán financiar nuestros servicios de consultoría. ¿Qué significa esto para ti?
+            </p>
+            <p>
+              📌 <strong>Cuotas accesibles</strong><br />
+              Puedes pagar tu asesoría en 3, 6 o 12 cuotas, sin afectar tu caja mensual.
+            </p>
+            <p>
+              📌 <strong>Aprobación rápida online</strong><br />
+              El proceso es digital, con respuesta en minutos y sin papeleos infinitos.
+            </p>
+            <p>
+              📌 <strong>Asesoría inmediata</strong><br />
+              No esperas a tener todo el dinero para empezar. Empiezas ahora, pagas mientras mejoras.
+            </p>
+            <p>
+              Este modelo busca democratizar el acceso a consultorías de calidad, especialmente para PYMES que quieren crecer pero no tienen espalda financiera.
+            </p>
+            <p><strong>Invertir en conocimiento nunca fue tan accesible.</strong></p>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
-}
+};
+
+export default BlogPost;
