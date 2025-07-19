@@ -35,7 +35,7 @@ const AutomatizacionPropuestas = () => {
 
   <div className="hero-video">
     <iframe
-      src="https://www.youtube.com/embed/AqcjdkPMPJA"
+      src="https://www.youtube.com/watch?v=9aTWRphGdnA"
       title="Automatización de Propuestas KUBO"
       allowFullScreen
     ></iframe>
