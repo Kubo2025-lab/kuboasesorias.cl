@@ -52,7 +52,7 @@ const Portfolio = () => {
                     <span>
                       <i className="fa-solid fa-code-branch" /> Detalle:
                     </span>
-                    <div dangerouslySetInnerHTML={{ __html: (servicio.detalle || "").replace(/\n/g, "<br />") }} />
+                    <div style={{ whiteSpace: "pre-line" }} dangerouslySetInnerHTML={{__html: servicio.detalle || "",}}/>
                   </li>
                 </ul>
               </div>
