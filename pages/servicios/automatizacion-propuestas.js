@@ -26,21 +26,23 @@ const AutomatizacionPropuestas = () => {
         <i className="fa-brands fa-whatsapp"></i>
       </a>
 
-     <section className="hero-section">
-        <div className="hero-content">
-            <h1>Automatiza tus propuestas y gana más licitaciones</h1>
-            <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
-            <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
-        </div>
+<section className="hero-section">
+  <div className="contenido-limitado">
+    <div className="hero-content">
+      <h1>Automatiza tus propuestas y gana más licitaciones</h1>
+      <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
+      <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
+    </div>
 
-        <div className="hero-video">
-            <iframe
-                src="https://www.youtube.com/embed/9aTWRphGdnA"
-                title="Automatización de Propuestas KUBO"
-                allowFullScreen
-            ></iframe>
-        </div>
-      </section>
+    <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
 
       <section className="benefits-section">
         <div className="section-container"> {/* Nuevo contenedor */}
