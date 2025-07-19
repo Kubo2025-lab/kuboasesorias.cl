@@ -5,14 +5,7 @@ import Blog from "../../components/sections/Blog";
 import Contact from "../../components/sections/Contact";
 
 // CSS
-import '../../public/css/all.min.css'
-import '../../public/css/animate.min.css'
-import '../../public/css/bootstrap.min.css'
-import '../../public/css/devicon.min.css'
-import '../../public/css/jquery.m.Custom.Scrollbar.min.css'
 import '../../public/css/style.css'
-import '../../public/css/stylewitcher.css'
-import '../../public/css/swiper-bundle.min.css'
 
 const AutomatizacionPropuestas = () => {
   const [submitted, setSubmitted] = useState(false);
