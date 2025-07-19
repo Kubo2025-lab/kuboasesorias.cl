@@ -30,7 +30,7 @@ const AutomatizacionPropuestas = () => {
   <div className="hero-content">
     <h1>Automatiza tus propuestas y gana más licitaciones</h1>
     <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
-    <a href="#formulario" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
+    <a href="#contacto" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
   </div>
 
 <div className="hero-video">
