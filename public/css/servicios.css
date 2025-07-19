@@ -90,8 +90,8 @@ h1, h2, h3, h4 {
 .benefits-section {
   background-color: #1c1c1c;
   padding: 4rem 4rem 2rem 4rem; /* top-right-bottom-left */
-  max-width: 1200px;
-  margin: 0 auto 2rem auto; /* auto horizontal, reduce espacio debajo */
+  max-width: 100%;
+  margin: 0 auto auto auto; /* auto horizontal, reduce espacio debajo */
 }
 
 .benefits-section h2 {
