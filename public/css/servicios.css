@@ -1,0 +1,195 @@
+
+/* ==========================
+   CSS exclusivo: servicios.css
+   Ruta: /public/css/servicios.css
+   ========================== */
+
+/* Reset básico y estructura */
+body.servicio-page {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------
+   HERO SECTION
+--------------------------- */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #111;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6f00;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-video {
+  flex: 1 1 45%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.hero-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/* --------------------------
+   BENEFITS SECTION
+--------------------------- */
+.benefits-section {
+  padding: 4rem 2rem;
+  background-color: #1c1c1c;
+}
+
+.benefits-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.benefit-box {
+  flex: 1 1 250px;
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-box i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6f00;
+}
+
+/* --------------------------
+   PROPUESTA SECTION
+--------------------------- */
+.propuesta-section {
+  padding: 4rem 2rem;
+  background-color: #181818;
+}
+
+.propuesta-section h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.propuesta-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.propuesta-section ul li {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.propuesta-section ul li strong {
+  color: #ff6f00;
+  margin-right: 0.5rem;
+}
+
+/* --------------------------
+   CTA SECTION
+--------------------------- */
+.cta-section {
+  padding: 4rem 2rem;
+  background-color: #0d0d0d;
+  text-align: center;
+}
+
+.cta-section h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #ff6f00;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.custom-btn {
+  background-color: #ff6f00;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #e65c00;
+}
+
+.respuesta-contacto {
+  margin-top: 2rem;
+  color: #00e676;
+}
