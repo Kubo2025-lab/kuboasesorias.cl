@@ -38,18 +38,13 @@ const AutomatizacionPropuestas = () => {
             Quiero automatizar mis propuestas
           </a>
         </div>
-        <div className="hero-video">
-          <iframe
-            width="100%"
-            height="315"
-            className="youtube-video"
-            src="https://www.youtube.com/embed/9aTWRphGdnA"
-            title="Video demostrativo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+<div className="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/TU_VIDEO_ID"
+    title="Video de Automatización"
+    allowFullScreen
+  ></iframe>
+</div>
       </section>
 
       <section className="benefits-section">
