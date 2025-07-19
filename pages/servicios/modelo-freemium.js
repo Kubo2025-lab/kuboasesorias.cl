@@ -1,5 +1,8 @@
-import React, { useState } from "react";
 import Head from "next/head";
+import { useState } from "react";
+import Contact from "../../components/sections/Contact";
+import Blog from "../../components/sections/Blog";
+import Portfolio from "../../components/sections/Portfolio";
 import "../../styles/style.css";
 
 const ModeloFreemium = () => {
