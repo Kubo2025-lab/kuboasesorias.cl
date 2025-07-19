@@ -120,7 +120,7 @@ const AutomatizacionPropuestas = () => {
 };
 
 export default AutomatizacionPropuestas;
-export default AutomatizacionPropuestas;
+
 
 
 
