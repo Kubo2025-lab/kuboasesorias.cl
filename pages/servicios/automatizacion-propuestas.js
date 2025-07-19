@@ -11,7 +11,7 @@ const AutomatizacionPropuestas = () => {
         <i className="fa-solid fa-arrow-left"></i>
       </a>
 
-      <div className="servicio-content">{/* <- Nuevo contenedor principal */}
+      <div className="blog-content">{/* <- Nuevo contenedor principal */}
 
         <section className="hero-section">
           <div className="hero-content">
