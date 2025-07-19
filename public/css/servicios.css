@@ -31,9 +31,10 @@ h1, h2, h3, h4 {
 }
 
 .hero-content {
-  flex: 1;
+  flex: 1.2;
   text-align: left;
-  padding-right: 1rem; /* o incluso 0.5rem si quieres bien ajustado */
+  margin-bottom: 0;
+  padding-right: 3rem;
 }
 
 .hero-content h1 {
