@@ -52,7 +52,7 @@ const Portfolio = () => {
                     <span>
                       <i className="fa-solid fa-code-branch" /> Detalle:
                     </span>
-                    <span dangerouslySetInnerHTML={{ __html: item.detalle.replace(/\n/g, "<br />") }} />
+                    <span dangerouslySetInnerHTML={{ __html: item.detalle.replace(/\n/g, "<br />") }}/>
                   </li>
                 </ul>
               </div>
