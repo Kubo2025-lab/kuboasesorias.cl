@@ -27,7 +27,7 @@ const frases = [
     }, 1000);
   };
 
-  const intervalo = setInterval(rotar, 1000);
+  const intervalo = setInterval(rotar, 8000);
   return () => clearInterval(intervalo);
 }, []);
 
