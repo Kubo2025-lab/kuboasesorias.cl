@@ -23,18 +23,17 @@ h1, h2, h3, h4 {
    HERO SECTION (con grid responsive)
 --------------------------- */
 .hero-section {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center; /* <-- más centrado */
   align-items: center;
-  padding: 4rem 2rem;
-  background-color: #111;
-  box-sizing: border-box;
+  gap: 3rem; /* <-- espacio entre columnas */
+  padding: 4rem 4rem; /* <-- menos padding general */
 }
 
 .hero-content {
-  max-width: 600px;
-  text-align: center;
-  margin-bottom: 3rem;
+  flex: 1;
+  text-align: left;
+  padding-right: 1rem; /* o incluso 0.5rem si quieres bien ajustado */
 }
 
 .hero-content h1 {
