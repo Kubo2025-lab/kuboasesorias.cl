@@ -92,6 +92,23 @@ const AutomatizacionPropuestas = () => {
               <p>Propuestas con mejor puntaje técnico, entregadas a tiempo y con sello de calidad.</p>
             </div>
           </div>
+                    <div className="benefits-grid">
+            <div className="benefit-box">
+              <i className="fa-solid fa-clock"></i>
+              <h4>+ integración de herramientas</h4>
+              <p>Conecta PRESTO, Excel, BIM y tu flujo interno en una sola estructura.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-file-circle-check"></i>
+              <h4>+ control de versiones</h4>
+              <p>Evita errores por archivos duplicados o mal gestionados.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-trophy"></i>
+              <h4>+ foco estratégico</h4>
+              <p>Dedica más tiempo a lo que realmente importa: ganar.</p>
+            </div>
+          </div>
         </div> {/* Fin Nuevo contenedor */}
       </section>
 
