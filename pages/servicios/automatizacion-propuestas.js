@@ -33,13 +33,13 @@ const AutomatizacionPropuestas = () => {
     <a href="#formulario" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
   </div>
 
-  <div className="hero-video">
-    <iframe
-      src="https://www.youtube.com/watch?v=9aTWRphGdnA"
-      title="Automatización de Propuestas KUBO"
-      allowFullScreen
-    ></iframe>
-  </div>
+<div className="hero-video">
+  <iframe
+    src="https://www.youtube.com/embed/9aTWRphGdnA"
+    title="Automatización de Propuestas KUBO"
+    allowFullScreen
+  ></iframe>
+</div>
 </section>
 
       <section className="benefits-section">
