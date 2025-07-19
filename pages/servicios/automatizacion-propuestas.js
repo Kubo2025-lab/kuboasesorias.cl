@@ -26,26 +26,21 @@ const AutomatizacionPropuestas = () => {
         <i className="fa-brands fa-whatsapp"></i>
       </a>
 
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="animated-layer fadeInUp wow">
-            Automatiza tus propuestas y gana más licitaciones
-          </h1>
-          <p className="animated-layer fadeInUp wow">
-            Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.
-          </p>
-          <a href="#contacto" className="custom-btn animated-layer fadeInUp wow">
-            Quiero automatizar mis propuestas
-          </a>
-        </div>
-<div className="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/TU_VIDEO_ID"
-    title="Video de Automatización"
-    allowFullScreen
-  ></iframe>
-</div>
-      </section>
+     <section className="hero-section">
+  <div className="hero-content">
+    <h1>Automatiza tus propuestas y gana más licitaciones</h1>
+    <p>Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.</p>
+    <a href="#formulario" className="custom-btn">Quiero Automatizar Mis Propuestas</a>
+  </div>
+
+  <div className="hero-video">
+    <iframe
+      src="https://www.youtube.com/embed/AqcjdkPMPJA"
+      title="Automatización de Propuestas KUBO"
+      allowFullScreen
+    ></iframe>
+  </div>
+</section>
 
       <section className="benefits-section">
         <h2>¿Por qué automatizar?</h2>
