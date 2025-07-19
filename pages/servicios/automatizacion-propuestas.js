@@ -2,33 +2,51 @@ import { Fragment, useEffect } from "react";
 import Head from "next/head";
 
 const AutomatizacionPropuestas = () => {
-  useEffect(() => {
+ useEffect(() => {
   document.querySelector("body").classList.add("blog-page");
 
-const frases = [
-  "¿Cuánto tiempo más vas a seguir copiando y pegando en cada licitación sin un sistema que lo haga por ti?",
-  "Las empresas que automatizan sus propuestas no solo ahorran tiempo: ganan más contratos con menos esfuerzo.",
-  "¿Y si tu propuesta técnica se armara sola, sin errores y en la mitad del tiempo que hoy demoras?",
-  "No se trata solo de velocidad, se trata de enviar mejores propuestas que realmente compitan y ganen.",
-  "Automatizar no es un lujo, es una ventaja competitiva que ya están usando tus futuros competidores."
-];
+  const frases = [
+    "¿Cuánto tiempo más vas a seguir copiando y pegando en cada licitación sin un sistema que lo haga por ti?",
+    "Las empresas que automatizan sus propuestas no solo ahorran tiempo: ganan más contratos con menos esfuerzo.",
+    "¿Y si tu propuesta técnica se armara sola, sin errores y en la mitad del tiempo que hoy demoras?",
+    "No se trata solo de velocidad, se trata de enviar mejores propuestas que realmente compitan y ganen.",
+    "Automatizar no es un lujo, es una ventaja competitiva que ya están usando tus futuros competidores."
+  ];
 
-
-  let index = 0;
   const contenedor = document.getElementById("frase-dinamica");
+  let index = 0;
+  let charIndex = 0;
+  let escribiendo = true;
+  let currentTimeout;
 
-  const rotar = () => {
-    contenedor.classList.add("fade-out");
-    setTimeout(() => {
-      contenedor.innerHTML = `<p>${frases[index]}</p>`;
-      contenedor.classList.remove("fade-out");
-      contenedor.classList.add("fade-in");
-      index = (index + 1) % frases.length;
-    }, 1000);
+  const escribirFrase = () => {
+    const frase = frases[index];
+    if (charIndex <= frase.length) {
+      contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+      charIndex++;
+      currentTimeout = setTimeout(escribirFrase, 40); // total escritura ~8s para frases largas
+    } else {
+      escribiendo = false;
+      setTimeout(borrarFrase, 3000); // espera 3s antes de borrar
+    }
   };
 
-  const intervalo = setInterval(rotar, 8000);
-  return () => clearInterval(intervalo);
+  const borrarFrase = () => {
+    const frase = frases[index];
+    if (charIndex >= 0) {
+      contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+      charIndex--;
+      currentTimeout = setTimeout(borrarFrase, 30); // borrado ~3s
+    } else {
+      index = (index + 1) % frases.length;
+      escribiendo = true;
+      setTimeout(escribirFrase, 1000); // pausa 1s antes de siguiente frase
+    }
+  };
+
+  escribirFrase();
+
+  return () => clearTimeout(currentTimeout);
 }, []);
 
   return (
