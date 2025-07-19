@@ -5,13 +5,14 @@ const AutomatizacionPropuestas = () => {
   useEffect(() => {
   document.querySelector("body").classList.add("blog-page");
 
-  const frases = [
-    "Agiliza tus propuestas técnicas sin perder calidad.",
-    "Di adiós al copiar y pegar en cada licitación.",
-    "Integra PRESTO + Excel con un clic.",
-    "Menos errores, más adjudicaciones.",
-    "Diseñado para profesionales que valoran su tiempo."
-  ];
+const frases = [
+  "¿Cuánto tiempo más vas a seguir copiando y pegando en cada licitación sin un sistema que lo haga por ti?",
+  "Las empresas que automatizan sus propuestas no solo ahorran tiempo: ganan más contratos con menos esfuerzo.",
+  "¿Y si tu propuesta técnica se armara sola, sin errores y en la mitad del tiempo que hoy demoras?",
+  "No se trata solo de velocidad, se trata de enviar mejores propuestas que realmente compitan y ganen.",
+  "Automatizar no es un lujo, es una ventaja competitiva que ya están usando tus futuros competidores."
+];
+
 
   let index = 0;
   const contenedor = document.getElementById("frase-dinamica");
