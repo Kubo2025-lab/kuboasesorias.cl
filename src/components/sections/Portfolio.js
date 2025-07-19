@@ -62,6 +62,13 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
         ))}
+          {/* Botones de navegación Swiper */}
+        <div className="nav-item next-item animated-btn">
+          <span />
+        </div>
+        <div className="nav-item prev-item animated-btn">
+          <span />
+        </div>
       </Swiper>
     </section>
   );
