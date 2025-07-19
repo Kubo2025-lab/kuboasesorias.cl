@@ -68,7 +68,7 @@ const Portfolio = () => {
     <div className="videocontainer">
       <iframe
         className="youtube-video"
-        src="https://www.youtube.com/embed/AqcjdkPMPJA?enablejsapi=1&version=3&playerapiid=ytplayer"
+        src="https://youtu.be/9aTWRphGdnA?enablejsapi=1&version=3&playerapiid=ytplayer"
         allowFullScreen=""
         title="Video institucional Kubo"
       />
@@ -78,14 +78,14 @@ const Portfolio = () => {
 
   {/* ITEM DETAILS STARTS */}
   <div className="details">
-    <h4>Video institucional Kubo</h4>
+    <h4>Cursos gratuitos en Youtube</h4>
     <div>
       <ul>
         <li>
           <span>
             <i className="fa-regular fa-file-lines" /> Proyecto:
           </span>
-          <span>Video institucional</span>
+          <span>Servicios gratuitos</span>
         </li>
         <li>
           <span>
