@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "@/src/layouts/Layout";
-import ScrollToTop from "@/src/components/ScrollToTop";
+import Layout from "../../src/layouts/Layout";
+import ScrollToTop from "../../src/components/ScrollToTop";
+
 
 const AutomatizacionPropuestas = () => {
   return (
