@@ -74,22 +74,23 @@ h1, h2, h3, h4 {
   .hero-section {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 6rem 8rem;
   }
 
   .hero-content {
-    flex: 1;
+    flex: 1.2;
     text-align: left;
     margin-bottom: 0;
-    padding-right: 4rem;
+    padding-right: 3rem;
   }
 
   .hero-video {
-    flex: 1;
-    max-width: 100%;
+    flex: 0.8;
+    max-width: 90%;
+    padding-bottom: 45%; /* más estrecho en alto */
   }
 }
-
 /* --------------------------
    BENEFITS SECTION
 --------------------------- */
