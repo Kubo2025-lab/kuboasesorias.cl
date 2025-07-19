@@ -50,20 +50,23 @@ h1, h2, h3, h4 {
 }
 
 .hero-video {
-  width: 100%;
+  flex: 1;
   max-width: 800px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
 }
 
 .hero-video iframe {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  top: 0;
+  left: 0;
+  border: none;
 }
 
 /* Desktop: lado a lado */
