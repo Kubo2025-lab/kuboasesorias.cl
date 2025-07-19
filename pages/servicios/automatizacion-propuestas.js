@@ -40,6 +40,8 @@ const AutomatizacionPropuestas = () => {
         </div>
         <div className="hero-video">
           <iframe
+            width="100%"
+            height="315"
             className="youtube-video"
             src="https://www.youtube.com/embed/9aTWRphGdnA"
             title="Video demostrativo"
