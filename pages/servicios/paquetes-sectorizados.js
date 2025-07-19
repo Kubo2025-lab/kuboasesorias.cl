@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { useState } from "react";
-import "@/styles/style.css";
+import Contact from "../../components/sections/Contact";
+import Blog from "../../components/sections/Blog";
+import Portfolio from "../../components/sections/Portfolio";
+import "../../styles/style.css";
 
 export default function PaquetesSectorizados() {
   const [enviado, setEnviado] = useState(false);
