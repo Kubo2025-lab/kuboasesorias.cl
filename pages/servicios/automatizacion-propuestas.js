@@ -1,9 +1,9 @@
 // /pages/servicios/automatizacion-propuestas.js
 import Head from "next/head";
 import { useState } from "react";
-import Contact from "@/components/sections/Contact";
-import Blog from "@/components/sections/Blog";
-import Portfolio from "@/components/sections/Portfolio";
+import Contact from "../../components/sections/Contact";
+import Blog from "../../components/sections/Blog";
+import Portfolio from "../../components/sections/Portfolio";
 
 const AutomatizacionPropuestas = () => {
   const [submitted, setSubmitted] = useState(false);
