@@ -19,15 +19,6 @@ h1, h2, h3, h4 {
 }
 
 /* --------------------------
-   Contenedor centrado y limitado
---------------------------- */
-.contenido-limitado {
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* --------------------------
    HERO SECTION (flex responsive)
 --------------------------- */
 .hero-section {
@@ -36,7 +27,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 6rem;
-  max-width: 1300px;
+  max-width: 1300px; /* Contenedor de contenido */
   margin: 0 auto;
 }
 
@@ -97,8 +88,13 @@ h1, h2, h3, h4 {
 --------------------------- */
 .benefits-section {
   background-color: #1c1c1c;
-  padding: 3rem 2rem 2rem 2rem;
-  max-width: 100%;
+  padding: 3rem 2rem; /* Espaciado uniforme para todas las pantallas */
+  /* max-width: 100%; Se elimina ya que el contenido interno se limitará a 1300px */
+  margin: 0 auto;
+}
+
+.benefits-section .section-container { /* Nuevo contenedor para limitar el ancho */
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -106,6 +102,7 @@ h1, h2, h3, h4 {
   color: #fff;
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 2.5rem; /* Aumento del tamaño del título para darle más protagonismo */
 }
 
 .benefits-grid {
@@ -113,8 +110,8 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  max-width: 1300px;
-  margin: 0 auto;
+  /* max-width: 1300px; Se mueve esta limitación al nuevo .section-container */
+  /* margin: 0 auto; Se mueve esta limitación al nuevo .section-container */
 }
 
 .benefit-box {
@@ -141,14 +138,20 @@ h1, h2, h3, h4 {
    PROPUESTA SECTION
 --------------------------- */
 .propuesta-section {
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem; /* Espaciado uniforme */
   background-color: #181818;
+}
+
+.propuesta-section .section-container { /* Nuevo contenedor para limitar el ancho */
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .propuesta-section h2 {
   color: #fff;
   margin-bottom: 2rem;
   text-align: center;
+  font-size: 2.5rem; /* Aumento del tamaño del título */
 }
 
 .propuesta-section ul {
@@ -177,9 +180,14 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.cta-section .section-container { /* Nuevo contenedor para limitar el ancho */
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .cta-section h2 {
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+  font-size: 2.5rem; /* Aumento del tamaño del título */
   color: #ff6f00;
 }
 
@@ -288,36 +296,15 @@ h1, h2, h3, h4 {
   .benefit-box {
     width: 100%;
   }
+
+  /* Asegura que los títulos se centren en pantallas pequeñas */
+  .benefits-section h2,
+  .propuesta-section h2,
+  .cta-section h2 {
+    text-align: center;
+    font-size: 1.8rem; /* Ajuste para pantallas pequeñas */
+  }
 }
-
-/* --------------------------
-   AJUSTES PARA FULL PAGE (1300px+)
---------------------------- */
-@media (min-width: 1300px) {
-  .hero-section,
-  .benefits-section,
-  .propuesta-section,
-  .cta-section {
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
-  }
-
-  .hero-content {
-    max-width: 100% !important;
-    text-align: center !important;
-    padding-right: 0 !important;
-  }
-
-  .hero-content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .hero-video {
     margin-top: 2rem;
   }
