@@ -1,6 +1,6 @@
 const servicios = [
   {
-    slug: "automatizacion-de-propuestas",
+    slug: "automatizacion-propuestas",
     titulo: "Automatización de propuestas",
     detalle: "Automatizamos el armado de propuestas técnicas y económicas usando plantillas inteligentes conectadas a PRESTO, Excel y BIM.",
     servicio: "Consultoría",
