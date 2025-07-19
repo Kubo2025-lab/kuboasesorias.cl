@@ -72,25 +72,27 @@ h1, h2, h3, h4 {
 /* Desktop: lado a lado */
 @media screen and (min-width: 1024px) {
   .hero-section {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem 8rem;
-  }
-
-  .hero-content {
-    flex: 1.2;
-    text-align: left;
-    margin-bottom: 0;
-    padding-right: 3rem;
-  }
-
-  .hero-video {
-    flex: 0.8;
-    max-width: 90%;
-    padding-bottom: 45%; /* más estrecho en alto */
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 8rem;
 }
+
+.hero-content {
+  flex: 1.5;
+  text-align: left;
+  margin-bottom: 0;
+  padding-right: 4rem;
+  max-width: 640px;
+}
+
+.hero-video {
+  flex: 0.5;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
 /* --------------------------
    BENEFITS SECTION
 --------------------------- */
