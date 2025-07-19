@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
+import Scrollbar from "../../src/components/Scrollbar";
 
 const AutomatizacionPropuestas = () => {
   return (
