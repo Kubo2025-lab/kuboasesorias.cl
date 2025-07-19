@@ -5,13 +5,14 @@ const AutomatizacionPropuestas = () => {
  useEffect(() => {
   document.querySelector("body").classList.add("blog-page");
 
-  const frases = [
-    "¿Cuánto tiempo más vas a seguir copiando y pegando en cada licitación sin un sistema que lo haga por ti?",
-    "Las empresas que automatizan sus propuestas no solo ahorran tiempo: ganan más contratos con menos esfuerzo.",
-    "¿Y si tu propuesta técnica se armara sola, sin errores y en la mitad del tiempo que hoy demoras?",
-    "No se trata solo de velocidad, se trata de enviar mejores propuestas que realmente compitan y ganen.",
-    "Automatizar no es un lujo, es una ventaja competitiva que ya están usando tus futuros competidores."
-  ];
+const frases = [
+  "¿Vas a seguir gastando horas cada semana copiando, corrigiendo y ajustando propuestas mientras tus competidores ya las generan en minutos?",
+  "Cada día que sigues armando propuestas manualmente, estás dejando pasar oportunidades más grandes y clientes que no volverán.",
+  "Si una sola propuesta mal hecha puede costarte un contrato millonario... ¿vale la pena seguir improvisando?",
+  "Automatizar no es solo ahorrar tiempo, es dejar de perder licitaciones por errores evitables y documentos desordenados.",
+  "Tu equipo vale más que repetir tareas. Automatiza y enfoca tu energía donde realmente haces la diferencia: ganando contratos."
+];
+
 
   const contenedor = document.getElementById("frase-dinamica");
   let index = 0;
