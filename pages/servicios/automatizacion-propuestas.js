@@ -1,121 +1,97 @@
-import { Fragment, useEffect } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Layout from "@/src/layouts/Layout";
+import ScrollToTop from "@/src/components/ScrollToTop";
 
 const AutomatizacionPropuestas = () => {
-  useEffect(() => {
-    document.querySelector("body").classList.add("servicio-page");
-  }, []);
-
   return (
-    <Fragment>
-      {/* Botón de regreso */}
-      <a href="/" className="back-btn">
-        <i className="fa-solid fa-arrow-left"></i>
-      </a>
+    <Layout pageClassName="servicio-page">
+      <Head>
+        <title>Automatiza tus Propuestas | Kubo Asesorías</title>
+        <meta
+          name="description"
+          content="Automatiza tus propuestas con plantillas inteligentes, PRESTO, BIM y Excel. Aumenta tu tasa de adjudicación y reduce tiempos."
+        />
+      </Head>
 
-      {/* Botón flotante WhatsApp */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1>Automatiza tus propuestas y gana más licitaciones</h1>
+          <p>
+            Plantillas inteligentes + PRESTO + BIM + Excel: la fórmula para dejar de perder tiempo y aumentar tu tasa de éxito.
+          </p>
+          <a href="#formulario" className="custom-btn">
+            Quiero Automatizar Mis Propuestas
+          </a>
+        </div>
+
+        <div className="hero-video">
+          <iframe
+            src="https://www.youtube.com/embed/AqcjdkPMPJA"
+            title="Video de automatización de propuestas"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section className="benefits-section">
+        <h2>¿Por qué automatizar?</h2>
+        <div className="benefits-grid">
+          <div className="benefit-box">
+            <i className="fa-solid fa-clock"></i>
+            <h4>70% menos tiempo</h4>
+            <p>El armado de propuestas se acelera drásticamente gracias a plantillas conectadas.</p>
+          </div>
+          <div className="benefit-box">
+            <i className="fa-solid fa-briefcase"></i>
+            <h4>+ profesionalismo</h4>
+            <p>Menos errores, mejor presentación y foco en el contenido que realmente importa.</p>
+          </div>
+          <div className="benefit-box">
+            <i className="fa-solid fa-star"></i>
+            <h4>+ tasa de adjudicación</h4>
+            <p>Propuestas con mejor puntaje técnico, entregadas a tiempo y con sello de calidad.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="propuesta-section">
+        <h2>¿Cómo funciona nuestro servicio?</h2>
+        <ul>
+          <li><strong>1. Diagnóstico:</strong> Analizamos tu proceso actual de armado de propuestas.</li>
+          <li><strong>2. Diseño:</strong> Creamos plantillas inteligentes en PRESTO y Excel.</li>
+          <li><strong>3. Integración:</strong> Automatizamos con tus flujos BIM (si aplica).</li>
+          <li><strong>4. Capacitación:</strong> Te entrenamos y entregamos documentación lista.</li>
+        </ul>
+      </section>
+
+      <section className="cta-section" id="formulario">
+        <h2>Solicita una asesoría gratuita</h2>
+        <form className="formulario-contacto">
+          <input type="text" placeholder="Tu nombre" required />
+          <input type="email" placeholder="Tu correo electrónico" required />
+          <textarea placeholder="Cuéntanos tu necesidad..." required></textarea>
+          <button type="submit" className="custom-btn">Enviar</button>
+        </form>
+        <div className="respuesta-contacto">Te responderemos en menos de 24h.</div>
+      </section>
+
       <a
-        href="https://api.whatsapp.com/send?phone=56921792366&text=Hola%2C%20quiero%20automatizar%20mis%20propuestas"
+        href="https://wa.me/56921792366"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp"
       >
-        <i className="fa-brands fa-whatsapp"></i>
+        <i className="fab fa-whatsapp"></i>
       </a>
 
-      {/* Sección principal */}
-      <div className="blog-content">
-        <h1>Automatiza tus propuestas y gana más licitaciones</h1>
-
-        <div className="main-post">
-          <div className="meta d-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-calendar" />
-              <span>19 Jul 2025</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-solid fa-tag" />
-              <span>automatización, licitaciones</span>
-            </div>
-          </div>
-
-          <div className="post-content">
-            <p>
-              ¿Estás cansado de perder tiempo armando propuestas desde cero cada vez que postulas a una licitación? Automatizar tu proceso no solo te ahorra tiempo, también eleva tu estándar de calidad.
-            </p>
-            <p>
-              Nuestro servicio combina herramientas como PRESTO, Excel y flujos BIM para que armes propuestas en un 70% menos de tiempo, con menos errores y mayor profesionalismo.
-            </p>
-
-            <h4>Beneficios de automatizar:</h4>
-            <ul>
-              <li><strong>70% menos tiempo:</strong> gracias al uso de plantillas conectadas y parametrizadas.</li>
-              <li><strong>Mayor profesionalismo:</strong> presentación impecable y sin errores de formato o cálculos.</li>
-              <li><strong>Mejor tasa de adjudicación:</strong> más tiempo para enfocarte en el contenido técnico y en la estrategia.</li>
-            </ul>
-
-            <h4>¿Cómo funciona nuestro servicio?</h4>
-            <ol>
-              <li><strong>Diagnóstico</strong> de tu proceso actual.</li>
-              <li><strong>Diseño</strong> de plantillas inteligentes en PRESTO y Excel.</li>
-              <li><strong>Integración</strong> con tu flujo BIM (si aplica).</li>
-              <li><strong>Capacitación</strong> y entrega de documentación.</li>
-            </ol>
-
-            <h4>Video demostrativo</h4>
-            <div className="hero-video" style={{ margin: "2rem 0" }}>
-              <iframe
-                className="youtube-video"
-                src="https://www.youtube.com/embed/9aTWRphGdnA"
-                title="Video demostrativo"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <h4>Solicita tu diagnóstico gratuito</h4>
-            <form
-              className="formulario-contacto"
-              onSubmit={async (e) => {
-                e.preventDefault();
-                const form = new FormData(e.target);
-                const data = Object.fromEntries(form.entries());
-                data.motivo = "Automatización de propuestas";
-
-                try {
-                  await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(data),
-                  });
-                  document.getElementById("respuesta").style.display = "block";
-                  e.target.reset();
-                } catch (err) {
-                  console.error("Error al enviar:", err);
-                }
-              }}
-            >
-              <input type="text" name="nombre" placeholder="Tu nombre" required />
-              <input type="email" name="email" placeholder="Tu correo electrónico" required />
-              <textarea name="mensaje" placeholder="Cuéntanos tu necesidad" required></textarea>
-              <button type="submit" className="custom-btn">Enviar mensaje</button>
-            </form>
-
-            <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}>
-              <p>Gracias por contactarnos. Te responderemos pronto.</p>
-              <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">
-                Volver a servicios
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Fragment>
+      <ScrollToTop />
+    </Layout>
   );
 };
 
 export default AutomatizacionPropuestas;
+
 
 
 
