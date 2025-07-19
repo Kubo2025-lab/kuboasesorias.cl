@@ -68,7 +68,7 @@ const Portfolio = () => {
     <div className="videocontainer">
       <iframe
         className="youtube-video"
-        src="https://www.youtube.com/watch?v=9aTWRphGdnA?enablejsapi=1&version=3&playerapiid=ytplayer"
+         src="https://www.youtube.com/embed/9aTWRphGdnA?enablejsapi=1&version=3&playerapiid=ytplayer"
         allowFullScreen=""
         title="Video institucional Kubo"
       />
