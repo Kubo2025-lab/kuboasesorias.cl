@@ -1,7 +1,7 @@
 // components/Portfolio.js
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-import servicios from "@/data/servicios";
+import servicios from "../data/servicios";
 
 const Portfolio = () => {
   return (
