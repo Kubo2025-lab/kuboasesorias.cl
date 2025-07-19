@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import "../../styles/style.css";
+
 
 export default function ClubDeUsuarios() {
   const [enviado, setEnviado] = useState(false);
