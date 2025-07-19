@@ -24,16 +24,16 @@ h1, h2, h3, h4 {
 --------------------------- */
 .hero-section {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem 8rem;
+  padding: 5rem 6rem;
+  gap: 3rem;
 }
 
 .hero-content {
-  flex: 1.2;
-  text-align: left;
-  margin-bottom: 0;
-  padding-right: 3rem;
+  flex: 1;
+  padding-right: 2.5rem;
+  max-width: 60%;
 }
 
 .hero-content h1 {
@@ -65,13 +65,9 @@ h1, h2, h3, h4 {
 
 .hero-video {
   flex: 1;
-  max-width: 500px;
-  width: 100%;
-  height: auto;
+  max-width: 40%;
+  min-width: 300px;
   aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-  position: relative;
 }
 
 .hero-video iframe {
