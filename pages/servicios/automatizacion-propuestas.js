@@ -168,21 +168,23 @@ onSubmit={async (e) => {
   respuestaDiv.style.display = "block";
 
   try {
-    const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data),
+});
 
-    if (resp.ok) {
-      respuestaDiv.innerHTML = `
-        <p>✅ Mensaje enviado con éxito. ¡Gracias por contactarnos!</p>
-        <a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">
-          Volver a servicios
-        </a>`;
-    } else {
-      throw new Error("Error de servidor");
-    }
+if (resp.ok) {
+  const respuesta = await resp.json();
+  if (respuesta.redirect) {
+    window.location.href = respuesta.redirect;
+  } else {
+    document.getElementById("respuesta").innerHTML = "<p>✅ Mensaje enviado con éxito</p>";
+    document.getElementById("respuesta").style.display = "block";
+  }
+} else {
+  throw new Error("Error en la respuesta del servidor");
+}
   } catch (err) {
     console.error("Error al enviar:", err);
     respuestaDiv.innerHTML = `
