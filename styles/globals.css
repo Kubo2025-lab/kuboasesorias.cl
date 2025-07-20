@@ -60,3 +60,18 @@
   display: none !important;
 }
 
+.vertical-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  scroll-behavior: smooth;
+  display: block !important;
+  position: relative;
+}
+
+.vertical-scroll .main-section {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 60px 20px;
+}
