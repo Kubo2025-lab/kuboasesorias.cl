@@ -603,8 +603,10 @@ header .mobile-menu {
 .home .intro.maquina {
   position: relative;
   display: inline-block;
-  margin-top: 0;
-  margin-left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   height: auto;
   width: auto;
   max-width: 90%;
@@ -618,7 +620,7 @@ header .mobile-menu {
 .vertical-scroll .home > div > div .intro {
   align-items: center;
   left: 700px;
-  top: 200px;
+  top: 300px;
   line-height: 24px;	
 }
 
@@ -632,7 +634,7 @@ header .mobile-menu {
   font-size: 1.1rem;
   font-weight: 600;
   z-index: 2;
-  position: relative;
+  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
