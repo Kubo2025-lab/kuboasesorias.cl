@@ -65,7 +65,7 @@ const frases = [
         <div>
           <div className="position-relative">
             <h1>
-              <span><span className="animated-layer">Automatiza.<span>.</span></span></span>
+              <span><span className="animated-layer">Automatiza<span>.</span></span></span>
               <span><span className="animated-layer">Propón.</span></span>
               <span><span className="animated-layer">Gana.</span></span>
             </h1>
