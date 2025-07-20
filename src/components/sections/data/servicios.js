@@ -6,7 +6,7 @@ const servicios = [
     servicio: "Consultoría",
     modalidad: "A distancia",
     duracion: "3 meses",
-    img: "/assets/portfolio/project-1.jpg"
+    img: "/assets/portfolio/project-2.jpg"
   },
   {
     slug: "modelo-freemium",
@@ -15,7 +15,7 @@ const servicios = [
     servicio: "Asesoría",
     modalidad: "Online",
     duracion: "2 meses",
-    img: "/assets/portfolio/project-2.jpg"
+    img: "/assets/portfolio/project-3.jpg"
   },
   {
     slug: "capacitacion-certificada",
@@ -24,7 +24,7 @@ const servicios = [
     servicio: "Formación",
     modalidad: "E-learning",
     duracion: "6 semanas",
-    img: "/assets/portfolio/project-3.jpg"
+    img: "/assets/portfolio/project-4.jpg"
   },
   {
     slug: "alianzas-fintech",
@@ -33,7 +33,7 @@ const servicios = [
     servicio: "Consultoría",
     modalidad: "Presencial / Remota",
     duracion: "Flexible",
-    img: "/assets/portfolio/project-4.jpg"
+    img: "/assets/portfolio/project-5.jpg"
   },
   {
     slug: "servicio-post-adjudicacion",
@@ -42,7 +42,7 @@ const servicios = [
     servicio: "Gestión de contratos",
     modalidad: "Mixta",
     duracion: "Durante la ejecución del contrato",
-    img: "/assets/portfolio/project-5.jpg"
+    img: "/assets/portfolio/project-6.jpg"
   },
   {
     slug: "paquetes-sectorizados",
@@ -51,7 +51,7 @@ const servicios = [
     servicio: "Consultoría + Formación",
     modalidad: "Online + In company",
     duracion: "Variable",
-    img: "/assets/portfolio/project-6.jpg"
+    img: "/assets/portfolio/project-7.jpg"
   },
   {
     slug: "club-de-usuarios",
@@ -60,7 +60,7 @@ const servicios = [
     servicio: "Membresía",
     modalidad: "Online",
     duracion: "Anual",
-    img: "/assets/portfolio/project-7.jpg"
+    img: "/assets/portfolio/project-8.jpg"
   }
 ];
 
