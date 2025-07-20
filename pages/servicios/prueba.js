@@ -72,7 +72,7 @@ const Pruebas = () => {
       {/* Secciones reutilizadas del sitio */}
       <Portfolio />
       <Testimonials />
-      <Footer />
+      <Copyright />
     </Fragment>
   );
 };
