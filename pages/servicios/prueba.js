@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Copyright";
-import Portfolio from "../../components/Portfolio";
-import Testimonials from "../../components/Testimonials";
+import Header from "../../src/components/Header";
+import Footer from "../../src/components/Copyright";
+import Portfolio from "../../src/components/Portfolio";
+import Testimonials from "../../src/components/Testimonials";
 
 const Prueba = () => {
   return (
