@@ -25,6 +25,7 @@ const App = ({ Component, pageProps }) => {
       />
 
       <Preloader />
+      <Switcher />
       <Component {...pageProps} />
     </Fragment>
   );
