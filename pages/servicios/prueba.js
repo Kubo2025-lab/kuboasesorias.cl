@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 
-import Header from "../../src/components/sections/Header";
+import Header from "../../src/components/Header";
 import Home from "../../src/components/sections/Home";
 import Facts from "../../src/components/sections/Facts";
 import Portfolio from "../../src/components/sections/Portfolio";
