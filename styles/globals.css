@@ -54,5 +54,9 @@
   font-size: 25px;
   color: #fff;
 }
-
+#switcher,
+#showSwitcher,
+.back-btn {
+  display: none !important;
+}
 
