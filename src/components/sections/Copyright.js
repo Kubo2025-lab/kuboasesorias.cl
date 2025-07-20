@@ -18,26 +18,26 @@ const Copyright = () => {
           </a>
         </span>
         <ul>
-          <li>
-            <a href="#">
-              <i className="fa-brands fa-github" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fa-brands fa-twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fa-brands fa-dribbble" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fa-brands fa-facebook" />
-            </a>
-          </li>
+         <li>
+                <a href="https://www.tiktok.com/@kuboservicios">
+                  <i className="fa-brands fa-tiktok" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@kuboasesorias_cl">
+                  <i className="fa-brands fa-youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/eduardo-zambrano/">
+                  <i className="fa-brands fa-linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/kubo.asesorias">
+                  <i className="fa-brands fa-facebook" />
+                </a>
+              </li>
         </ul>
       </div>
     </section>
