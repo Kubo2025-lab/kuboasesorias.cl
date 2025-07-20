@@ -476,6 +476,10 @@ header {
   right: 0;
   width: 100%;
 }
+.vertical-scroll .animated-layer {
+  opacity: 1 !important;
+  transform: none !important;
+}
 
 header .header-inner {
   display: flex;
