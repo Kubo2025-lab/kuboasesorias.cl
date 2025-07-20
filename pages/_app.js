@@ -27,7 +27,7 @@ const App = ({ Component, pageProps }) => {
 
       {/* Estilos y preloader */}
       <Preloader />
-
+      <Switcher />
       {/* Render de la página */}
       <Component {...pageProps} />
     </Fragment>
