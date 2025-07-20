@@ -10,7 +10,7 @@ const Prueba = () => {
     <Fragment>
       <Head>
         <title>Zona de Pruebas Kubo</title>
-        <link rel="stylesheet" href="/css/servicios.css" />
+        <link rel="stylesheet" href="/css/servicios-pruebas.css" />
       </Head>
 
       <a href="/" className="back-btn">
