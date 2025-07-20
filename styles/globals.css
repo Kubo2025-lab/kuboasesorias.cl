@@ -1,17 +1,12 @@
-/* =================================================
-   GLOBAL STYLES: globals.css original
-   Proyecto: salimov-react modificado para kuboasesorias.cl
-================================================= */
-
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import "swiper/css/scrollbar";
 
-/* Swiper padding */
 .swiper-portfolio {
   padding-right: 250px;
 }
+
 @media screen and (max-width: 767px) {
   .swiper-portfolio {
     width: 100%;
@@ -20,7 +15,6 @@
   }
 }
 
-/* Switcher styles (si deseas mantenerlo, puedes comentar para desactivar) */
 #switcher,
 #showSwitcher {
   transition: 1s all;
@@ -36,7 +30,6 @@
   margin: 0 15px 15px 0;
 }
 
-/* Botón de volver atrás (Switcher) */
 .back-btn {
   z-index: 11111;
   margin-left: 0px;
@@ -56,42 +49,10 @@
   border-right: 0;
   border-radius: 0 4px 4px 0;
 }
+
 .back-btn i {
   font-size: 25px;
   color: #fff;
-}
-
-/* Scroll vertical exclusivo para páginas con diseño vertical */
-.vertical-scroll {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100vh;
-  scroll-behavior: smooth;
-  display: block !important;
-  position: relative;
-}
-.vertical-scroll section {
-  min-height: auto;
-  height: auto;
-  padding: 60px 20px;
-}
-
-/* Scroll horizontal (default del template original) */
-.main-section {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Si estás en scroll vertical y quieres que main-section se adapte */
-.vertical-scroll .main-section {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding: 60px 20px;
 }
 
 
