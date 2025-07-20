@@ -603,7 +603,7 @@ header .mobile-menu {
 .home .intro.maquina {
   position: relative;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 0;
   margin-left: 0;
   height: auto;
   width: auto;
@@ -615,6 +615,13 @@ header .mobile-menu {
   font-weight: 600;
   font-size: 1.1rem;
 }
+.vertical-scroll .home > div > div .intro {
+  align-items: center;
+  left: 700px;
+  top: 200px;
+  line-height: 24px;	
+}
+
 .vertical-scroll .home .intro.maquina {
   display: block;
   text-align: center;
