@@ -89,6 +89,12 @@
   opacity: 1 !important;
   visibility: visible !important;
   height: auto !important;
+  animation: none !important;
+}
+
+.vertical-scroll .home .animated-layer {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 /* Corregir posibles conflictos si tenían 100vh forzado */
