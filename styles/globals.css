@@ -3,6 +3,7 @@
 @import "swiper/css/pagination";
 @import "swiper/css/scrollbar";
 
+/* ======== Swiper ajustes portfolio ======== */
 .swiper-portfolio {
   padding-right: 250px;
 }
@@ -11,51 +12,14 @@
   .swiper-portfolio {
     width: 100%;
     padding-left: 30px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
-#switcher,
-#showSwitcher {
-  transition: 1s all;
-}
-#switcher.open,
-#showSwitcher.open {
-  margin-left: 0;
-}
-#showSwitcher.close {
-  margin-left: -500px;
-}
-#switcher ul li {
-  margin: 0 15px 15px 0;
-}
+/* ======== Eliminamos Switcher ======== */
+/* Todos los estilos relacionados con switcher han sido eliminados */
 
-.back-btn {
-  z-index: 11111;
-  margin-left: 0px;
-  position: fixed;
-  right: 0;
-  top: 220px;
-  background: #444;
-  border-left: 0;
-  font-size: 18px;
-  display: block;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 4px;
-  padding: 10px 16px 10px 16px;
-  cursor: pointer;
-  left: 0;
-  right: initial;
-  border-right: 0;
-  border-radius: 0 4px 4px 0;
-}
-
-.back-btn i {
-  font-size: 25px;
-  color: #fff;
-}
-
-/* Scroll vertical exclusivo */
+/* ======== Scroll vertical general ======== */
 .vertical-scroll {
   overflow-y: auto;
   overflow-x: hidden;
@@ -63,24 +27,32 @@
   scroll-behavior: smooth;
   display: block !important;
   position: relative;
+  background-color: #111; /* Fijamos un fondo oscuro base */
 }
 
+/* ======== Ajustes para las secciones internas ======== */
 .vertical-scroll section {
-  min-height: auto;
+  width: 100%;
   height: auto;
   padding: 60px 20px;
+  display: block;
 }
+
+/* Compatibilidad por si hay clases heredadas */
 .main-section {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.vertical-scroll .main-section {
   width: 100%;
   height: auto;
   display: block;
   padding: 60px 20px;
+  position: relative;
+}
+
+/* ======== Forzamos visibilidad (para WOW.js o animaciones invisibles) ======== */
+.vertical-scroll .animated-layer,
+.vertical-scroll .fade-in-left-animation,
+.vertical-scroll .fade-in-up-animation,
+.vertical-scroll .fadeInUp {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
 }
