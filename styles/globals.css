@@ -60,7 +60,7 @@
   display: none !important;
 }
 
-/* Scroll vertical exclusivo para páginas tipo "prueba.js" */
+/* Scroll vertical para páginas tipo /servicios/prueba */
 .vertical-scroll {
   overflow-y: auto;
   overflow-x: hidden;
@@ -70,16 +70,30 @@
   position: relative;
 }
 
-.vertical-scroll section {
+/* Secciones adaptadas al scroll vertical */
+.vertical-scroll section,
+.vertical-scroll .section {
   min-height: auto;
   height: auto;
   padding: 60px 20px;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-/* Ajuste especial para secciones que ocupaban toda la pantalla en horizontal */
-.vertical-scroll .main-section {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Ajustes adicionales para Home, Portfolio, Testimonials si tenían animaciones o clases ocultas */
+.vertical-scroll .home,
+.vertical-scroll .portfolio,
+.vertical-scroll .testimonials {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: auto !important;
+}
+
+/* Corregir posibles conflictos si tenían 100vh forzado */
+.section {
+  height: auto !important;
+  min-height: 100vh;
   padding: 60px 20px;
 }
