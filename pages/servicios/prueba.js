@@ -20,37 +20,48 @@ const Prueba = () => {
       <section className="hero-section">
         <div className="contenido-limitado">
           <div className="hero-content">
-            <h1>Zona de pruebas visuales y funcionales</h1>
+            <h1>Zona de Pruebas Visuales</h1>
             <p style={{ marginBottom: "1rem" }}>
-              Esta página es para testear nuevas ideas antes de pasarlas a producción.
+              Aquí probamos componentes antes de llevarlos a producción.
             </p>
-            <a href="#prototipo1" className="custom-btn">Ir a Prototipo 1</a>
           </div>
         </div>
       </section>
 
-      <section id="prototipo1" className="benefits-section">
+      {/* 1. Métrica destacada */}
+      <section className="metricas-section">
         <div className="section-container">
-          <h2>Prototipo 1: Grid con animación hover</h2>
-          <div className="benefits-grid">
-            <div className="benefit-box prueba-hover">
-              <i className="fa-solid fa-microchip"></i>
-              <h4>Componente 1</h4>
-              <p>Este bloque tiene un hover especial para destacar ideas nuevas.</p>
-            </div>
-            <div className="benefit-box prueba-hover">
-              <i className="fa-solid fa-rocket"></i>
-              <h4>Componente 2</h4>
-              <p>Útil para probar colores, sombras, efectos o animaciones temporales.</p>
-            </div>
-            <div className="benefit-box prueba-hover">
-              <i className="fa-solid fa-vial"></i>
-              <h4>Componente 3</h4>
-              <p>Todo lo que se cree aquí puede migrarse fácilmente a producción.</p>
-            </div>
+          <div className="metric-card">
+            <h2 className="counter">+31</h2>
+            <p>Proyectos adjudicados por nuestros clientes este año</p>
           </div>
         </div>
       </section>
+
+      {/* 2. Caja testimonial */}
+      <section className="testimonial-section">
+        <div className="section-container">
+          <div className="testimonial-box">
+            <p>
+              "Gracias a Kubo, hoy gano más licitaciones y paso menos horas en
+              Excel. Su sistema me salvó."
+            </p>
+            <strong>– Carolina Osorio, Técnica en Licitaciones</strong>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Comparador visual */}
+      <section className="comparador-section">
+        <div className="section-container">
+          <h4>Antes vs. Después</h4>
+          <div className="image-compare">
+            <img src="/assets/test/antes.jpg" alt="Antes" className="img-left" />
+            <img src="/assets/test/despues.jpg" alt="Después" className="img-right" />
+          </div>
+        </div>
+      </section>
+
     </Fragment>
   );
 };
