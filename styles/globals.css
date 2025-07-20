@@ -54,3 +54,22 @@
   font-size: 25px;
   color: #fff;
 }
+/* For vertical scroll layout */
+.vertical-scroll {
+  width: 100% !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  position: relative !important;
+  display: block !important;
+  flex-direction: column !important;
+}
+
+.vertical-scroll .main-section {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: auto !important;
+  padding: 60px 20px;
+  scroll-snap-align: unset !important;
+}
