@@ -72,7 +72,7 @@ const frases = [
             <span className="intro animated-layer maquina">{texto}<span className="cursor">|</span></span>
           </div>
         </div>
-        <span className="animated-layer animated-btn cta" id="cta"><span></span></span>
+        
       </section>
 
       <Facts />
