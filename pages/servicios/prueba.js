@@ -1,13 +1,13 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Header from "../../src/components/Header";
+import Header from "../../src/components/layouts/Header";
 import Home from "../../src/components/sections/Home";
+import Facts from "../../src/components/sections/Facts";
 import Portfolio from "../../src/components/sections/Portfolio";
 import Testimonials from "../../src/components/sections/Testimonials";
 import Copyright from "../../src/components/sections/Copyright";
 
-const Pruebas = () => {
- export default function Pruebas() {
+export default function Pruebas() {
   return (
     <div className="vertical-scroll">
       <Header />
@@ -19,5 +19,3 @@ const Pruebas = () => {
     </div>
   );
 }
-
-export default Pruebas;
