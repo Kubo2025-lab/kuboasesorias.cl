@@ -1,66 +1,155 @@
-// /pages/servicios/capacitacion-certificada.js
 import { Fragment, useEffect } from "react";
+import Head from "next/head";
 
 const CapacitacionCertificada = () => {
   useEffect(() => {
-    document.querySelector("body").classList.add("page-servicio");
+    document.querySelector("body").classList.add("blog-page");
+
+    const frases = [
+      "¿Cuántos puntos estás perdiendo en cada licitación por no tener una certificación que respalde tu experiencia?",
+      "Una buena capacitación no solo te entrena, te diferencia frente a la competencia en la evaluación técnica.",
+      "Dejar de estudiar es dejar de competir. Capacítate con enfoque práctico, real y orientado al mercado público.",
+      "Nuestro contenido está hecho por consultores que ganan licitaciones, no por teóricos ni improvisados.",
+      "Certifícate, potencia tu perfil en ChileCompra y destaca en cada presentación técnica que entregues."
+    ];
+
+    const contenedor = document.getElementById("frase-dinamica");
+    let index = 0;
+    let charIndex = 0;
+    let currentTimeout;
+
+    const escribirFrase = () => {
+      const frase = frases[index];
+      if (charIndex <= frase.length) {
+        contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+        charIndex++;
+        currentTimeout = setTimeout(escribirFrase, 40);
+      } else {
+        setTimeout(borrarFrase, 3000);
+      }
+    };
+
+    const borrarFrase = () => {
+      const frase = frases[index];
+      if (charIndex >= 0) {
+        contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+        charIndex--;
+        currentTimeout = setTimeout(borrarFrase, 30);
+      } else {
+        index = (index + 1) % frases.length;
+        setTimeout(escribirFrase, 1000);
+      }
+    };
+
+    escribirFrase();
+    return () => clearTimeout(currentTimeout);
   }, []);
 
   return (
     <Fragment>
+      <Head>
+        <link rel="stylesheet" href="/css/servicios.css" />
+      </Head>
+
       <a href="/" className="back-btn">
-        <i className="fa-solid fa-arrow-left" />
+        <i className="fa-solid fa-arrow-left"></i>
       </a>
-      <div className="service-content">
-        {/* Sección 1: Título */}
-        <h1>🚀 Capacitación Certificada para Profesionales que Licitan</h1>
 
-        {/* Sección 2: Problema */}
-        <div className="service-section">
-          <h3>El conocimiento técnico ya no es suficiente.</h3>
-          <p>
-            Cada día, más licitaciones exigen dominio de plataformas, criterios de evaluación,
-            estrategias de oferta y gestión documental. ¿El problema? La mayoría aprende a punta de errores.
-          </p>
-          <p>
-            Si estás en una constructora, consultora o eres profesional independiente, sabes que capacitarse no es un lujo: es sobrevivir en el mercado público.
-          </p>
+      <a
+        href="https://wa.me/56921792366"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <section className="hero-section">
+        <div className="contenido-limitado">
+          <div className="hero-content">
+            <h1>Certifica tus habilidades y gana con ventaja</h1>
+            <div className="frase-dinamica" id="frase-dinamica">
+              <p>Capacítate con cursos pensados para ganar licitaciones.</p>
+            </div>
+            <a href="#contacto" className="custom-btn">Quiero Certificarme con Kubo</a>
+          </div>
+
+          <div className="hero-video">
+            <iframe
+              src="https://www.youtube.com/embed/Kh6V8n-4wGM"
+              title="Capacitación Certificada KUBO"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
+      </section>
 
-        {/* Sección 3: Solución */}
-        <div className="service-section">
-          <h3>Capacitación diseñada para ganar licitaciones.</h3>
-          <p>
-            Creamos programas 100% online, modulares, cortos y aplicables desde el día uno.  
-            Nuestros cursos están validados por empresas reales y se actualizan constantemente según las nuevas exigencias del sistema.
-          </p>
-          <p>
-            Además, obtendrás un certificado de KUBO, con sello de reconocimiento en el ecosistema de compras públicas.
-          </p>
+      <section className="benefits-section">
+        <div className="section-container">
+          <h2>¿Por qué capacitarte con nosotros?</h2>
+          <div className="benefits-grid">
+            <div className="benefit-box">
+              <i className="fa-solid fa-certificate"></i>
+              <h4>+ puntaje técnico</h4>
+              <p>Nuestras certificaciones mejoran tu presentación en licitaciones públicas y privadas.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-user-graduate"></i>
+              <h4>+ posicionamiento profesional</h4>
+              <p>Tu nombre y perfil destacan en plataformas como ChileCompra y LinkedIn.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-laptop-code"></i>
+              <h4>100% online y flexible</h4>
+              <p>Estudia a tu ritmo con acceso 24/7 desde cualquier lugar.</p>
+            </div>
+          </div>
+          <div className="benefits-grid">
+            <div className="benefit-box">
+              <i className="fa-solid fa-cubes"></i>
+              <h4>Módulos especializados</h4>
+              <p>Contenido adaptado según el rubro o especialidad técnica.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-shield-halved"></i>
+              <h4>Certificación con respaldo</h4>
+              <p>Incluye insignia digital y diploma verificable en línea.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-people-group"></i>
+              <h4>Comunidad exclusiva</h4>
+              <p>Acceso a foros privados, descuentos y asesorías grupales.</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* Sección 4: Beneficios */}
-        <div className="service-section">
-          <h3>🎯 Beneficios de nuestra capacitación:</h3>
+      <section className="propuesta-section">
+        <div className="contenido-limitado">
+          <h2>¿Qué incluye nuestra capacitación?</h2>
           <ul>
-            <li>✅ Certificación con respaldo de empresa especializada en mercado público.</li>
-            <li>✅ Aprendizaje aplicado: estudia hoy, usa mañana.</li>
-            <li>✅ Acceso de por vida y actualizaciones sin costo.</li>
-            <li>✅ Cursos desde 1 hora a programas completos de 10 horas.</li>
-            <li>✅ Marca personal fortalecida con credenciales verificables.</li>
+            <li><strong>01.</strong> Diagnóstico de tus brechas y fortalezas técnicas</li>
+            <li><strong>02.</strong> Selección personalizada de módulos según tu perfil o rubro</li>
+            <li><strong>03.</strong> Acceso 24/7 a plataforma online con videos y recursos descargables</li>
+            <li><strong>04.</strong> Evaluaciones prácticas con retroalimentación</li>
+            <li><strong>05.</strong> Certificación digital con validación pública</li>
+            <li><strong>06.</strong> Asistencia para mejorar tu perfil profesional en ChileCompra</li>
+            <li><strong>07.</strong> Acceso por 1 año al contenido actualizado</li>
+            <li><strong>08.</strong> Bono exclusivo: plantilla editable de propuesta técnica</li>
           </ul>
         </div>
+      </section>
 
-        {/* Sección 5: Llamado a la acción */}
-        <div className="cta-section">
-          <h4>¿Listo para dejar de improvisar en las licitaciones?</h4>
+      <section id="contacto" className="cta-section">
+        <div className="section-container">
+          <h2>Solicita una clase gratuita</h2>
           <form
             className="formulario-contacto"
             onSubmit={async (e) => {
               e.preventDefault();
               const form = new FormData(e.target);
               const data = Object.fromEntries(form.entries());
-              data.motivo = "Capacitación certificada";
+              data.motivo = "Capacitación Certificada";
 
               try {
                 await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
@@ -77,17 +166,17 @@ const CapacitacionCertificada = () => {
           >
             <input type="text" name="nombre" placeholder="Tu nombre" required />
             <input type="email" name="email" placeholder="Tu correo electrónico" required />
-            <textarea name="mensaje" placeholder="Cuéntanos qué curso te interesa" required></textarea>
-            <button type="submit" className="custom-btn">Quiero capacitarme</button>
+            <textarea name="mensaje" placeholder="¿Qué tipo de curso te interesa?" required></textarea>
+            <button type="submit" className="custom-btn">Solicitar clase gratuita</button>
           </form>
           <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}>
-            <p>Gracias por escribirnos. Un asesor te contactará en breve.</p>
+            <p>Gracias por contactarnos. Te enviaremos acceso a tu clase muy pronto.</p>
             <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">
               Volver a servicios
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </Fragment>
   );
 };
