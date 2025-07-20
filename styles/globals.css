@@ -132,3 +132,6 @@
   visibility: visible !important;
   animation: none !important;
 }
+.vertical-scroll .header-inner {
+  opacity: 1 !important;
+}
