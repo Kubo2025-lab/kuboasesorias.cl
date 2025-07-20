@@ -1,65 +1,189 @@
 import { Fragment, useEffect } from "react";
+import Head from "next/head";
 
-const BlogPost = () => {
+const ClubDeUsuarios = () => {
   useEffect(() => {
     document.querySelector("body").classList.add("blog-page");
+
+    const frases = [
+      "¿Cuántas veces sentiste que estabas solo frente a una licitación compleja, sin a quién preguntar?",
+      "Las empresas que se agrupan, comparten estrategias y se apoyan entre sí... ganan más y se equivocan menos.",
+      "Imagina tener una comunidad de expertos a un clic de distancia, disponibles justo cuando necesitas una opinión.",
+      "El Club de Usuarios Kubo no es un grupo: es tu red de apoyo estratégica para licitaciones públicas.",
+      "Tu empresa no necesita más suerte, necesita aliados que ya hayan recorrido el mismo camino y lo compartan contigo."
+    ];
+
+    const contenedor = document.getElementById("frase-dinamica");
+    let index = 0;
+    let charIndex = 0;
+    let currentTimeout;
+
+    const escribirFrase = () => {
+      const frase = frases[index];
+      if (charIndex <= frase.length) {
+        contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+        charIndex++;
+        currentTimeout = setTimeout(escribirFrase, 40);
+      } else {
+        setTimeout(borrarFrase, 3000);
+      }
+    };
+
+    const borrarFrase = () => {
+      const frase = frases[index];
+      if (charIndex >= 0) {
+        contenedor.innerHTML = `<p>${frase.substring(0, charIndex)}<span class="cursor">|</span></p>`;
+        charIndex--;
+        currentTimeout = setTimeout(borrarFrase, 30);
+      } else {
+        index = (index + 1) % frases.length;
+        setTimeout(escribirFrase, 1000);
+      }
+    };
+
+    escribirFrase();
+    return () => clearTimeout(currentTimeout);
   }, []);
 
   return (
     <Fragment>
+      <Head>
+        <link rel="stylesheet" href="/css/servicios.css" />
+      </Head>
+
       <a href="/" className="back-btn">
         <i className="fa-solid fa-arrow-left"></i>
       </a>
-      <div className="blog-content">
-        <h1>#Kubo_Blog</h1>
 
-        <div className="main-post">
-          <div className="meta d-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-calendar" />
-              <span>19 Jul 2025</span>
+      <a
+        href="https://wa.me/56921792366"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+
+      {/* HERO + PROBLEMA */}
+      <section className="hero-section">
+        <div className="contenido-limitado">
+          <div className="hero-content">
+            <h1>Únete al Club de Usuarios Kubo y deja de pelear solo</h1>
+            <div className="frase-dinamica" id="frase-dinamica">
+              <p>No estás solo. Somos más de los que crees.</p>
             </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-solid fa-tag" />
-              <span>comunidad, networking, licitaciones</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-comments" />
-              <span>0 comentarios</span>
-            </div>
+            <a href="#contacto" className="custom-btn">Quiero unirme al Club</a>
           </div>
 
-          <h3>El Club de Usuarios que transforma licitadores en ganadores</h3>
-          <img src="/assets/blog/club.jpg" alt="Club de usuarios Kubo" />
-
-          <div className="post-content">
-            <p>
-              Licitar no tiene por qué ser un camino solitario. Cuando compartes experiencias, dudas y estrategias, creces el doble. Por eso nació nuestro Club de Usuarios.
-            </p>
-            <p>
-              Es una comunidad pensada para quienes están metidos hasta el cuello en el mundo del mercado público. Porque entendemos que los buenos se potencian cuando se juntan.
-            </p>
-            <p>
-              📌 <strong>Sesiones grupales de asesoría:</strong><br />
-              Una vez al mes, nos juntamos online para revisar casos reales, responder dudas y compartir hacks de licitación.
-            </p>
-            <p>
-              📌 <strong>Descuentos exclusivos y recursos premium:</strong><br />
-              Accede a plantillas, informes, análisis de bases y promociones especiales solo por ser parte.
-            </p>
-            <p>
-              📌 <strong>Networking con propósito:</strong><br />
-              Conecta con otros licitadores, crea alianzas, busca proveedores o súmate a propuestas colaborativas.
-            </p>
-            <p>
-              Ser parte del club no es solo tener beneficios, es dejar de remar solo. Es entrar en una red que rema contigo.
-            </p>
-            <p><strong>Los solos llegan más rápido, pero los conectados llegan más lejos.</strong></p>
+          <div className="hero-video">
+            <iframe
+              src="https://www.youtube.com/embed/8LhZYzVrfgs"
+              title="Club de Usuarios KUBO"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* PROMESA */}
+      <section className="benefits-section">
+        <div className="section-container">
+          <h2>¿Por qué ser parte del Club?</h2>
+          <div className="benefits-grid">
+            <div className="benefit-box">
+              <i className="fa-solid fa-handshake-angle"></i>
+              <h4>Acompañamiento real</h4>
+              <p>No más dudas sin resolver. Respaldo experto para tus decisiones estratégicas.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-people-arrows"></i>
+              <h4>Networking estratégico</h4>
+              <p>Conecta con otras empresas que compiten en los mismos mercados.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-file-shield"></i>
+              <h4>Acceso a recursos premium</h4>
+              <p>Plantillas, guías, ejemplos reales y herramientas que no están disponibles públicamente.</p>
+            </div>
+          </div>
+          <div className="benefits-grid">
+            <div className="benefit-box">
+              <i className="fa-solid fa-comments-dollar"></i>
+              <h4>Descuentos exclusivos</h4>
+              <p>Beneficios especiales en asesorías y servicios de Kubo solo para miembros activos.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-calendar-days"></i>
+              <h4>Sesiones grupales semanales</h4>
+              <p>Análisis en vivo de licitaciones y resolución de casos reales vía Zoom.</p>
+            </div>
+            <div className="benefit-box">
+              <i className="fa-solid fa-unlock-keyhole"></i>
+              <h4>Contenido anticipado</h4>
+              <p>Accede antes que nadie a nuevos productos, herramientas y oportunidades.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRUEBA */}
+      <section className="propuesta-section">
+        <div className="contenido-limitado">
+          <h2>¿Qué incluye tu membresía?</h2>
+          <ul>
+            <li><strong>01.</strong> Bienvenida y diagnóstico personalizado</li>
+            <li><strong>02.</strong> Acceso a comunidad privada activa</li>
+            <li><strong>03.</strong> Plantillas, recursos y ejemplos actualizados cada mes</li>
+            <li><strong>04.</strong> Participación en reuniones grupales semanales</li>
+            <li><strong>05.</strong> Canal directo vía WhatsApp con el equipo Kubo</li>
+            <li><strong>06.</strong> Prioridad en atención y soporte técnico</li>
+            <li><strong>07.</strong> Beneficios cruzados en cursos, asesorías y software</li>
+            <li><strong>08.</strong> Cancelación libre en cualquier momento, sin compromisos</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* PROPUESTA */}
+      <section id="contacto" className="cta-section">
+        <div className="section-container">
+          <h2>Solicita tu acceso al Club</h2>
+          <form
+            className="formulario-contacto"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = new FormData(e.target);
+              const data = Object.fromEntries(form.entries());
+              data.motivo = "Club de Usuarios";
+
+              try {
+                await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(data),
+                });
+                document.getElementById("respuesta").style.display = "block";
+                e.target.reset();
+              } catch (err) {
+                console.error("Error al enviar:", err);
+              }
+            }}
+          >
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu correo electrónico" required />
+            <textarea name="mensaje" placeholder="Cuéntanos por qué quieres entrar al Club" required></textarea>
+            <button type="submit" className="custom-btn">Solicitar acceso</button>
+          </form>
+          <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}>
+            <p>Gracias por tu interés. Te contactaremos para coordinar tu ingreso.</p>
+            <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">
+              Volver a servicios
+            </a>
+          </div>
+        </div>
+      </section>
     </Fragment>
   );
 };
 
-export default BlogPost;
+export default ClubDeUsuarios;
+
