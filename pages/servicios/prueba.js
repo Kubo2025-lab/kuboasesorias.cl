@@ -2,8 +2,7 @@ import Head from "next/head";
 import { useEffect, useState, Fragment } from "react";
 
 import Header from "../../src/components/Header";
-import Facts from "../../src/components/sections/Facts";
-import Portfolio from "../../src/components/sections/Portfolio";
+import Testimonials from "../../src/components/sections/About";
 import Testimonials from "../../src/components/sections/Testimonials";
 import Copyright from "../../src/components/sections/Copyright";
 
@@ -72,10 +71,10 @@ const frases = [
             <span className="intro animated-layer maquina">{texto}<span className="cursor">|</span></span>
           </div>
         </div>
-        
+        <a href="#contacto" className="animated-layer animated-btn cta" id="cta">¡Hablemos!</a>
       </section>
 
-      <Facts />
+      <About/>
       <Testimonials />
       <Copyright />
     </div>
