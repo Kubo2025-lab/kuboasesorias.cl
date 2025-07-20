@@ -82,9 +82,7 @@
 }
 
 /* Ajustes adicionales para Home, Portfolio, Testimonials si tenían animaciones o clases ocultas */
-.vertical-scroll .home,
-.vertical-scroll .portfolio,
-.vertical-scroll .testimonials {
+.vertical-scroll .home{
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -92,6 +90,14 @@
   animation: none !important;
 }
 
+.vertical-scroll .testimonials,
+.vertical-scroll .portfolio{
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: auto !important;
+}
+  
 .vertical-scroll .home .animated-layer {
   opacity: 1 !important;
   transform: none !important;
