@@ -619,8 +619,9 @@ header .mobile-menu {
 }
 .vertical-scroll .home > div > div .intro {
   align-items: center;
+  width: 300px;
   left: 700px;
-  top: 300px;
+  top: 200px;
   line-height: 24px;	
 }
 
