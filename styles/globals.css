@@ -123,3 +123,12 @@
   transform: none !important;
   animation: none !important;
 }
+.vertical-scroll .testimonials .testimonial-box,
+.vertical-scroll .testimonials .animated-layer,
+.vertical-scroll .testimonials .wow {
+  display: block !important;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  animation: none !important;
+}
