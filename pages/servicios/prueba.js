@@ -10,13 +10,20 @@ import Copyright from "../../src/components/sections/Copyright";
 
 export default function Pruebas() {
   return (
-    <div className="vertical-scroll">
-      <Header />
-      <Home />
-      <Facts />
-      <Portfolio />
-      <Testimonials />
-      <Copyright />
-    </div>
+    <Fragment>
+      <Head>
+        <title>Prueba de Scroll Vertical | Kubo</title>
+        <meta name="description" content="Página de prueba para scroll vertical en servicios de Kubo" />
+      </Head>
+
+      <div className="vertical-scroll">
+        <Header />
+        <Home />
+        <Facts />
+        <Portfolio />
+        <Testimonials />
+        <Copyright />
+      </div>
+    </Fragment>
   );
 }
