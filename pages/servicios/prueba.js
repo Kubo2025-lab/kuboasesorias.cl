@@ -8,11 +8,14 @@ const Prueba = () => {
 
   return (
     <Fragment>
-      <Head>
-        <title>Zona de Pruebas Kubo</title>
-        <link rel="stylesheet" href="/css/servicios-pruebas.css" />
-      </Head>
-
+<Head>
+  <title>Zona de Pruebas Kubo</title>
+  <link rel="stylesheet" href="/css/servicios-pruebas.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/animate.min.css" />
+  <link rel="stylesheet" href="/css/all.min.css" />
+  <!-- y los que quieras probar -->
+</Head>
       <a href="/" className="back-btn">
         <i className="fa-solid fa-arrow-left"></i>
       </a>
