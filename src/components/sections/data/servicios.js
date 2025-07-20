@@ -36,7 +36,7 @@ const servicios = [
     img: "/assets/portfolio/project-5.jpg"
   },
   {
-    slug: "servicio-post-adjudicacion",
+    slug: "post-adjudicacion",
     titulo: "Servicio post-adjudicación",
     detalle: "Acompañamos la ejecución contractual con reportes técnicos, checklist de cumplimiento y alertas de hitos.",
     servicio: "Gestión de contratos",
