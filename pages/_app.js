@@ -26,7 +26,6 @@ const App = ({ Component, pageProps }) => {
       />
 
       {/* Estilos y preloader */}
-      <Switcher />
       <Preloader />
 
       {/* Render de la página */}
