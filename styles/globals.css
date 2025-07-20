@@ -60,15 +60,23 @@
   display: none !important;
 }
 
+/* Scroll vertical exclusivo para páginas tipo "prueba.js" */
 .vertical-scroll {
   overflow-y: auto;
   overflow-x: hidden;
-  height: auto;
+  height: 100vh;
   scroll-behavior: smooth;
   display: block !important;
   position: relative;
 }
 
+.vertical-scroll section {
+  min-height: auto;
+  height: auto;
+  padding: 60px 20px;
+}
+
+/* Ajuste especial para secciones que ocupaban toda la pantalla en horizontal */
 .vertical-scroll .main-section {
   width: 100%;
   height: auto;
