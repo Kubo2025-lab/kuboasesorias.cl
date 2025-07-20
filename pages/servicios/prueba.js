@@ -16,13 +16,13 @@ export default function Pruebas() {
     }
   }, []);
 
-  const frases = [
-    "Impulsamos tu crecimiento con estrategia comercial, control presupuestario y foco en resultados concretos.",
-    "Transformamos la gestión de tu empresa para que venda más, planifique mejor y ejecute con excelencia.",
-    "Estrategia, orden y ejecución: el método para que tu negocio compita de verdad y gane donde importa.",
-    "Desde el diagnóstico hasta la adjudicación: acompañamos a PYMES que quieren dejar de improvisar y empezar a crecer.",
-    "Te ayudamos a estructurar, postular y cerrar con éxito: menos intuición, más planificación comercial."
-  ];
+const frases = [
+  "¿Sigues copiando y pegando propuestas? Te estás quedando en el pasado.",
+  "Automatiza el armado técnico y económico en minutos, no días.",
+  "Menos tiempo haciendo documentos, más tiempo ganando licitaciones.",
+  "Plantillas inteligentes que se adaptan al proyecto y al cliente.",
+  "Ahorra horas de trabajo, elimina errores y postula con ventaja."
+];
 
   const [texto, setTexto] = useState("");
   const [fraseIndex, setFraseIndex] = useState(0);
@@ -65,9 +65,9 @@ export default function Pruebas() {
         <div>
           <div className="position-relative">
             <h1>
-              <span><span className="animated-layer">Hola<span>.</span></span></span>
-              <span><span className="animated-layer">Somos</span></span>
-              <span><span className="animated-layer">Kubo Asesorías</span></span>
+              <span><span className="animated-layer">Automatiza.<span>.</span></span></span>
+              <span><span className="animated-layer">Propón.</span></span>
+              <span><span className="animated-layer">Gana.</span></span>
             </h1>
             <span className="intro animated-layer maquina">{texto}<span className="cursor">|</span></span>
           </div>
