@@ -1,5 +1,6 @@
-import Head from "next/head";
-import { Fragment } from "react";
+import Head from "next/head"; 
+import { useEffect, Fragment } from "react";
+import WOW from "wowjs";
 
 import Header from "../../src/components/Header";
 import Home from "../../src/components/sections/Home";
@@ -9,21 +10,21 @@ import Testimonials from "../../src/components/sections/Testimonials";
 import Copyright from "../../src/components/sections/Copyright";
 
 export default function Pruebas() {
+  useEffect(() => {
+    new WOW.WOW({ live: false }).init();
+  }, []);
+
   return (
-    <Fragment>
+    <div className="vertical-scroll">
       <Head>
         <title>Prueba de Scroll Vertical | Kubo</title>
-        <meta name="description" content="Página de prueba para scroll vertical en servicios de Kubo" />
       </Head>
-
-      <div className="vertical-scroll">
-        <Header />
-        <Home />
-        <Facts />
-        <Portfolio />
-        <Testimonials />
-        <Copyright />
-      </div>
-    </Fragment>
+      <Header />
+      <Home />
+      <Facts />
+      <Portfolio />
+      <Testimonials />
+      <Copyright />
+    </div>
   );
 }
