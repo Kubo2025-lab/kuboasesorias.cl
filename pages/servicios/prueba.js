@@ -76,7 +76,6 @@ export default function Pruebas() {
       </section>
 
       <Facts />
-      <Portfolio />
       <Testimonials />
       <Copyright />
     </div>
