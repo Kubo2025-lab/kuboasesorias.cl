@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect, useState, Fragment } from "react";
 
 import Header from "../../src/components/Header";
-import Testimonials from "../../src/components/sections/About";
+import About from "../../src/components/sections/About";
 import Testimonials from "../../src/components/sections/Testimonials";
 import Copyright from "../../src/components/sections/Copyright";
 
