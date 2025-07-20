@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Header from "../../src/components/layouts/Header";
+import Header from "../../src/components/Header";
 import Home from "../../src/components/sections/Home";
 import Portfolio from "../../src/components/sections/Portfolio";
 import Testimonials from "../../src/components/sections/Testimonials";
