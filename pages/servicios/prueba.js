@@ -1,6 +1,6 @@
 import Head from "next/head"; 
 import { useEffect, Fragment } from "react";
-import WOW from "wowjs";
+
 
 import Header from "../../src/components/Header";
 import Home from "../../src/components/sections/Home";
@@ -11,7 +11,11 @@ import Copyright from "../../src/components/sections/Copyright";
 
 export default function Pruebas() {
   useEffect(() => {
-    new WOW.WOW({ live: false }).init();
+    if (typeof window !== "undefined") {
+      import("wowjs").then(({ WOW }) => {
+        new WOW({ live: false }).init();
+      });
+    }
   }, []);
 
   return (
