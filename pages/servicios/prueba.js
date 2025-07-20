@@ -12,10 +12,6 @@ const Prueba = () => {
       </Head>
 
       <div className="container py-5">
-        <a href="/" className="btn btn-dark mb-4">
-          <i className="fas fa-arrow-left"></i> Volver
-        </a>
-
         <h1 className="text-center fw-bold mb-3 animated fadeInDown">Zona de Pruebas Visuales</h1>
         <p className="text-center text-muted animated fadeInUp">
           Aquí probamos componentes antes de llevarlos a producción.
