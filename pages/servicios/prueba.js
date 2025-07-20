@@ -67,6 +67,7 @@ const frases = [
             <h1>
               <span><span className="animated-layer">Automatiza<span>.</span></span></span>
               <span><span className="animated-layer">Propón.</span></span>
+              <span className="intro animated-layer maquina">{texto}<span className="cursor">|</span></span>
               <span><span className="animated-layer">Gana.</span></span>
             </h1>
             <span className="intro animated-layer maquina">{texto}<span className="cursor">|</span></span>
