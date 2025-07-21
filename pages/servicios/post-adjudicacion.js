@@ -130,24 +130,44 @@ const PostAdjudicacion = () => {
           <h2>Evita problemas antes de que ocurran</h2>
           <form
             className="formulario-contacto"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const form = new FormData(e.target);
-              const data = Object.fromEntries(form.entries());
-              data.motivo = "Post-Adjudicación";
+onSubmit={async (e) => {
+  e.preventDefault();
+  const form = new FormData(e.target);
+  const data = Object.fromEntries(form.entries());
+  data.motivo = "Post-Adjudicación";
 
-              try {
-                await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(data),
-                });
-                document.getElementById("respuesta").style.display = "block";
-                e.target.reset();
-              } catch (err) {
-                console.error("Error al enviar:", err);
-              }
-            }}
+  const respuestaDiv = document.getElementById("respuesta");
+  const formulario = e.target;
+
+  formulario.style.display = "none";
+  respuestaDiv.innerHTML = "<p>📨 Enviando tu solicitud... Un momento.</p>";
+  respuestaDiv.style.display = "block";
+
+  try {
+    const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const resultado = await resp.json();
+    if (resp.ok && resultado.status === "ok") {
+      respuestaDiv.innerHTML = `
+        <p>✅ Acompañamiento solicitado con éxito. Pronto te contactaremos para ayudarte en la ejecución.</p>
+        <a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">Volver a servicios</a>`;
+      e.target.reset();
+    } else {
+      throw new Error("Error en la respuesta del servidor");
+    }
+  } catch (err) {
+    console.error("Error al enviar:", err);
+    respuestaDiv.innerHTML = `
+      <p>❌ Algo falló al enviar tu mensaje. Puedes reintentar o escribirnos directamente.</p>
+      <button onclick="location.reload()" class="custom-btn">Reintentar</button>`;
+    formulario.style.display = "block";
+  }
+}}
+
           >
             <input type="text" name="nombre" placeholder="Tu nombre" required />
             <input type="email" name="email" placeholder="Tu correo electrónico" required />
