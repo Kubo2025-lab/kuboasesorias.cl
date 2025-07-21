@@ -173,14 +173,15 @@ onSubmit={async (e) => {
       body: JSON.stringify(data),
     });
 
-    if (resp.ok) {
+    const resultado = await resp.json(); // ⚠️ importante: leer el body
+    if (resp.ok && resultado.status === "ok") {
       respuestaDiv.innerHTML = `
         <p>✅ Mensaje enviado con éxito. Te responderemos pronto.</p>
         <a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">Volver a servicios</a>
       `;
       e.target.reset();
     } else {
-      throw new Error("Error en la respuesta del servidor");
+      throw new Error("Respuesta no válida");
     }
   } catch (err) {
     console.error("Error al enviar:", err);
