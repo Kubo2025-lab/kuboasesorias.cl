@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/servicios/club-de-usuarios": "pages/servicios/club-de-usuarios.js",
+  "/servicios/modelo-freemium": "pages/servicios/modelo-freemium.js",
+  "/servicios/financiamiento-consultorias": "pages/servicios/financiamiento-consultorias.js"
 }

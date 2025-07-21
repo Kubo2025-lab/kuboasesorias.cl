@@ -24,6 +24,16 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/servicios/financiamiento-consultorias": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/servicios/financiamiento-consultorias.js"
+    ],
+    "/servicios/modelo-freemium": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/servicios/modelo-freemium.js"
     ]
   },
   "ampFirstPages": []
