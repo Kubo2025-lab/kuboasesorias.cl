@@ -10,7 +10,7 @@ const PostAdjudicacion = () => {
       "La ejecución técnica no espera, el informe mensual tampoco.",
       "Muchos ganan... y después pierden por errores en la entrega.",
       "¿Tienes claridad sobre tus obligaciones técnicas y fiscales post-adjudicación?",
-      "Con Kubo te acompañamos desde la firma hasta el último informe entregado a tiempo."
+      "Con Kubo te acompañamos desde la firma hasta el último informe entregado a tiempo.",
     ];
 
     const contenedor = document.getElementById("frase-dinamica");
@@ -64,7 +64,7 @@ const PostAdjudicacion = () => {
         <i className="fa-brands fa-whatsapp"></i>
       </a>
 
-      {/* PROBLEMA */}
+      {/* HERO - PROBLEMA */}
       <section className="hero-section">
         <div className="contenido-limitado">
           <div className="hero-content">
@@ -74,7 +74,6 @@ const PostAdjudicacion = () => {
             </div>
             <a href="#contacto" className="custom-btn">Necesito Acompañamiento</a>
           </div>
-
           <div className="hero-video">
             <iframe
               src="https://www.youtube.com/embed/RMkVf-HDD1I"
@@ -130,56 +129,54 @@ const PostAdjudicacion = () => {
           <h2>Evita problemas antes de que ocurran</h2>
           <form
             className="formulario-contacto"
-onSubmit={async (e) => {
-  e.preventDefault();
-  const form = new FormData(e.target);
-  const data = Object.fromEntries(form.entries());
-  data.motivo = "Post-Adjudicación";
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = new FormData(e.target);
+              const data = Object.fromEntries(form.entries());
+              data.motivo = "Post-Adjudicación";
 
-  const respuestaDiv = document.getElementById("respuesta");
-  const formulario = e.target;
+              const respuestaDiv = document.getElementById("respuesta");
+              const formulario = e.target;
 
-  formulario.style.display = "none";
-  respuestaDiv.innerHTML = "<p>📨 Enviando tu solicitud... Un momento.</p>";
-  respuestaDiv.style.display = "block";
+              formulario.style.display = "none";
+              respuestaDiv.innerHTML = "<p>📨 Enviando tu solicitud... Un momento.</p>";
+              respuestaDiv.style.display = "block";
 
-  try {
-    const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+              try {
+                const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(data),
+                });
 
-    const resultado = await resp.json();
-    if (resp.ok && resultado.status === "ok") {
-      respuestaDiv.innerHTML = `
-        <p>✅ Acompañamiento solicitado con éxito. Pronto te contactaremos para ayudarte en la ejecución.</p>
-        <a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">Volver a servicios</a>`;
-      e.target.reset();
-    } else {
-      throw new Error("Error en la respuesta del servidor");
-    }
-  } catch (err) {
-    console.error("Error al enviar:", err);
-    respuestaDiv.innerHTML = `
-      <p>❌ Algo falló al enviar tu mensaje. Puedes reintentar o escribirnos directamente.</p>
-      <button onclick="location.reload()" class="custom-btn">Reintentar</button>`;
-    formulario.style.display = "block";
-  }
-}}
-
+                const resultado = await resp.json();
+                if (resp.ok && resultado.status === "ok") {
+                  respuestaDiv.innerHTML =
+                    '<p>✅ Acompañamiento solicitado con éxito. Te contactaremos pronto.</p>' +
+                    '<a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">Volver a servicios</a>';
+                  e.target.reset();
+                } else {
+                  throw new Error("Respuesta no válida");
+                }
+              } catch (err) {
+                console.error("Error al enviar:", err);
+                respuestaDiv.innerHTML =
+                  '<p>❌ Ocurrió un error. Puedes reintentar o escribirnos por WhatsApp.</p>' +
+                  '<button onclick="location.reload()" class="custom-btn">Reintentar</button>';
+                formulario.style.display = "block";
+              }
+            }}
           >
             <input type="text" name="nombre" placeholder="Tu nombre" required />
             <input type="email" name="email" placeholder="Tu correo electrónico" required />
-            <textarea name="mensaje" placeholder="¿Qué proyecto necesitas ejecutar correctamente?" required></textarea>
+            <textarea
+              name="mensaje"
+              placeholder="¿Qué proyecto necesitas ejecutar correctamente?"
+              required
+            ></textarea>
             <button type="submit" className="custom-btn">Solicitar Acompañamiento</button>
           </form>
-          <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}>
-            <p>Gracias. Nos pondremos en contacto para iniciar tu apoyo post-adjudicación.</p>
-            <a href="https://www.kuboasesorias.cl/#portfolio" className="custom-btn">
-              Volver a servicios
-            </a>
-          </div>
+          <div id="respuesta" className="respuesta-contacto" style={{ display: "none" }}></div>
         </div>
       </section>
     </Fragment>
