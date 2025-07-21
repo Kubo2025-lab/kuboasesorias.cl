@@ -74,13 +74,13 @@ const CapacitacionCertificada = () => {
             <a href="#contacto" className="custom-btn">Quiero Certificarme con Kubo</a>
           </div>
 
-          <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/Kh6V8n-4wGM"
-              title="Capacitación Certificada KUBO"
-              allowFullScreen
-            ></iframe>
-          </div>
+  <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
         </div>
       </section>
 

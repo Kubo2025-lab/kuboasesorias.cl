@@ -75,13 +75,13 @@ const ClubDeUsuarios = () => {
             <a href="#contacto" className="custom-btn">Quiero unirme al Club</a>
           </div>
 
-          <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/8LhZYzVrfgs"
-              title="Club de Usuarios KUBO"
-              allowFullScreen
-            ></iframe>
-          </div>
+           <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
         </div>
       </section>
 

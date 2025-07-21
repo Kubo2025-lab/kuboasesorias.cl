@@ -75,13 +75,13 @@ const PaquetesSectorizados = () => {
             <a href="#contacto" className="custom-btn">Solicitar Paquete Sectorizado</a>
           </div>
 
-          <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/LgSGP-E6naM"
-              title="Paquetes Sectorizados Kubo"
-              allowFullScreen
-            ></iframe>
-          </div>
+  <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
         </div>
       </section>
 

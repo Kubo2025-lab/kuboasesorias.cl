@@ -75,13 +75,13 @@ const FinanciamientoConsultorias = () => {
             <a href="#contacto" className="custom-btn">Quiero Financiar mi Consultoría</a>
           </div>
 
-          <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/vWE_F4cLgx8"
-              title="Financiamiento de Consultorías - Kubo"
-              allowFullScreen
-            ></iframe>
-          </div>
+  <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
         </div>
       </section>
 

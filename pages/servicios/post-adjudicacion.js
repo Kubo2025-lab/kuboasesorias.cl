@@ -74,13 +74,13 @@ const PostAdjudicacion = () => {
             </div>
             <a href="#contacto" className="custom-btn">Necesito Acompañamiento</a>
           </div>
-          <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/RMkVf-HDD1I"
-              title="Post-Adjudicación Kubo"
-              allowFullScreen
-            ></iframe>
-          </div>
+  <div className="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/9aTWRphGdnA"
+        title="Automatización de Propuestas KUBO"
+        allowFullScreen
+      ></iframe>
+    </div>
         </div>
       </section>
 
