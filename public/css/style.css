@@ -605,14 +605,14 @@ header .mobile-menu {
   z-index: 1;
 }
 .home .intro.maquina {
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
   height: auto;
-  width: auto;
+  width: 300px;
   max-width: 90%;
   padding: 10px 20px;
   border-radius: 10px;
@@ -2717,4 +2717,3 @@ header .mobile-menu {
   cursor: pointer;
   color: #fff;
 }
-
