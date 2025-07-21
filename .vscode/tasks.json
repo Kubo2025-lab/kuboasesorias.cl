@@ -4,12 +4,12 @@
     {
       "label": "deploy-kubo",
       "type": "shell",
-      "command": "cmd",
+      "command": "git",
       "args": [
-        "/c",
-        "git add . && git commit -m \"Actualización de cambios Kubo\" && git push origin main"
+        "add", "."
       ],
       "problemMatcher": [],
+      "dependsOn": ["commit-and-push"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -18,6 +18,47 @@
         "echo": true,
         "reveal": "always",
         "panel": "shared"
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      }
+    },
+    {
+      "label": "commit-and-push",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "commit",
+        "-m",
+        "Actualización de cambios Kubo"
+      ],
+      "dependsOn": ["push-to-origin"],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      }
+    },
+    {
+      "label": "push-to-origin",
+      "type": "shell",
+      "command": "git",
+      "args": ["push", "origin", "main"],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
       }
     }
   ]
