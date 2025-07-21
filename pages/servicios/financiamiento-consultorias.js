@@ -129,24 +129,41 @@ const FinanciamientoConsultorias = () => {
           <h2>Solicita tu evaluación gratuita</h2>
           <form
             className="formulario-contacto"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const form = new FormData(e.target);
-              const data = Object.fromEntries(form.entries());
-              data.motivo = "Financiamiento de Consultoría";
+           onSubmit={async (e) => {
+  e.preventDefault();
+  const form = new FormData(e.target);
+  const data = Object.fromEntries(form.entries());
+  data.motivo = "Financiamiento de Consultoría";
 
-              try {
-                await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(data),
-                });
-                document.getElementById("respuesta").style.display = "block";
-                e.target.reset();
-              } catch (err) {
-                console.error("Error al enviar:", err);
-              }
-            }}
+  const respuestaDiv = document.getElementById("respuesta");
+  const formulario = e.target;
+
+  formulario.style.display = "none";
+  respuestaDiv.innerHTML = "<p>📨 Enviando solicitud... Por favor espera unos segundos.</p>";
+  respuestaDiv.style.display = "block";
+
+  try {
+    const resp = await fetch("https://branddata.app.n8n.cloud/webhook/formulario-k-u-b-o", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const resultado = await resp.json();
+    if (resp.ok && resultado.status === "ok") {
+      respuestaDiv.innerHTML = `
+        <p>✅ Evaluación solicitada con éxito. Te responderemos pronto por correo o WhatsApp.</p>
+        <a href="https://www.kuboasesorias.cl/#portfolio" class="custom-btn">Volver a servicios</a>`;
+      e.target.reset();
+    } else {
+      throw new Error("Error en la respuesta del servidor");
+    }
+  } catch (err) {
+    console.error("Error al enviar:", err);
+    respuestaDiv.innerHTML = `
+      <p>❌ Ocurrió un error al enviar tu mensaje. Intenta nuevamente más tarde.</p>
+      <button onclick="location.reload()" class=
+
           >
             <input type="text" name="nombre" placeholder="Tu nombre" required />
             <input type="email" name="email" placeholder="Tu correo electrónico" required />
