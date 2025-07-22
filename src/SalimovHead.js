@@ -27,7 +27,7 @@ const SalimovHead = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kuboasesorias.cl" />
-        <meta property="og:image" content="https://www.kuboasesorias.cl/images/preview-kubo.png" />
+        <meta property="og:image" content="https://www.kuboasesorias.cl/public/assets/preview-kubo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* 🧷 Favicon */}
