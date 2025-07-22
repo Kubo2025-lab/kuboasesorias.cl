@@ -5,7 +5,7 @@ const SalimovHead = () => {
   return (
     <>
       <Head>
-        {/* Título y descripción SEO */}
+        {/* 🔍 SEO Básico */}
         <title>Kubo | Te ayudamos a ganar licitaciones públicas en Chile</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@ const SalimovHead = () => {
         />
         <meta name="author" content="Kubo Servicios SPA" />
 
-        {/* Open Graph / Social Media */}
+        {/* 📲 Open Graph / Redes Sociales */}
         <meta property="og:title" content="Kubo | Expertos en licitaciones públicas" />
         <meta
           property="og:description"
@@ -27,35 +27,36 @@ const SalimovHead = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kuboasesorias.cl" />
-        <meta property="og:image" content="https://www.kuboasesorias.cl/og-image.jpg" />
+        <meta property="og:image" content="https://www.kuboasesorias.cl/images/preview-kubo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        {/* Favicon */}
-        <link rel="icon" href="public/assets/kubo_icon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="public/assets/kubo_icon.ico" type="image/x-icon" />
+        {/* 🧷 Favicon */}
+        <link rel="icon" href="/assets/kubo_icon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/assets/kubo_icon.ico" type="image/x-icon" />
 
-        {/* Google Fonts */}
+        {/* 🔡 Tipografías Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
           href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
 
-        {/* CSS Styles */}
-        <link rel="stylesheet" href="/css/devicon.min.css" />
-        <link rel="stylesheet" href="/css/all.min.css" />
+        {/* 🎨 Estilos CSS Globales */}
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/all.min.css" />
+        <link rel="stylesheet" href="/css/devicon.min.css" />
         <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/animate.min.css" />
         <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="/css/styleswitcher.css" />
+        <link rel="stylesheet" href="/css/styleswitcher.css" />
         {/* <link rel="stylesheet" href="/css/skins/yellow.css" /> */}
       </Head>
-   </>
+    </>
   );
 };
 
 export default SalimovHead;
+
 
