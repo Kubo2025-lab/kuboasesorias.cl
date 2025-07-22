@@ -23,6 +23,18 @@ const App = ({ Component, pageProps }) => {
           })(window,document,'script','dataLayer','GTM-NX74D4K');`
         }}
       />
+  <Script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-SRX1N91MW1"
+/>
+<Script id="ga4-script" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SRX1N91MW1');
+  `}
+</Script>
 
       <Preloader />
       <Switcher />
